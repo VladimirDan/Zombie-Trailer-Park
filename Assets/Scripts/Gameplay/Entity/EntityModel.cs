@@ -25,6 +25,24 @@ public class EntityModel : IEntityModel
         EntityRigidbody.velocity = currentVelocity * speed;
     }
 
+    public Collider FindNearestCollider(Collider[] colliders, Transform referenceTransform)
+    {
+        Collider nearestCollider = null;
+        float minDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
+        {
+            float distance = Vector3.Distance(referenceTransform.position, collider.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestCollider = collider;
+            }
+        }
+
+        return nearestCollider;
+    }
+
     public GameObject FindOpponent()
     {
         GameObject opponent;
@@ -38,7 +56,7 @@ public class EntityModel : IEntityModel
 
         Collider[] colliders = Physics.OverlapBox(boxCenter, new Vector3(width / 2, height / 2, depth / 2), Quaternion.identity, OpponentLayer);
 
-        opponent = colliders.Length == 0 ? null : colliders[0].gameObject;
+        opponent = colliders.Length == 0 ? null : FindNearestCollider(colliders, EntityTransform).gameObject;
 
         return opponent;
     }
@@ -53,6 +71,7 @@ public class EntityModel : IEntityModel
         HealthModel opponentHealth = target.GetComponent<HealthModel>();
         Entity opponentEntity = target.GetComponent<Entity>();
 
+        yield return new WaitForSeconds(AttackSpeed);
         while (opponentHealth.isAlive())
         {
             opponentHealth.ReduceHealth(AttackDamage);
