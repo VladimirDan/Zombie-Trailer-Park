@@ -22,17 +22,11 @@ public class HealthModel : MonoBehaviour
     }
     void Start()
     {
-        onHealthChange += DisplayMessage;
+        //onHealthChange += DisplayMessage;
     }
 
     void Update()
     {
 
-    }
-
-    HealthModel(float healthPoints)
-    {
-        HealthPoints = healthPoints;
-        //onHealthChange += DisplayMessage;
     }
 }

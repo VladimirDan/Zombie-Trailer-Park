@@ -4,24 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Game.Code.Common.CoroutineRunner;
 
 namespace Assets.Scripts.StateMachine.States
 {
-    internal class DeathState : EntitieBehaviourState
+    internal class AfkState : EntityBehaviourState
     {
-        public Coroutine attackCoroutine;
-
         public override void Enter()
         {
-            
         }
 
         public override void Exit()
         {
-
         }
-
-        public DeathState(Entitie _entitieModel) : base(_entitieModel) { }
-    
+        public AfkState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_entityModel, _coroutineRunner) { }
     }
 }
