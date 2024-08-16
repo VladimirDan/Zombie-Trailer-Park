@@ -7,17 +7,15 @@ using UnityEngine;
 
 public class AttackState : EntityBehaviourState
 {
-    private IEnumerator attackEnumerator;
+    private IEnumerator fightEnumerator;
     public override void Enter()
     {
-        GameObject target = entityModel.FindOpponent();
-
-        attackEnumerator = entityModel.Attack(target);
-        coroutineRunner.RunCoroutine(attackEnumerator);
+        fightEnumerator = entityModel.Fight();
+        coroutineRunner.RunCoroutine(fightEnumerator);
     }
     public override void Exit()
     {
-           coroutineRunner.StopRunningCoroutine(attackEnumerator);
+           coroutineRunner.StopRunningCoroutine(fightEnumerator);
     }
 
     public AttackState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_entityModel, _coroutineRunner) { }

@@ -25,24 +25,6 @@ public class EntityModel : IEntityModel
         EntityRigidbody.velocity = currentVelocity * speed;
     }
 
-    public Collider FindNearestCollider(Collider[] colliders, Transform referenceTransform)
-    {
-        Collider nearestCollider = null;
-        float minDistance = Mathf.Infinity;
-
-        foreach (Collider collider in colliders)
-        {
-            float distance = Vector3.Distance(referenceTransform.position, collider.transform.position);
-            if (distance < minDistance)
-            {
-                minDistance = distance;
-                nearestCollider = collider;
-            }
-        }
-
-        return nearestCollider;
-    }
-
     public GameObject FindOpponent()
     {
         GameObject opponent;
@@ -54,9 +36,9 @@ public class EntityModel : IEntityModel
                             (Vector3.right * CreatureHorizontalMovementDirection * (width / 2)) +
                             (Vector3.forward * (depth / 2));
 
-        Collider[] colliders = Physics.OverlapBox(boxCenter, new Vector3(width / 2, height / 2, depth / 2), Quaternion.identity, OpponentLayer);
+        Collider[] colliders = Physics.OverlapBox(boxCenter, new Vector3(width, height, depth), Quaternion.identity, OpponentLayer);
 
-        opponent = colliders.Length == 0 ? null : FindNearestCollider(colliders, EntityTransform).gameObject;
+        opponent = colliders.Length == 0 ? null : colliders.FindNearestCollider(EntityTransform).gameObject;
 
         return opponent;
     }
@@ -66,18 +48,35 @@ public class EntityModel : IEntityModel
         return FindOpponent() != null;
     }
 
-    public IEnumerator Attack(GameObject target) 
+    public void Attack(GameObject target) 
     {
         HealthModel opponentHealth = target.GetComponent<HealthModel>();
-        Entity opponentEntity = target.GetComponent<Entity>();
 
+        opponentHealth.ReduceHealth(AttackDamage);
+    }
+
+    public IEnumerator Fight()
+    {
+        GameObject target = FindOpponent();
         yield return new WaitForSeconds(AttackSpeed);
-        while (opponentHealth.isAlive())
+
+        while (true)
         {
-            opponentHealth.ReduceHealth(AttackDamage);
+            if(target == null && isEnemyInAttackRange())
+            {
+                target = FindOpponent();
+                Attack(target);
+            }
+            else if (target != null)
+            {
+                Attack(target);
+            }
+            else
+            {
+                yield break;
+            }
             yield return new WaitForSeconds(AttackSpeed);
         }
-        yield break;
     }
 
     public EntityModel(float creatureSpeed, float creatureHorizontalMovementDirection, float attackRange,

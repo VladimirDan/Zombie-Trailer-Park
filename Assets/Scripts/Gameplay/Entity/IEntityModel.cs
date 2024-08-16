@@ -17,7 +17,8 @@ public interface IEntityModel
     public void Walk(float speed, float movementDirection);
     public GameObject FindOpponent();
     public bool isEnemyInAttackRange();
-    public IEnumerator Attack(GameObject target);
+    public void Attack(GameObject target);
+    public IEnumerator Fight();
 
 }
 

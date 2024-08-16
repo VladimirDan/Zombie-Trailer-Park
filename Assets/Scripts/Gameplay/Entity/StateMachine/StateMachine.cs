@@ -11,7 +11,7 @@ public class StateMachine
     {
         if (currentState.GetType() != nextState.GetType())
         {
-            Debug.Log(currentState.GetType() + " -> " + nextState.GetType());
+            //Debug.Log(currentState.GetType() + " -> " + nextState.GetType());
             currentState.Exit();
             currentState = nextState;
             currentState.Enter();
