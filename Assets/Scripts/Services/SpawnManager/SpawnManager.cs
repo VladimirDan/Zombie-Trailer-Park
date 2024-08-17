@@ -27,6 +27,11 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    public void OnCollisionStay(Collision collision)
+    {
+        
+    }
+
     public void SpawnObject(Vector3 position, Quaternion rotation, GameObject objectPrefab)
     {
         Instantiate(objectPrefab, new Vector3(position.x, position.y, position.z), rotation);
