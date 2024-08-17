@@ -17,6 +17,6 @@ namespace Assets.Scripts.StateMachine.States
         public override void Exit()
         {
         }
-        public AfkState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_entityModel, _coroutineRunner) { }
+        public AfkState(ICoroutineRunner _coroutineRunner) : base(_coroutineRunner) { }
     }
 }

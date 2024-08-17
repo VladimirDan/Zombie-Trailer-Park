@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.Code.Common.CoroutineRunner;
+using Assets.Scripts.Gameplay.Entity.StateMachine;
+using CreaturesData;
 
-public class WalkState : EntityBehaviourState
+public class WalkState : UnitBehaviourState
 {
     public float exitSpeed = 0f;
 

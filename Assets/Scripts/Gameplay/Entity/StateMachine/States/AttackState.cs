@@ -1,3 +1,4 @@
+using Assets.Scripts.Gameplay.Entity.StateMachine;
 using Game.Code.Common.CoroutineRunner;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,7 +6,7 @@ using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AttackState : EntityBehaviourState
+public class AttackState : UnitBehaviourState
 {
     private IEnumerator fightEnumerator;
     public override void Enter()

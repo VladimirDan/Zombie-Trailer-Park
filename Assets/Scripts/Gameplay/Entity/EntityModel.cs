@@ -7,6 +7,7 @@ using UnityEditor;
 using static HealthModel;
 using static UnityEngine.EventSystems.EventTrigger;
 using Unity.VisualScripting;
+using CreaturesData;
 
 public class EntityModel : IEntityModel
 {
@@ -80,8 +81,8 @@ public class EntityModel : IEntityModel
     }
 
     public EntityModel(float creatureSpeed, float creatureHorizontalMovementDirection, float attackRange,
-                       float attackDamage, float attackSpeed, LayerMask opponentLayer,
-                       Rigidbody EntityRigidbody, Transform EntityTransform)
+                        float attackDamage, float attackSpeed, LayerMask opponentLayer,
+                        Rigidbody EntityRigidbody, Transform EntityTransform)
     {
         this.CreatureSpeed = creatureSpeed;
         this.CreatureHorizontalMovementDirection = creatureHorizontalMovementDirection;

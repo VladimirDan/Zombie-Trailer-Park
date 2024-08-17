@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 9170897112385119076}
   - component: {fileID: 999991503555805175}
   - component: {fileID: 5451833713602385458}
-  - component: {fileID: -4232759411683409708}
   - component: {fileID: 1369040906271083293}
   - component: {fileID: -1588766597126010344}
+  - component: {fileID: -982878349480736079}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -101,27 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 100
---- !u!114 &-4232759411683409708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7258905495002365054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bc163121b2687b488e674816963c137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
-  CreatureSpeed: 3
-  CreatureHorizontalMovementDirection: -1
-  AttackRange: 1
-  AttackDamage: 10
-  AttackSpeed: 1
-  OpponentLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!65 &1369040906271083293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -170,3 +149,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 72
   m_CollisionDetection: 1
+--- !u!114 &-982878349480736079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258905495002365054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4504c4174a835db4bbe040695df3ccff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
+  EntityParameters: {fileID: 11400000, guid: e550ed28ca55485459d5e4afcb96f730, type: 2}
+  OpponentLayer:
+    serializedVersion: 2
+    m_Bits: 128

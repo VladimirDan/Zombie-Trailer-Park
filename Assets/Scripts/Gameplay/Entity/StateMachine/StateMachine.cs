@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StateMachine
 {
-    private IEntityModel entityModel;
     private EntityBehaviourState currentState;
 
     public void ChangeCurrentState(EntityBehaviourState nextState)
@@ -18,9 +17,8 @@ public class StateMachine
         }
     }
 
-    public StateMachine(IEntityModel _entityModel, EntityBehaviourState _currentState)
+    public StateMachine(EntityBehaviourState _currentState)
     {
-        entityModel = _entityModel;
         currentState = _currentState;
         currentState.Enter();
     }

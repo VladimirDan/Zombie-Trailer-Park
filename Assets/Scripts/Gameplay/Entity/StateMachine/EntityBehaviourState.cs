@@ -5,14 +5,12 @@ using UnityEngine;
 
 public abstract class EntityBehaviourState
 {
-    protected IEntityModel entityModel;
     protected ICoroutineRunner coroutineRunner;
     public abstract void Enter();
     public abstract void Exit();
 
-    public EntityBehaviourState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner)
+    public EntityBehaviourState(ICoroutineRunner _coroutineRunner)
     {
-        entityModel = _entityModel;
         coroutineRunner = _coroutineRunner;
     }
 }

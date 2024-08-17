@@ -11,7 +11,7 @@ public class MainBuildingEntity : Entity
     {
         if (!healthModel.isAlive())
         {
-            stateMachine.ChangeCurrentState(new DeathState(entityModel, coroutineRunner));
+            stateMachine.ChangeCurrentState(new DeathState(coroutineRunner));
             Die();
         }
     }
@@ -22,7 +22,8 @@ public class MainBuildingEntity : Entity
         Time.timeScale = 0f;
         Debug.Log("Level end");
     }
-    public override void Start()
+
+    public override void Initialize()
     {
         coroutineRunner = FindObjectOfType<CoroutineRunner>();
         healthModel = GetComponent<HealthModel>();
@@ -33,10 +34,10 @@ public class MainBuildingEntity : Entity
         onDestroy += DestroyObject;
         onDestroy += HandleMainBuildingDestruction;
 
-        entityModel = new EntityModel(CreatureSpeed, CreatureHorizontalMovementDirection, AttackRange,
-                                        AttackDamage, AttackSpeed, OpponentLayer,
-                                        GetComponent<Rigidbody>(), this.transform);
 
-        stateMachine = new StateMachine(entityModel, new AfkState(entityModel, coroutineRunner));
+
+        stateMachine = new StateMachine(new AfkState(coroutineRunner));
+
+        isInitialized = true;
     }
 }
