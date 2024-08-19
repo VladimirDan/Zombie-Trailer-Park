@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7264403554744247981}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 1, z: -1}
+  m_LocalPosition: {x: -20, y: 1, z: -1}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50,10 +50,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e24878abcc07844828cccec178cdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnEntityType: Digger
-  baseSpawnPosition: {x: -6, y: 0, z: -1}
+  basicEntityType: 0
+  spawnTimings: {fileID: 11400000, guid: 37a8e577d380f5a4ea0383061f601a0a, type: 2}
+  baseSpawnPosition: {x: -22, y: 0, z: -1}
   spawnCooldown: 0.5
-  maxSpawnCount: 100
+  maxSpawnCount: 1000
+  maxDistanceBetweenRows: 5
 --- !u!114 &1203525305867918395
 MonoBehaviour:
   m_ObjectHideFlags: 0

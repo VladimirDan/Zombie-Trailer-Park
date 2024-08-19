@@ -6,6 +6,8 @@ namespace CreaturesData
 
     public class EntityParametersData : EntityBasicData
     {
+        public UnitType unitType;
+        public LayerMask OpponentLayer;
         public float CreatureSpeed;
         public float CreatureHorizontalMovementDirection;
         public float AttackRange;

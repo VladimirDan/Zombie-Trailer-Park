@@ -9,11 +9,12 @@ namespace Assets.Scripts.Gameplay.Entity.StateMachine
 {
     public abstract class UnitBehaviourState : EntityBehaviourState
     {
-        protected IEntityModel entityModel;
+        protected IUnitModel unitModel;
+        public float exitSpeed = 0f;
 
-        public UnitBehaviourState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_coroutineRunner)
+        public UnitBehaviourState(IUnitModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_coroutineRunner)
         {
-            entityModel = _entityModel;
+            unitModel = _entityModel;
         }
     }
 }

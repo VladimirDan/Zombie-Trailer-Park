@@ -8,28 +8,31 @@ using UnityEngine;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
 {
-    public class StandartUnitSpawner : EntitySpawner        //Every unit that only deals damage or walk is standart unit
+    public class ZombieJumperSpawner : EntitySpawner
     {
 
         public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition) {
             GameObject prefab = dataProvider.GetUnitPrefab(entityType);
-            EntityParametersData unitData = (EntityParametersData)dataProvider.GetUnitData(entityType);
+            ZombieJumperParametersData unitData = (ZombieJumperParametersData)dataProvider.GetUnitData(entityType);
 
             GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
 
             unit.GetComponent<HealthModel>().setHealth(unitData.health);
 
-            Unit unitObject = unit.GetComponent<Unit>();
-            unitObject.OpponentLayer = unitData.OpponentLayer;
+            ZombieJumper unitObject = unit.GetComponent<ZombieJumper>();
             unitObject.CreatureSpeed = unitData.CreatureSpeed;
             unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
             unitObject.AttackDamage = unitData.AttackDamage;
             unitObject.AttackRange = unitData.AttackRange;
             unitObject.AttackSpeed = unitData.AttackSpeed;
+            unitObject.jumpLenght = unitData.jumpLenght;
+            unitObject.jumpCoolDown = unitData.jumpCoolDown;
+            unitObject.oponentBaseXCoord = unitData.oponentBaseXCoord;
+
 
             unitObject.Initialize();
         }
 
-        public StandartUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }
+        public ZombieJumperSpawner(DataProvider dataProvider) : base(dataProvider) { }
     }
 }

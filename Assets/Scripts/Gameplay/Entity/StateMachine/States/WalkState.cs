@@ -7,16 +7,14 @@ using CreaturesData;
 
 public class WalkState : UnitBehaviourState
 {
-    public float exitSpeed = 0f;
-
     public override void Enter()
     {
-        entityModel.Walk(entityModel.CreatureSpeed, entityModel.CreatureHorizontalMovementDirection);
+        unitModel.Walk(unitModel.CreatureSpeed, unitModel.CreatureHorizontalMovementDirection);
     }
 
     public override void Exit()
     {
-        entityModel.Walk(exitSpeed, entityModel.CreatureHorizontalMovementDirection);
+        unitModel.Walk(exitSpeed, unitModel.CreatureHorizontalMovementDirection);
     }
-    public WalkState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_entityModel, _coroutineRunner) { }
+    public WalkState(IUnitModel _unitModel, ICoroutineRunner _coroutineRunner) : base(_unitModel, _coroutineRunner) { }
 }

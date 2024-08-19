@@ -8,15 +8,14 @@ using CreaturesData;
 
 public class Unit : Entity
 {
-    public IEntityModel entityModel;
-    [SerializeField] public EntityParametersData EntityParameters { get; set; }
+    public IUnitModel unitModel;
 
     public float CreatureSpeed;
     public float CreatureHorizontalMovementDirection;
     public float AttackRange;
     public float AttackDamage;
     public float AttackSpeed;
-    [SerializeField] public LayerMask OpponentLayer;
+    public LayerMask OpponentLayer;
     public Coroutine attackCoroutine;
 
     public override void CheckoutCurrentState()
@@ -27,14 +26,14 @@ public class Unit : Entity
             Die();
         }
 
-        else if (entityModel.isEnemyInAttackRange())
+        else if (unitModel.isEnemyInAttackRange())
         {
-            stateMachine.ChangeCurrentState(new AttackState(entityModel, coroutineRunner));
+            stateMachine.ChangeCurrentState(new AttackState(unitModel, coroutineRunner));
         }
 
         else
         {
-            stateMachine.ChangeCurrentState(new WalkState(entityModel, coroutineRunner));
+            stateMachine.ChangeCurrentState(new WalkState(unitModel, coroutineRunner));
         }
     }
 
@@ -48,7 +47,7 @@ public class Unit : Entity
 
         onDestroy += DestroyObject;
 
-        entityModel = new EntityModel(CreatureSpeed,
+        unitModel = new UnitModel(CreatureSpeed,
             CreatureHorizontalMovementDirection,
             AttackRange,
             AttackDamage,
@@ -62,3 +61,4 @@ public class Unit : Entity
         isInitialized = true;
     }
 }
+

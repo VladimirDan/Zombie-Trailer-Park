@@ -1,4 +1,5 @@
-﻿using CreaturesData;
+﻿using Assets.Scripts.Extensions;
+using CreaturesData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,10 @@ namespace Assets.Scripts.Services.SpawnManager
     public class DataProvider : MonoBehaviour
     {
         [SerializeField] private GameObject [] prefabs;
-        [SerializeField] private EntityBasicData [] entityDataConfigs;
+        [SerializeField] private EntityParametersData[] entityDataConfigs;
 
-        private Dictionary<string, EntityBasicData> entityDataDictionary;
-        private Dictionary<string, GameObject> entityPrefabDictionary;
+        private Dictionary<UnitType, EntityParametersData> entityDataDictionary;
+        private Dictionary<UnitType, GameObject> entityPrefabDictionary;
 
         private void Awake()
         {
@@ -23,8 +24,8 @@ namespace Assets.Scripts.Services.SpawnManager
 
         private void InitializeDictionaries()
         {
-            entityDataDictionary = new Dictionary<string, EntityBasicData>();
-            entityPrefabDictionary = new Dictionary<string, GameObject>();
+            entityDataDictionary = new Dictionary<UnitType, EntityParametersData>();
+            entityPrefabDictionary = new Dictionary<UnitType, GameObject>();
 
             foreach (var data in entityDataConfigs)
             {
@@ -33,17 +34,17 @@ namespace Assets.Scripts.Services.SpawnManager
 
             foreach (var prefab in prefabs)
             {
-                entityPrefabDictionary[prefab.name] = prefab;
+                entityPrefabDictionary[prefab.name.ToEnum<UnitType>()] = prefab;
             }
         }
 
-        public EntityBasicData GetUnitData(string unitType)
+        public EntityBasicData GetUnitData(UnitType unitType)
         {
             entityDataDictionary.TryGetValue(unitType, out var data);
             return data;
         }
 
-        public GameObject GetUnitPrefab(string unitType)
+        public GameObject GetUnitPrefab(UnitType unitType)
         {
             entityPrefabDictionary.TryGetValue(unitType, out var prefab);
             return prefab;

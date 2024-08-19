@@ -9,7 +9,7 @@ using UnityEngine;
 public abstract class EntitySpawner
 {
     protected DataProvider dataProvider;
-    public abstract void SpawnEntity(string entityName, Vector3 spawnPosition);
+    public abstract void SpawnEntity(UnitType entityType, Vector3 spawnPosition);
 
     public EntitySpawner(DataProvider dataProvider)
     {

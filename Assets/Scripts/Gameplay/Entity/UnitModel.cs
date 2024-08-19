@@ -9,7 +9,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 using Unity.VisualScripting;
 using CreaturesData;
 
-public class EntityModel : IEntityModel
+public class UnitModel : IUnitModel
 {
     public float CreatureSpeed { get; set; }
     public float CreatureHorizontalMovementDirection { get; set; }
@@ -26,10 +26,10 @@ public class EntityModel : IEntityModel
         EntityRigidbody.velocity = currentVelocity * speed;
     }
 
-    public GameObject FindOpponent()
+    public GameObject FindOpponent(float range)
     {
         GameObject opponent;
-        float width = AttackRange;
+        float width = range;
         float depth = 10f;
         float height = 1f;
 
@@ -46,7 +46,7 @@ public class EntityModel : IEntityModel
 
     public bool isEnemyInAttackRange()
     {
-        return FindOpponent() != null;
+        return FindOpponent(AttackRange) != null;
     }
 
     public void Attack(GameObject target) 
@@ -58,14 +58,14 @@ public class EntityModel : IEntityModel
 
     public IEnumerator Fight()
     {
-        GameObject target = FindOpponent();
+        GameObject target = FindOpponent(AttackRange);
         yield return new WaitForSeconds(AttackSpeed);
 
         while (true)
         {
             if(target == null && isEnemyInAttackRange())
             {
-                target = FindOpponent();
+                target = FindOpponent(AttackRange);
                 Attack(target);
             }
             else if (target != null)
@@ -80,7 +80,7 @@ public class EntityModel : IEntityModel
         }
     }
 
-    public EntityModel(float creatureSpeed, float creatureHorizontalMovementDirection, float attackRange,
+    public UnitModel(float creatureSpeed, float creatureHorizontalMovementDirection, float attackRange,
                         float attackDamage, float attackSpeed, LayerMask opponentLayer,
                         Rigidbody EntityRigidbody, Transform EntityTransform)
     {

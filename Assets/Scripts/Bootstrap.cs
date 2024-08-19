@@ -12,6 +12,9 @@ public class Bootstrap : MonoBehaviour
     private MainBuildingEntity villageMainBuilding;
     private MainBuildingEntity zombieMainBuilding;
 
+    private SpawnManager vilagersSpawner;
+    private SpawnManager zombieSpawner;
+
     void Awake()
     {
         GameObject runnerObject = Instantiate(coroutineRunnerPrefab);
@@ -22,9 +25,15 @@ public class Bootstrap : MonoBehaviour
         villageMainBuilding = playerBase.GetComponent<MainBuildingEntity>();
         villageMainBuilding.Initialize();
 
+        vilagersSpawner = playerBase.GetComponent<SpawnManager>();
+        vilagersSpawner.Initialize();
+
         GameObject enemyBase = Instantiate(ZombieMainBuildingPrefab);
         zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
         zombieMainBuilding.Initialize();
+
+        zombieSpawner = enemyBase.GetComponent<SpawnManager>();
+        zombieSpawner.Initialize();
     }
 
     public CoroutineRunner GetCoroutineRunner()

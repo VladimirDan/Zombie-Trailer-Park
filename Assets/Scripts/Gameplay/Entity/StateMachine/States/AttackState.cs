@@ -11,7 +11,7 @@ public class AttackState : UnitBehaviourState
     private IEnumerator fightEnumerator;
     public override void Enter()
     {
-        fightEnumerator = entityModel.Fight();
+        fightEnumerator = unitModel.Fight();
         coroutineRunner.RunCoroutine(fightEnumerator);
     }
     public override void Exit()
@@ -19,5 +19,5 @@ public class AttackState : UnitBehaviourState
            coroutineRunner.StopRunningCoroutine(fightEnumerator);
     }
 
-    public AttackState(IEntityModel _entityModel, ICoroutineRunner _coroutineRunner) : base(_entityModel, _coroutineRunner) { }
+    public AttackState(IUnitModel _unitModel, ICoroutineRunner _coroutineRunner) : base(_unitModel, _coroutineRunner) { }
 }

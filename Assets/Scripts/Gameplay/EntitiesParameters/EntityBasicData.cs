@@ -6,6 +6,5 @@ namespace CreaturesData
     public class EntityBasicData : ScriptableObject
     {
         public float health;
-        public string unitType;
     }
 }

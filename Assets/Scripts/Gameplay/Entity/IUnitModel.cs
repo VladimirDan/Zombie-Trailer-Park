@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IEntityModel
+public interface IUnitModel
 {
     public float CreatureSpeed { get; set; }
     public float CreatureHorizontalMovementDirection { get; set; }
@@ -16,7 +16,7 @@ public interface IEntityModel
     public Transform EntityTransform { get; set; }
 
     public void Walk(float speed, float movementDirection);
-    public GameObject FindOpponent();
+    public GameObject FindOpponent(float range);
     public bool isEnemyInAttackRange();
     public void Attack(GameObject target);
     public IEnumerator Fight();
