@@ -39,26 +39,20 @@ public class Unit : Entity
 
     public override void Initialize()
     {
-        coroutineRunner = FindObjectOfType<CoroutineRunner>();
-        healthModel = GetComponent<HealthModel>();
+        base.Initialize();
 
-        if (healthModel == null)
-            Debug.LogWarning("HealthModel component not found on this GameObject.");
+        unitModel = GetComponent<UnitModel>();
 
-        onDestroy += DestroyObject;
-
-        unitModel = new UnitModel(CreatureSpeed,
-            CreatureHorizontalMovementDirection,
-            AttackRange,
-            AttackDamage,
-            AttackSpeed,
-            OpponentLayer,
-            GetComponent<Rigidbody>(),
-            this.transform);
+        unitModel.CreatureSpeed = CreatureSpeed;
+        unitModel.CreatureHorizontalMovementDirection = CreatureHorizontalMovementDirection;
+        unitModel.AttackRange = AttackRange;
+        unitModel.AttackDamage = AttackDamage;
+        unitModel.AttackSpeed = AttackSpeed;
+        unitModel.OpponentLayer = OpponentLayer;
+        unitModel.EntityRigidbody = GetComponent<Rigidbody>();
+        unitModel.EntityTransform = GetComponent<Transform>();
 
         stateMachine = new StateMachine(new AfkState(coroutineRunner));
-
-        isInitialized = true;
     }
 }
 

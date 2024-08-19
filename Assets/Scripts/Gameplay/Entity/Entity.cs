@@ -15,7 +15,7 @@ public class Entity : MonoBehaviour
     public delegate void OnDestroyEvent();
     public event OnDestroyEvent onDestroy;
 
-    protected bool isInitialized = false;
+    public bool isInitialized = false;
 
     public void Die()
     {
@@ -49,8 +49,6 @@ public class Entity : MonoBehaviour
         onDestroy += DestroyObject;
 
         stateMachine = new StateMachine(new AfkState(coroutineRunner));
-
-        isInitialized = true;
     }
 
     void Update()

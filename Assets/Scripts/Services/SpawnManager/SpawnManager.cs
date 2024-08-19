@@ -13,7 +13,10 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] public UnitType basicEntityType;
     [SerializeField] public ZombieSpawnTimings spawnTimings;
     [SerializeField] private Vector3 baseSpawnPosition;
-    [SerializeField] private float spawnCooldown;
+    [SerializeField] private float zombieSpawnCooldown;
+    [SerializeField] private float zombieJuperSpawnCooldown;
+    [SerializeField] private float bansheeSpawnCooldown;
+    [SerializeField] private float giantSpawnCooldown;
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
     [SerializeField] public int maxSpawnCount = 10;
     [SerializeField] private float maxDistanceBetweenRows = 5;
@@ -33,7 +36,7 @@ public class SpawnManager : MonoBehaviour
     {
         foreach(var data in spawnTimings.zombieSpawmCooldownChange)
         {
-            spawnCooldown = data.spawnCooldown;
+            zombieSpawnCooldown = data.spawnCooldown;
             yield return new WaitForSeconds(data.timing);
         }
         yield break;
@@ -60,7 +63,7 @@ public class SpawnManager : MonoBehaviour
     {
         for (int i = 0; i < maxSpawnCount; i++)
         {
-            yield return new WaitForSeconds(spawnCooldown);
+            yield return new WaitForSeconds(zombieSpawnCooldown);
             SpawnUnitOnRandomRow(basicEntityType, baseSpawnPosition);
         }
     }
@@ -75,7 +78,9 @@ public class SpawnManager : MonoBehaviour
     {
         EntitySpawner spawner = entityType switch
         {
-            UnitType.Zombie or UnitType.Digger => spawner = new StandartUnitSpawner(dataProvider),
+            UnitType.Zombie or UnitType.Banshee or UnitType.Digger
+            or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider),
+            UnitType.Giant or UnitType.Boozer => spawner = new SplashDamageUnitSpawner(dataProvider),
             UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider),
             _ => null
         };

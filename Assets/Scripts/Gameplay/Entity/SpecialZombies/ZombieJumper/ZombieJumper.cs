@@ -49,25 +49,10 @@ public class ZombieJumper : Unit
 
     public override void Initialize()
     {
-        coroutineRunner = FindObjectOfType<CoroutineRunner>();
-        healthModel = GetComponent<HealthModel>();
+        base.Initialize();
 
-        if (healthModel == null)
-            Debug.LogWarning("HealthModel component not found on this GameObject.");
-
-        onDestroy += DestroyObject;
-
-        unitModel = new ZombieJumperModel(jumpLenght, jumpCoolDown, oponentBaseXCoord, CreatureSpeed,
-            CreatureHorizontalMovementDirection,
-            AttackRange,
-            AttackDamage,
-            AttackSpeed,
-            OpponentLayer,
-            GetComponent<Rigidbody>(),
-            this.transform);
-
-        stateMachine = new StateMachine(new AfkState(coroutineRunner));
-
-        isInitialized = true;
+        ((ZombieJumperModel)unitModel).jumpLenght = jumpLenght;
+        ((ZombieJumperModel)unitModel).jumpCoolDown = jumpCoolDown;
+        ((ZombieJumperModel)unitModel).oponentBaseXCoord = oponentBaseXCoord;
     }
 }

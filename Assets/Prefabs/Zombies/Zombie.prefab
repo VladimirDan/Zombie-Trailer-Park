@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1369040906271083293}
   - component: {fileID: -1588766597126010344}
   - component: {fileID: 8057596377303148404}
+  - component: {fileID: 8055352696018631157}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Untagged
@@ -162,7 +163,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
-  EntityParameters: {fileID: 11400000, guid: e550ed28ca55485459d5e4afcb96f730, type: 2}
+  CreatureSpeed: 0
+  CreatureHorizontalMovementDirection: 0
+  AttackRange: 0
+  AttackDamage: 0
+  AttackSpeed: 0
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &8055352696018631157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258905495002365054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa4c8748eb20e745860065267f36947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

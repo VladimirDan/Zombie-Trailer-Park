@@ -2,9 +2,9 @@
 
 namespace CreaturesData
 {
-    [CreateAssetMenu(fileName = "EntityParametersData", menuName = "Entities/Entity Parameters Data")]
+    [CreateAssetMenu(fileName = "UnitParametersData", menuName = "Entities/Unit Parameters Data")]
 
-    public class EntityParametersData : EntityBasicData
+    public class UnitParametersData : EntityBasicData
     {
         public UnitType unitType;
         public LayerMask OpponentLayer;

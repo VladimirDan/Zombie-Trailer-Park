@@ -31,6 +31,7 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
 
 
             unitObject.Initialize();
+            unitObject.isInitialized = true;
         }
 
         public ZombieJumperSpawner(DataProvider dataProvider) : base(dataProvider) { }

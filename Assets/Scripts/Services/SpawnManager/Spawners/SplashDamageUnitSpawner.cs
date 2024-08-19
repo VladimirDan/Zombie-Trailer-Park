@@ -8,29 +8,31 @@ using UnityEngine;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
 {
-    public class StandartUnitSpawner : EntitySpawner        //Every unit that only attack single target or walk is standart unit
+    public class SplashDamageUnitSpawner : EntitySpawner
     {
 
-        public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition) {
+        public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition)
+        {
             GameObject prefab = dataProvider.GetUnitPrefab(entityType);
-            UnitParametersData unitData = (UnitParametersData)dataProvider.GetUnitData(entityType);
+            SplashDamageUnitParametersData unitData = (SplashDamageUnitParametersData)dataProvider.GetUnitData(entityType);
 
             GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
 
             unit.GetComponent<HealthModel>().setHealth(unitData.health);
 
-            Unit unitObject = unit.GetComponent<Unit>();
+            SplashDamageUnit unitObject = unit.GetComponent<SplashDamageUnit>();
             unitObject.OpponentLayer = unitData.OpponentLayer;
             unitObject.CreatureSpeed = unitData.CreatureSpeed;
             unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
             unitObject.AttackDamage = unitData.AttackDamage;
             unitObject.AttackRange = unitData.AttackRange;
             unitObject.AttackSpeed = unitData.AttackSpeed;
+            unitObject.maxSplashAttackTargets = unitData.maxSplashAttackTargets;
 
             unitObject.Initialize();
             unitObject.isInitialized = true;
         }
 
-        public StandartUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }
+        public SplashDamageUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }
     }
 }

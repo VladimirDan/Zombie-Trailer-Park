@@ -9,7 +9,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 using Unity.VisualScripting;
 using CreaturesData;
 
-public class UnitModel : IUnitModel
+public class UnitModel : MonoBehaviour, IUnitModel
 {
     public float CreatureSpeed { get; set; }
     public float CreatureHorizontalMovementDirection { get; set; }
@@ -26,7 +26,7 @@ public class UnitModel : IUnitModel
         EntityRigidbody.velocity = currentVelocity * speed;
     }
 
-    public GameObject FindOpponent(float range)
+    public virtual GameObject FindOpponent(float range)
     {
         GameObject opponent;
         float width = range;
@@ -49,14 +49,14 @@ public class UnitModel : IUnitModel
         return FindOpponent(AttackRange) != null;
     }
 
-    public void Attack(GameObject target) 
+    public virtual void Attack(GameObject target) 
     {
         HealthModel opponentHealth = target.GetComponent<HealthModel>();
 
         opponentHealth.ReduceHealth(AttackDamage);
     }
 
-    public IEnumerator Fight()
+    public virtual IEnumerator Fight()
     {
         GameObject target = FindOpponent(AttackRange);
         yield return new WaitForSeconds(AttackSpeed);
@@ -78,19 +78,5 @@ public class UnitModel : IUnitModel
             }
             yield return new WaitForSeconds(AttackSpeed);
         }
-    }
-
-    public UnitModel(float creatureSpeed, float creatureHorizontalMovementDirection, float attackRange,
-                        float attackDamage, float attackSpeed, LayerMask opponentLayer,
-                        Rigidbody EntityRigidbody, Transform EntityTransform)
-    {
-        this.CreatureSpeed = creatureSpeed;
-        this.CreatureHorizontalMovementDirection = creatureHorizontalMovementDirection;
-        this.AttackRange = attackRange;
-        this.AttackDamage = attackDamage;
-        this.AttackSpeed = attackSpeed;
-        this.OpponentLayer = opponentLayer;
-        this.EntityRigidbody = EntityRigidbody;
-        this.EntityTransform = EntityTransform;
     }
 }

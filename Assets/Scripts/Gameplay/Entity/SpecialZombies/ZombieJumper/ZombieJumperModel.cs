@@ -9,22 +9,10 @@ public class ZombieJumperModel : UnitModel
     public float jumpCoolDown;
     public float oponentBaseXCoord;
 
-    public float jumpHeight = 5f;
-    public float gravityScale = 1f;
+    private float jumpHeight = 3f;
+    private float gravityScale = 1f;
 
     public float lastJumpTime = 0f;
-
-    public ZombieJumperModel(float jumpLenght, float jumpCoolDown, float oponentBaseXCoord, float creatureSpeed, 
-                        float creatureHorizontalMovementDirection, float attackRange,
-                        float attackDamage, float attackSpeed, LayerMask opponentLayer,
-                        Rigidbody EntityRigidbody, Transform EntityTransform)
-        : base(creatureSpeed, creatureHorizontalMovementDirection, attackRange,
-            attackDamage, attackSpeed, opponentLayer, EntityRigidbody, EntityTransform) 
-    { 
-        this.jumpLenght = jumpLenght;
-        this.jumpCoolDown = jumpCoolDown;
-        this.oponentBaseXCoord = oponentBaseXCoord;
-    }
 
     public void Jump()
     {
@@ -33,13 +21,16 @@ public class ZombieJumperModel : UnitModel
 
     public Vector3 CalculateJumpForce(float jumpDistance)
     {
-        float g = Mathf.Abs(Physics.gravity.y) * gravityScale;
+        float g = Mathf.Abs(Physics.gravity.y) * gravityScale; // Убедитесь, что `g` правильно масштабирован
         float verticalVelocity = Mathf.Sqrt(2 * g * jumpHeight);
+
+        // Time to apex (время до достижения максимальной высоты) должно быть рассчитано корректно
         float timeToApex = verticalVelocity / g;
         float horizontalVelocity = jumpDistance / (2 * timeToApex) * CreatureHorizontalMovementDirection;
 
         return new Vector3(horizontalVelocity, verticalVelocity, EntityRigidbody.velocity.z);
     }
+
 
     public void Land()
     {

@@ -12,9 +12,9 @@ namespace Assets.Scripts.Services.SpawnManager
     public class DataProvider : MonoBehaviour
     {
         [SerializeField] private GameObject [] prefabs;
-        [SerializeField] private EntityParametersData[] entityDataConfigs;
+        [SerializeField] private UnitParametersData[] entityDataConfigs;
 
-        private Dictionary<UnitType, EntityParametersData> entityDataDictionary;
+        private Dictionary<UnitType, UnitParametersData> entityDataDictionary;
         private Dictionary<UnitType, GameObject> entityPrefabDictionary;
 
         private void Awake()
@@ -24,7 +24,7 @@ namespace Assets.Scripts.Services.SpawnManager
 
         private void InitializeDictionaries()
         {
-            entityDataDictionary = new Dictionary<UnitType, EntityParametersData>();
+            entityDataDictionary = new Dictionary<UnitType, UnitParametersData>();
             entityPrefabDictionary = new Dictionary<UnitType, GameObject>();
 
             foreach (var data in entityDataConfigs)
