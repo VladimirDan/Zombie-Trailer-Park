@@ -2,33 +2,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
 {
-    public class StandartUnitSpawner : EntitySpawner        //Every unit that only attack single target or walk is standart unit
+    public class StandartUnitSpawner : UnitSpawner        //Every unit that only attack single target or walk is standart unit
     {
 
-        public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition) {
-            GameObject prefab = dataProvider.GetUnitPrefab(entityType);
-            UnitParametersData unitData = (UnitParametersData)dataProvider.GetUnitData(entityType);
+        public override void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
+        {
+            base.SpawnUnit(entityType, spawnPosition);
+        }
 
-            GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
-
-            unit.GetComponent<HealthModel>().setHealth(unitData.health);
-
-            Unit unitObject = unit.GetComponent<Unit>();
+        public override void SetParameters(Unit unitObject, UnitParametersData unitData)
+        {
             unitObject.OpponentLayer = unitData.OpponentLayer;
             unitObject.CreatureSpeed = unitData.CreatureSpeed;
             unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
             unitObject.AttackDamage = unitData.AttackDamage;
             unitObject.AttackRange = unitData.AttackRange;
             unitObject.AttackSpeed = unitData.AttackSpeed;
-
-            unitObject.Initialize();
-            unitObject.isInitialized = true;
         }
 
         public StandartUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }

@@ -76,7 +76,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnEntity(UnitType entityType, Vector3 position)
     {
-        EntitySpawner spawner = entityType switch
+        UnitSpawner spawner = entityType switch
         {
             UnitType.Zombie or UnitType.Banshee or UnitType.Digger
             or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider),
@@ -85,7 +85,7 @@ public class SpawnManager : MonoBehaviour
             _ => null
         };
 
-        spawner.SpawnEntity(entityType, position);
+        spawner.SpawnUnit(entityType, position);
     }
 
     public Vector3 GenerateEntitySpawnPosition(Vector3 baseSpawnPosition)

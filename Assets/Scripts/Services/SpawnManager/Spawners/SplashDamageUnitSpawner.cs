@@ -8,29 +8,18 @@ using UnityEngine;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
 {
-    public class SplashDamageUnitSpawner : EntitySpawner
+    public class SplashDamageUnitSpawner : StandartUnitSpawner
     {
 
-        public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition)
+        public override void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
         {
-            GameObject prefab = dataProvider.GetUnitPrefab(entityType);
-            SplashDamageUnitParametersData unitData = (SplashDamageUnitParametersData)dataProvider.GetUnitData(entityType);
+            base.SpawnUnit(entityType, spawnPosition);
+        }
 
-            GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
-
-            unit.GetComponent<HealthModel>().setHealth(unitData.health);
-
-            SplashDamageUnit unitObject = unit.GetComponent<SplashDamageUnit>();
-            unitObject.OpponentLayer = unitData.OpponentLayer;
-            unitObject.CreatureSpeed = unitData.CreatureSpeed;
-            unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
-            unitObject.AttackDamage = unitData.AttackDamage;
-            unitObject.AttackRange = unitData.AttackRange;
-            unitObject.AttackSpeed = unitData.AttackSpeed;
-            unitObject.maxSplashAttackTargets = unitData.maxSplashAttackTargets;
-
-            unitObject.Initialize();
-            unitObject.isInitialized = true;
+        public override void SetParameters(Unit unitObject, UnitParametersData unitData)
+        {
+            base.SetParameters(unitObject, unitData);
+            ((SplashDamageUnit)unitObject).maxSplashAttackTargets = ((SplashDamageUnitParametersData)unitData).maxSplashAttackTargets;
         }
 
         public SplashDamageUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }

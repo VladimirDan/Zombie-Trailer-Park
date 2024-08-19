@@ -5,9 +5,9 @@ using System;
 
 public class ZombieJumperModel : UnitModel
 {
-    public float jumpLenght;
-    public float jumpCoolDown;
-    public float oponentBaseXCoord;
+    public float jumpLength;
+    public float jumpCooldown;
+    public float opponentBaseXCoord;
 
     private float jumpHeight = 3f;
     private float gravityScale = 1f;
@@ -16,7 +16,7 @@ public class ZombieJumperModel : UnitModel
 
     public void Jump()
     {
-        EntityRigidbody.velocity = CalculateJumpForce(jumpLenght);
+        EntityRigidbody.velocity = CalculateJumpForce(jumpLength);
     }
 
     public Vector3 CalculateJumpForce(float jumpDistance)
@@ -59,12 +59,12 @@ public class ZombieJumperModel : UnitModel
 
     public bool isEnemyInJumpDistanceRange()
     {
-        return FindOpponentOutOffAttackRange(jumpLenght) != null;
+        return FindOpponentOutOffAttackRange(jumpLength) != null;
     }
 
     public bool isJumpPossible()
     {
-        return EntityTransform.position.x + (AttackRange + jumpLenght) * CreatureHorizontalMovementDirection > oponentBaseXCoord;
+        return EntityTransform.position.x + (AttackRange + jumpLength) * CreatureHorizontalMovementDirection > opponentBaseXCoord;
     }
 
     public bool isGrounded()

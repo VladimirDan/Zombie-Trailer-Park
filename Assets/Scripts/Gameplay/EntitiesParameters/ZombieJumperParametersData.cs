@@ -7,8 +7,8 @@ namespace CreaturesData
 
     public class ZombieJumperParametersData : UnitParametersData
     {
-        public float jumpLenght;
-        public float jumpCoolDown;
-        public float oponentBaseXCoord;
+        public float jumpLength;
+        public float jumpCooldown;
+        public float opponentBaseXCoord;
     }
 }

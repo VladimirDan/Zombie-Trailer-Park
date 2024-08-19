@@ -9,9 +9,9 @@ using Assets.Scripts.Gameplay.Entity.StateMachine.States;
 
 public class ZombieJumper : Unit
 {
-    public float jumpLenght;
-    public float jumpCoolDown;
-    public float oponentBaseXCoord;
+    public float jumpLength;
+    public float jumpCooldown;
+    public float opponentBaseXCoord;
 
     public override void CheckoutCurrentState()
     {
@@ -25,7 +25,7 @@ public class ZombieJumper : Unit
         {
             if (unitModel.isEnemyInAttackRange())
             {
-                if (((ZombieJumperModel)unitModel).isJumpPossible() && Time.time - ((ZombieJumperModel)unitModel).lastJumpTime >= ((ZombieJumperModel)unitModel).jumpCoolDown && Random.value < 0.5f)
+                if (((ZombieJumperModel)unitModel).isJumpPossible() && Time.time - ((ZombieJumperModel)unitModel).lastJumpTime >= ((ZombieJumperModel)unitModel).jumpCooldown && Random.value < 0.5f)
                 {
                     stateMachine.ChangeCurrentState(new JumpState((ZombieJumperModel)unitModel, coroutineRunner));
                 }
@@ -51,8 +51,8 @@ public class ZombieJumper : Unit
     {
         base.Initialize();
 
-        ((ZombieJumperModel)unitModel).jumpLenght = jumpLenght;
-        ((ZombieJumperModel)unitModel).jumpCoolDown = jumpCoolDown;
-        ((ZombieJumperModel)unitModel).oponentBaseXCoord = oponentBaseXCoord;
+        ((ZombieJumperModel)unitModel).jumpLength = jumpLength;
+        ((ZombieJumperModel)unitModel).jumpCooldown = jumpCooldown;
+        ((ZombieJumperModel)unitModel).opponentBaseXCoord = opponentBaseXCoord;
     }
 }

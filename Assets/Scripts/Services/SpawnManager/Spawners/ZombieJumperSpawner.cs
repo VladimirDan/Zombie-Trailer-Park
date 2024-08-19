@@ -8,30 +8,21 @@ using UnityEngine;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
 {
-    public class ZombieJumperSpawner : EntitySpawner
+    public class ZombieJumperSpawner : StandartUnitSpawner
     {
 
-        public override void SpawnEntity(UnitType entityType, Vector3 spawnPosition) {
-            GameObject prefab = dataProvider.GetUnitPrefab(entityType);
-            ZombieJumperParametersData unitData = (ZombieJumperParametersData)dataProvider.GetUnitData(entityType);
+        public override void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
+        {
+            base.SpawnUnit(entityType, spawnPosition);
+        }
 
-            GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
+        public override void SetParameters(Unit unitObject, UnitParametersData unitData)
+        {
+            base.SetParameters(unitObject, unitData);
 
-            unit.GetComponent<HealthModel>().setHealth(unitData.health);
-
-            ZombieJumper unitObject = unit.GetComponent<ZombieJumper>();
-            unitObject.CreatureSpeed = unitData.CreatureSpeed;
-            unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
-            unitObject.AttackDamage = unitData.AttackDamage;
-            unitObject.AttackRange = unitData.AttackRange;
-            unitObject.AttackSpeed = unitData.AttackSpeed;
-            unitObject.jumpLenght = unitData.jumpLenght;
-            unitObject.jumpCoolDown = unitData.jumpCoolDown;
-            unitObject.oponentBaseXCoord = unitData.oponentBaseXCoord;
-
-
-            unitObject.Initialize();
-            unitObject.isInitialized = true;
+            ((ZombieJumper)unitObject).jumpLength = ((ZombieJumperParametersData)unitData).jumpLength;
+            ((ZombieJumper)unitObject).jumpCooldown = ((ZombieJumperParametersData)unitData).jumpCooldown;
+            ((ZombieJumper)unitObject).opponentBaseXCoord = ((ZombieJumperParametersData)unitData).opponentBaseXCoord;
         }
 
         public ZombieJumperSpawner(DataProvider dataProvider) : base(dataProvider) { }
