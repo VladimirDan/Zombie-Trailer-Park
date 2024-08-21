@@ -47,9 +47,9 @@ public class ZombieJumper : Unit
         }
     }
 
-    public override void Initialize()
+    public override void setUpEntity()
     {
-        base.Initialize();
+        base.setUpEntity();
 
         ((ZombieJumperModel)unitModel).jumpLength = jumpLength;
         ((ZombieJumperModel)unitModel).jumpCooldown = jumpCooldown;

@@ -12,9 +12,9 @@ public class SplashDamageUnit : Unit
 {
     public int maxSplashAttackTargets;
 
-    public override void Initialize()
+    public override void setUpEntity()
     {
-        base.Initialize();
+        base.setUpEntity();
 
         ((SplashDamageUnitModel)unitModel).maxSplashAttackTargets = maxSplashAttackTargets;
     }

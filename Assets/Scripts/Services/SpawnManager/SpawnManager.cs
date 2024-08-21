@@ -10,45 +10,28 @@ public class SpawnManager : MonoBehaviour
 {
     CoroutineRunner coroutineRunner;
     DataProvider dataProvider;
-    [SerializeField] public UnitType basicEntityType;
-    [SerializeField] public ZombieSpawnTimings spawnTimings;
-    [SerializeField] private Vector3 baseSpawnPosition;
-    [SerializeField] private float zombieSpawnCooldown;
-    [SerializeField] private float zombieJuperSpawnCooldown;
-    [SerializeField] private float bansheeSpawnCooldown;
-    [SerializeField] private float giantSpawnCooldown;
+    private Vector3 baseSpawnPosition;
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
-    [SerializeField] public int maxSpawnCount = 10;
-    [SerializeField] private float maxDistanceBetweenRows = 5;
+    private float maxDistanceBetweenRows = 5;
+
+    [SerializeField] public ZombiesSpawnTimings zombiesSpawnCycleParameters;
 
     public void Initialize()
     {
         coroutineRunner = FindObjectOfType<CoroutineRunner>();
         dataProvider = GetComponent<DataProvider>();
 
-        coroutineRunner.RunCoroutine(OrderZombieSpawnCooldownChange());
-        OrderSpecialZombiesSpawn();
-
-        coroutineRunner.RunCoroutine(startSpawnCycle(baseSpawnPosition));
+        OrderZombiesSpawn();
     }
 
-    public IEnumerator OrderZombieSpawnCooldownChange()
+    public void OrderZombiesSpawn()
     {
-        foreach(var data in spawnTimings.zombieSpawmCooldownChange)
+        foreach (var unit in zombiesSpawnCycleParameters.zombiesSpawnTimings)
         {
-            zombieSpawnCooldown = data.spawnCooldown;
-            yield return new WaitForSeconds(data.timing);
-        }
-        yield break;
-    }
-
-    public void OrderSpecialZombiesSpawn()
-    {
-        foreach (var data in spawnTimings.specialZombieSpawnTimings)
-        {
-            foreach (float spawnTiming in data.spawnTimings)
+            foreach (ZombieSpawnCycleParameters spawnParameters in unit.zombieSpawnCycleParameters)
             {
-                coroutineRunner.RunCoroutine(OrderZombieSpawn(data.specialZombieType, spawnTiming));
+                coroutineRunner.RunCoroutine(startSpawnCycle(baseSpawnPosition, spawnParameters.timing, unit.zombieType, 
+                    spawnParameters.spawnCooldown, spawnParameters.zombieCount));
             }
         }
     }
@@ -59,12 +42,14 @@ public class SpawnManager : MonoBehaviour
         SpawnUnitOnRandomRow(zombieType, baseSpawnPosition);
     }
 
-    public IEnumerator startSpawnCycle(Vector3 baseSpawnPosition)
+    public IEnumerator startSpawnCycle(Vector3 baseSpawnPosition, float timing, UnitType zombieType, float zombieSpawnCooldown, int zombieCount)
     {
-        for (int i = 0; i < maxSpawnCount; i++)
+        yield return new WaitForSeconds(timing);
+
+        for (int i = 0; i < zombieCount; i++)
         {
             yield return new WaitForSeconds(zombieSpawnCooldown);
-            SpawnUnitOnRandomRow(basicEntityType, baseSpawnPosition);
+            SpawnUnitOnRandomRow(zombieType, baseSpawnPosition);
         }
     }
 
@@ -85,7 +70,7 @@ public class SpawnManager : MonoBehaviour
             _ => null
         };
 
-        spawner.SpawnUnit(entityType, position);
+        spawner.SpawnAndInitializeUnit(entityType, position);
     }
 
     public Vector3 GenerateEntitySpawnPosition(Vector3 baseSpawnPosition)

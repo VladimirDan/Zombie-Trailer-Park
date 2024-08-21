@@ -23,21 +23,9 @@ public class MainBuildingEntity : Entity
         Debug.Log("Level end");
     }
 
-    public override void Initialize()
+    public override void setUpEntity()
     {
-        coroutineRunner = FindObjectOfType<CoroutineRunner>();
-        healthModel = GetComponent<HealthModel>();
-
-        if (healthModel == null)
-            Debug.LogWarning("HealthModel component not found on this GameObject.");
-
-        onDestroy += DestroyObject;
+        base.setUpEntity();
         onDestroy += HandleMainBuildingDestruction;
-
-
-
-        stateMachine = new StateMachine(new AfkState(coroutineRunner));
-
-        isInitialized = true;
     }
 }

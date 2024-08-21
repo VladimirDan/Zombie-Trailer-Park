@@ -38,7 +38,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public virtual void Initialize()
+    public virtual void setUpEntity()
     {
         coroutineRunner = FindObjectOfType<CoroutineRunner>();
         healthModel = GetComponent<HealthModel>();
@@ -49,6 +49,12 @@ public class Entity : MonoBehaviour
         onDestroy += DestroyObject;
 
         stateMachine = new StateMachine(new AfkState(coroutineRunner));
+    }
+
+    public virtual void Initialize()
+    {
+        setUpEntity();
+        isInitialized = true;
     }
 
     void Update()

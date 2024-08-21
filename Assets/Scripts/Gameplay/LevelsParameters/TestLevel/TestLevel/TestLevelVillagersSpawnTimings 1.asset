@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieSpawmCooldownChange:
   - timing: 0
-    spawnCooldown: 4
-  specialZombieSpawnTimings: []
+    spawnCooldown: 0.1
+  specialZombieSpawnTimings:
+  - specialZombieType: 1
+    spawnTimings: []

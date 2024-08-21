@@ -27,13 +27,4 @@ public class HealthModel : MonoBehaviour
     {
         return HealthPoints > 0;
     }
-    void Start()
-    {
-        //onHealthChange += DisplayMessage;
-    }
-
-    void Update()
-    {
-
-    }
 }

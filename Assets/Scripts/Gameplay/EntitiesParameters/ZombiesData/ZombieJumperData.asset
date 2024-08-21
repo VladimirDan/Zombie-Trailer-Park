@@ -22,6 +22,6 @@ MonoBehaviour:
   AttackRange: 1
   AttackDamage: 25
   AttackSpeed: 0.5
-  jumpLenght: 8
-  jumpCoolDown: 1
-  oponentBaseXCoord: -20
+  jumpLength: 6
+  jumpCooldown: 2
+  opponentBaseXCoord: -22

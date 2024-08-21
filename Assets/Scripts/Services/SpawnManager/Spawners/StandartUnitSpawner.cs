@@ -11,12 +11,6 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
 {
     public class StandartUnitSpawner : UnitSpawner        //Every unit that only attack single target or walk is standart unit
     {
-
-        public override void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
-        {
-            base.SpawnUnit(entityType, spawnPosition);
-        }
-
         public override void SetParameters(Unit unitObject, UnitParametersData unitData)
         {
             unitObject.OpponentLayer = unitData.OpponentLayer;

@@ -10,12 +10,6 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
 {
     public class SplashDamageUnitSpawner : StandartUnitSpawner
     {
-
-        public override void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
-        {
-            base.SpawnUnit(entityType, spawnPosition);
-        }
-
         public override void SetParameters(Unit unitObject, UnitParametersData unitData)
         {
             base.SetParameters(unitObject, unitData);

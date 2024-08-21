@@ -51,14 +51,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basicEntityType: 5
-  spawnTimings: {fileID: 11400000, guid: 77708e73b15fd7547a6de5ae3136761d, type: 2}
   baseSpawnPosition: {x: 22, y: 0, z: -1}
   zombieSpawnCooldown: 0
   zombieJuperSpawnCooldown: 0
   bansheeSpawnCooldown: 0
   giantSpawnCooldown: 0
-  maxSpawnCount: 100
   maxDistanceBetweenRows: 5
+  zombiesSpawnCycleParameters: {fileID: 11400000, guid: 03f0cc6456421af45ac8ae7046171221, type: 2}
 --- !u!114 &5930452931293996864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
+  isInitialized: 0
 --- !u!65 &3719705045914039516
 BoxCollider:
   m_ObjectHideFlags: 0

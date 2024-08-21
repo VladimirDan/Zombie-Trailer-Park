@@ -37,9 +37,9 @@ public class Unit : Entity
         }
     }
 
-    public override void Initialize()
+    public override void setUpEntity()
     {
-        base.Initialize();
+        base.setUpEntity();
 
         unitModel = GetComponent<UnitModel>();
 
@@ -51,8 +51,6 @@ public class Unit : Entity
         unitModel.OpponentLayer = OpponentLayer;
         unitModel.EntityRigidbody = GetComponent<Rigidbody>();
         unitModel.EntityTransform = GetComponent<Transform>();
-
-        stateMachine = new StateMachine(new AfkState(coroutineRunner));
     }
 }
 

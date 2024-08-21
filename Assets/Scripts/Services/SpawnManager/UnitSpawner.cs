@@ -9,7 +9,12 @@ using UnityEngine;
 
 public class UnitSpawner : EntitySpawner
 {
-    public virtual void SpawnUnit(UnitType entityType, Vector3 spawnPosition)
+    public void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition)
+    {
+        Unit unitObject = SpawnUnit(entityType, spawnPosition);
+        InitializeUnit(unitObject);
+    }
+    public virtual Unit SpawnUnit(UnitType entityType, Vector3 spawnPosition)
     {
         GameObject prefab = dataProvider.GetUnitPrefab(entityType);
         UnitParametersData unitData = (UnitParametersData)dataProvider.GetUnitData(entityType);
@@ -21,8 +26,12 @@ public class UnitSpawner : EntitySpawner
         Unit unitObject = unit.GetComponent<Unit>();
         SetParameters(unitObject, unitData);
 
+        return unitObject;
+    }
+
+    public virtual void InitializeUnit(Unit unitObject)
+    {
         unitObject.Initialize();
-        unitObject.isInitialized = true;
     }
 
     public virtual void SetParameters(Unit unitObject, UnitParametersData unitData)

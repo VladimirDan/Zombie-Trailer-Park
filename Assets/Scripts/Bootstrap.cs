@@ -31,11 +31,9 @@ public class Bootstrap : MonoBehaviour
         GameObject enemyBase = Instantiate(ZombieMainBuildingPrefab);
         zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
         zombieMainBuilding.Initialize();
-        zombieMainBuilding.isInitialized = true;
 
         zombieSpawner = enemyBase.GetComponent<SpawnManager>();
         zombieSpawner.Initialize();
-        zombieMainBuilding.isInitialized = true;
     }
 
     public CoroutineRunner GetCoroutineRunner()
