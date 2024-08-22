@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
 {
     CoroutineRunner coroutineRunner;
     DataProvider dataProvider;
-    private Vector3 baseSpawnPosition;
+    public Vector3 baseSpawnPosition;
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
     private float maxDistanceBetweenRows = 5;
 
@@ -34,12 +34,6 @@ public class SpawnManager : MonoBehaviour
                     spawnParameters.spawnCooldown, spawnParameters.zombieCount));
             }
         }
-    }
-
-    public IEnumerator OrderZombieSpawn(UnitType zombieType, float timing)
-    {
-        yield return new WaitForSeconds(timing);
-        SpawnUnitOnRandomRow(zombieType, baseSpawnPosition);
     }
 
     public IEnumerator startSpawnCycle(Vector3 baseSpawnPosition, float timing, UnitType zombieType, float zombieSpawnCooldown, int zombieCount)

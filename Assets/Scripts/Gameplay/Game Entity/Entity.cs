@@ -54,14 +54,11 @@ public class Entity : MonoBehaviour
     public virtual void Initialize()
     {
         setUpEntity();
-        isInitialized = true;
+        this.enabled = true;
     }
 
     void Update()
     {
-        if (!isInitialized)
-            return;
-
         CheckoutCurrentState();
     }
 }

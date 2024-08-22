@@ -50,13 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e24878abcc07844828cccec178cdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicEntityType: 0
   baseSpawnPosition: {x: -22, y: 0, z: -1}
-  zombieSpawnCooldown: 0
-  zombieJuperSpawnCooldown: 0
-  bansheeSpawnCooldown: 0
-  giantSpawnCooldown: 0
-  maxDistanceBetweenRows: 5
   zombiesSpawnCycleParameters: {fileID: 11400000, guid: 5df757d2c720d85419e265747edd13e2, type: 2}
 --- !u!114 &1203525305867918395
 MonoBehaviour:
@@ -78,7 +72,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7264403554744247981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7e2de2fc350c5943beed996216d7ae1, type: 3}
   m_Name: 

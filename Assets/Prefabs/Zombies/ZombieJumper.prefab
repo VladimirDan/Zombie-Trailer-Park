@@ -157,7 +157,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7258905495002365054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48b61e368b3794b4883aba97e2ec9662, type: 3}
   m_Name: 
@@ -172,9 +172,9 @@ MonoBehaviour:
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 128
-  jumpLenght: 0
-  jumpCoolDown: 0
-  oponentBaseXCoord: 0
+  jumpLength: 0
+  jumpCooldown: 0
+  opponentBaseXCoord: 0
 --- !u!114 &-1517494033909025633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a9c7f2a39bad74fa4edfba6e0a34d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpLenght: 0
-  jumpCoolDown: 0
-  oponentBaseXCoord: 0
+  jumpLength: 0
+  jumpCooldown: 0
+  opponentBaseXCoord: 0
   lastJumpTime: 0

@@ -109,12 +109,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2834832886997551221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4504c4174a835db4bbe040695df3ccff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
+  isInitialized: 0
   CreatureSpeed: 0
   CreatureHorizontalMovementDirection: 0
   AttackRange: 0

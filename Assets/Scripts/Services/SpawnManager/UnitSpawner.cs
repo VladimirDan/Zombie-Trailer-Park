@@ -12,7 +12,7 @@ public class UnitSpawner : EntitySpawner
     public void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition)
     {
         Unit unitObject = SpawnUnit(entityType, spawnPosition);
-        InitializeUnit(unitObject);
+        unitObject.Initialize();
     }
     public virtual Unit SpawnUnit(UnitType entityType, Vector3 spawnPosition)
     {
@@ -27,11 +27,6 @@ public class UnitSpawner : EntitySpawner
         SetParameters(unitObject, unitData);
 
         return unitObject;
-    }
-
-    public virtual void InitializeUnit(Unit unitObject)
-    {
-        unitObject.Initialize();
     }
 
     public virtual void SetParameters(Unit unitObject, UnitParametersData unitData)
