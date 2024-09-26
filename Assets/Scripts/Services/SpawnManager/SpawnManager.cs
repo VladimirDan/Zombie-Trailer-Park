@@ -1,10 +1,9 @@
-using Assets.Scripts.Services.SpawnManager;
 using Assets.Scripts.Services.SpawnManager.Factories;
-using CreaturesData;
 using Game.Code.Common.CoroutineRunner;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Services;
+using LevelsParameters;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -14,48 +13,48 @@ public class SpawnManager : MonoBehaviour
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
     private float maxDistanceBetweenRows = 5;
 
-    [SerializeField] public ZombiesSpawnTimings zombiesSpawnCycleParameters;
+    [SerializeField] public UnitsSpawnTimings unitsSpawnCycleParameters;
 
-    public void Initialize()
+    public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider)
     {
-        coroutineRunner = FindObjectOfType<CoroutineRunner>();
-        dataProvider = GetComponent<DataProvider>();
+        this.coroutineRunner = coroutineRunner;
+        this.dataProvider = dataProvider;
 
-        OrderZombiesSpawn();
+        OrderUnitSpawn();
     }
 
-    public void OrderZombiesSpawn()
+    public void OrderUnitSpawn()
     {
-        foreach (var unit in zombiesSpawnCycleParameters.zombiesSpawnTimings)
+        foreach (var unit in unitsSpawnCycleParameters.unitsSpawnTimings)
         {
-            foreach (ZombieSpawnCycleParameters spawnParameters in unit.zombieSpawnCycleParameters)
+            foreach (UnitSpawnCycleParameters spawnParameters in unit.unitSpawnCycleParameters)
             {
-                coroutineRunner.RunCoroutine(startSpawnCycle(baseSpawnPosition, spawnParameters.timing, unit.zombieType, 
-                    spawnParameters.spawnCooldown, spawnParameters.zombieCount));
+                coroutineRunner.RunCoroutine(startSpawnCycle(baseSpawnPosition, spawnParameters.timing, unit.unitType, 
+                    spawnParameters.spawnCooldown, spawnParameters.unitCount));
             }
         }
     }
 
-    public IEnumerator startSpawnCycle(Vector3 baseSpawnPosition, float timing, UnitType zombieType, float zombieSpawnCooldown, int zombieCount)
+    public IEnumerator startSpawnCycle(Vector3 baseSpawnPosition, float timing, UnitType unitType, float unitSpawnCooldown, int unitsCount)
     {
         yield return new WaitForSeconds(timing);
 
-        for (int i = 0; i < zombieCount; i++)
+        for (int i = 0; i < unitsCount; i++)
         {
-            yield return new WaitForSeconds(zombieSpawnCooldown);
-            SpawnUnitOnRandomRow(zombieType, baseSpawnPosition);
+            yield return new WaitForSeconds(unitSpawnCooldown);
+            SpawnUnitOnRandomRow(unitType, baseSpawnPosition);
         }
     }
 
     public void SpawnUnitOnRandomRow(UnitType entityType, Vector3 baseSpawnPosition)
     {
-        Vector3 spawnPosition = GenerateEntitySpawnPosition(baseSpawnPosition);
-        SpawnEntity(entityType, spawnPosition);
+        Vector3 spawnPosition = GenerateUnitSpawnPosition(baseSpawnPosition);
+        SpawnUnit(entityType, spawnPosition);
     }
 
-    public void SpawnEntity(UnitType entityType, Vector3 position)
+    public void SpawnUnit(UnitType unitType, Vector3 position)
     {
-        UnitSpawner spawner = entityType switch
+        UnitSpawner spawner = unitType switch
         {
             UnitType.Zombie or UnitType.Banshee or UnitType.Digger
             or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider),
@@ -64,10 +63,10 @@ public class SpawnManager : MonoBehaviour
             _ => null
         };
 
-        spawner.SpawnAndInitializeUnit(entityType, position);
+        spawner.SpawnAndInitializeUnit(unitType, position);
     }
 
-    public Vector3 GenerateEntitySpawnPosition(Vector3 baseSpawnPosition)
+    public Vector3 GenerateUnitSpawnPosition(Vector3 baseSpawnPosition)
     {
         float zCoordinate = baseSpawnPosition.z + PickRandomLineForUnitWalkWay(maxDistanceBetweenRows / 2, -maxDistanceBetweenRows / 2);
         return new Vector3(baseSpawnPosition.x, baseSpawnPosition.y, zCoordinate);

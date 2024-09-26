@@ -1,11 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe6de307-4890-4c26-b8fa-42d2fdfc69e5" name="Changes" comment="" />
+    <list default="true" id="fe6de307-4890-4c26-b8fa-42d2fdfc69e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/ButtonCooldownManagerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/CreditModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/CreditModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/UnitsSummonData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/UnitsSummonData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/PlayerResources.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/PlayerResources.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/UnitsSpawnTimings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/DataProvider.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/DataProvider/DataProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/DataProvider/DataProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameController/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameController/GameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameController/SummonCooldownController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameController/SummonCooldownController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerManager.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerManager/PlayerBankModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerManager/PlayerBankModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SummonController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SummonController/SummonController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SummonController/SummonController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Timer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Timer/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Timer/Timer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Timer/TimerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Timer/TimerManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonWithCooldown.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonWithCooldown.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels/ArmyCapacityPanelUIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels/ArmyCapacityPanelUIManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels/MoneyPanelUIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels/MoneyPanelUIManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanels/TimerUIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITextManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITextManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ZombieTrailerPark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZombieTrailerPark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/SpeedControllerButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/SpeedControllerButton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainBuildins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainBuildins/VillageMainBuilding.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainBuildins/VillageMainBuilding.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainBuildins/ZombieMainBuilding.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainBuildins/ZombieMainBuilding.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Entity/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Entity/StateMachine/States/AttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Entity/StateMachine/States/AttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/EntityBasicData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/EntityBasicData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/EntityBasicData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/EntityBasicData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/SplashDamageUnitParametersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/SplashDamageUnitParametersData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/SplashDamageUnitParametersData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/SplashDamageUnitParametersData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/UnitParametersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/UnitParametersData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/UnitParametersData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/UnitParametersData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/BoozerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/BoozerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/BoozerData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/BoozerData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/ClericData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/ClericData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/ClericData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/ClericData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/DiggerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/DiggerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/DiggerData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/DiggerData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/ShooterData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/ShooterData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/ShooterData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/ShooterData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/SurvivalistCarData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/SurvivalistCarData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/SurvivalistCarData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/SurvivalistCarData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/VillagerMainBuildingHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/VillagerMainBuildingHealth.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/VilagersData/VillagerMainBuildingHealth.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/VilagersData/VillagerMainBuildingHealth.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombieJumperParametersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombieJumperParametersData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombieJumperParametersData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombieJumperParametersData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/BansheeData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/BansheeData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/BansheeData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/BansheeData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/GiantData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/GiantData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/GiantData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/GiantData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieJumperData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieJumperData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieJumperData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieJumperData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieMainBuildingHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieMainBuildingHealth.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/Entities Parameters/ZombiesData/ZombieMainBuildingHealth.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/ZombiesData/ZombieMainBuildingHealth.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/SpawnCycleParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/SpawnCycleParameters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/SpawnCycleParameters.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/SpawnCycleParameters.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/TestLevel.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel/TestLevel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel/TestLevel/TestLevelVillagersSpawnTimings 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel/TestLevel/TestLevelVillagersSpawnTimings 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel/TestLevel/TestLevelZombiesSpawnTimings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/TestLevel/TestLevel/TestLevelZombiesSpawnTimings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/ZombieSpawnTimings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Game Parameters/LevelsParameters/ZombieSpawnTimings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/LevelsParameters/UnitsSpawnTimings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/HealthModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/HealthModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GameSpeedController/GameSpeedController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameSpeedController/GameSpeedController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/DataProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/DataProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/EntitySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/EntitySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/SplashDamageUnitSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/SplashDamageUnitSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/StandartUnitSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/StandartUnitSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/ZombieJumperSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/Spawners/ZombieJumperSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/UnitSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/SpawnManager/UnitSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameView.cs.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/GameParameters/EntitiesParameters/UnitsSummonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TimerUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -18,10 +139,60 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Local\\Symbols\\src&quot;
+    ]
   }
 }</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity 2022.3.8f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\прорвемся\ZombieTrailerPark -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\прорвемся\ZombieTrailerPark" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity 2022.3.8f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\прорвемся\ZombieTrailerPark -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\прорвемся\ZombieTrailerPark" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,14 +203,34 @@
       <updated>1722524952614</updated>
       <workItem from="1722524956287" duration="136000" />
       <workItem from="1722590813273" duration="10000" />
+      <workItem from="1724485342282" duration="17240000" />
+      <workItem from="1726920527684" duration="9758000" />
+      <workItem from="1726932953019" duration="3272000" />
+      <workItem from="1726940145573" duration="27385000" />
+      <workItem from="1727180051573" duration="48894000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="241" />
+    <coverage-tree-state>
+      <expand />
+      <select />
+    </coverage-tree-state>
+  </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9243bc9a337b4125921ab980537a5b11, type: 3}
+  m_Name: SummonPrices
+  m_EditorClassIdentifier: 
+  unitsData:
+  - unitType: 0
+    price: 50
+    capacity: 1
+    summonTime: 1
+  - unitType: 1
+    price: 200
+    capacity: 2
+    summonTime: 2
+  - unitType: 2
+    price: 350
+    capacity: 3
+    summonTime: 3
+  - unitType: 3
+    price: 900
+    capacity: 5
+    summonTime: 9
+  - unitType: 4
+    price: 1500
+    capacity: 5
+    summonTime: 15

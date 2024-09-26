@@ -1,39 +1,65 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using Game.Code.Common.CoroutineRunner;
+using Services;
 
 public class Bootstrap : MonoBehaviour
 {
     [SerializeField] public GameObject coroutineRunnerPrefab;
-    [SerializeField] public GameObject VillageMainBuildingPrefab;
-    [SerializeField] public GameObject ZombieMainBuildingPrefab;
+    [SerializeField] public GameObject dataProviderPrefab;
+    
+    [SerializeField] public GameObject villageMainBuildingPrefab;
+    [SerializeField] public GameObject zombieMainBuildingPrefab;
+    
     private CoroutineRunner coroutineRunner;
+    private DataProvider dataProvider;
+    
+    private GameObject playerManager;
+    private PlayerBankModel playerBank;
+    
+    private GameObject gameControllerObject;
+    private GameController gameController;
+    
     private MainBuildingEntity villageMainBuilding;
     private MainBuildingEntity zombieMainBuilding;
 
-    private SpawnManager vilagersSpawner;
+    private SpawnManager villagersSpawner;
     private SpawnManager zombieSpawner;
+
+    private SummonController summonController;
 
     void Awake()
     {
-        GameObject runnerObject = Instantiate(coroutineRunnerPrefab);
-        coroutineRunner = runnerObject.GetComponent<CoroutineRunner>();
-        DontDestroyOnLoad(runnerObject);
-
-        GameObject playerBase = Instantiate(VillageMainBuildingPrefab);
+        GameObject coroutineRunnerObject = Instantiate(coroutineRunnerPrefab);
+        coroutineRunner = coroutineRunnerObject.GetComponent<CoroutineRunner>();
+        DontDestroyOnLoad(coroutineRunnerObject);
+        
+        GameObject dataProviderObject = Instantiate(dataProviderPrefab);
+        dataProvider = dataProviderObject.GetComponent<DataProvider>();
+        dataProvider.Initialize();
+        DontDestroyOnLoad(dataProviderObject);
+        
+        GameObject playerBase = Instantiate(villageMainBuildingPrefab);
         villageMainBuilding = playerBase.GetComponent<MainBuildingEntity>();
         villageMainBuilding.Initialize();
 
-        vilagersSpawner = playerBase.GetComponent<SpawnManager>();
-        vilagersSpawner.Initialize();
+        villagersSpawner = playerBase.GetComponent<SpawnManager>();
+        villagersSpawner.Initialize(coroutineRunner, dataProvider);
+        
+        summonController = playerBase.GetComponent<SummonController>();
+        summonController.Initialize(villagersSpawner);
 
-        GameObject enemyBase = Instantiate(ZombieMainBuildingPrefab);
+        GameObject enemyBase = Instantiate(zombieMainBuildingPrefab);
         zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
         zombieMainBuilding.Initialize();
 
         zombieSpawner = enemyBase.GetComponent<SpawnManager>();
-        zombieSpawner.Initialize();
+        zombieSpawner.Initialize(coroutineRunner, dataProvider);
+        
+        gameControllerObject = GameObject.Find("GameController");
+        gameController = gameControllerObject.GetComponent<GameController>();
+        gameController.Initialize(coroutineRunner, dataProvider, summonController);
+        
+        
     }
 
     public CoroutineRunner GetCoroutineRunner()
