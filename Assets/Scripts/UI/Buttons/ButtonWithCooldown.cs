@@ -3,21 +3,28 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using UnityEngine.EventSystems;
 
 namespace UI.Buttons
 {
-    public class ButtonWithCooldown : Button
+    public class ButtonWithCooldown : Button, IPointerEnterHandler, IPointerExitHandler
     {
         private CoroutineRunner coroutineRunner;
-
+        
+        private Outline outline;
+        [SerializeField] private Color hoverOutlineColor = Color.black;
+        [SerializeField] private Color outlineColor = Color.yellow;
+        [SerializeField] private Vector2 outlineDistanceHover = new Vector2(2, 2);
+        [SerializeField] private Vector2 outlineDistance = new Vector2(1, 1);
+        
         private Image mainImage;
         private Image overlayImage;
         public Sprite overlaySprite;
         
-        private Color activeButtonColor = Color.white;
-        private Color inactiveButtonColor = new Color(0.99f, 0.99f, 0.99f, 1f);
+        [SerializeField] private Color activeButtonColor = Color.white;
+        [SerializeField] private Color inactiveButtonColor = new Color(0.99f, 0.99f, 0.99f, 1f);
         
-        private Color cooldownProgressColor = new Color(1f, 1f, 1f, 0.3f);
+        [SerializeField] private Color cooldownProgressColor = new Color(1f, 1f, 1f, 0.3f);
         
         public event Action OnActivityChange;
         
@@ -27,14 +34,43 @@ namespace UI.Buttons
 
             coroutineRunner = FindObjectOfType<CoroutineRunner>();
             mainImage = GetComponent<Image>();
-
-
             overlayImage = FindOverlayImage() == null ? CreateOverlayImage() : FindOverlayImage();
+
+            outline = GetComponent<Outline>();
+            if(outline == null)
+                outline = gameObject.AddComponent<Outline>();
+            
+            ChangeOutlineColor(hoverOutlineColor); 
+            outline.effectDistance = outlineDistance; 
         }
 
         protected void Update()
         {
             OnActivityChange?.Invoke(); 
+        }
+        
+        public override void OnPointerEnter(PointerEventData eventData)
+        {
+            base.OnPointerEnter(eventData);
+            ChangeOutlineColor(outlineColor);
+            ChangeOutlineEffectDistance(outlineDistanceHover);
+        }
+
+        public override void OnPointerExit(PointerEventData eventData)
+        {
+            base.OnPointerExit(eventData);
+            ChangeOutlineColor(hoverOutlineColor);
+            ChangeOutlineEffectDistance(outlineDistance);
+        }
+
+        private void ChangeOutlineColor(Color newColor)
+        {
+            outline.effectColor = newColor;
+        }
+        
+        private void ChangeOutlineEffectDistance(Vector2 newDistance)
+        {
+            outline.effectDistance = newDistance;
         }
         
         private Image CreateOverlayImage()
@@ -59,7 +95,6 @@ namespace UI.Buttons
             return overlayImage;
         }
 
-
         private Image FindOverlayImage()
         {
             Transform overlayTransform = transform.Find("OverlayImage");
@@ -76,11 +111,6 @@ namespace UI.Buttons
             StartCoroutine(UpdateOverlayFill(seconds));
         }
 
-        public void FillOverlay()
-        {
-            overlayImage.fillAmount = 1;
-        }
-
         private IEnumerator UpdateOverlayFill(float seconds)
         {
             float elapsedTime = 0f;
@@ -92,8 +122,8 @@ namespace UI.Buttons
             while (elapsedTime < seconds)
             {
                 elapsedTime += Time.deltaTime;
-                overlayImage.fillAmount = elapsedTime / seconds; // Заполняем пропорционально времени
-                yield return null; // Ждем следующего кадра
+                overlayImage.fillAmount = elapsedTime / seconds; 
+                yield return null; 
             }
 
             HideOverlay();

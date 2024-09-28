@@ -1,10 +1,5 @@
 using Assets.Scripts.StateMachine.States;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static HealthModel;
-using Game.Code.Common.CoroutineRunner;
-using CreaturesData;
 
 public class Unit : Entity
 {
@@ -16,7 +11,6 @@ public class Unit : Entity
     public float AttackDamage;
     public float AttackSpeed;
     public LayerMask OpponentLayer;
-    public Coroutine attackCoroutine;
 
     public override void CheckoutCurrentState()
     {

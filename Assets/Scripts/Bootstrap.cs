@@ -25,7 +25,7 @@ public class Bootstrap : MonoBehaviour
     private SpawnManager villagersSpawner;
     private SpawnManager zombieSpawner;
 
-    private SummonController summonController;
+    private SummonManager summonManager;
 
     void Awake()
     {
@@ -45,8 +45,7 @@ public class Bootstrap : MonoBehaviour
         villagersSpawner = playerBase.GetComponent<SpawnManager>();
         villagersSpawner.Initialize(coroutineRunner, dataProvider);
         
-        summonController = playerBase.GetComponent<SummonController>();
-        summonController.Initialize(villagersSpawner);
+        summonManager = new SummonManager(dataProvider, villagersSpawner);
 
         GameObject enemyBase = Instantiate(zombieMainBuildingPrefab);
         zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
@@ -57,7 +56,7 @@ public class Bootstrap : MonoBehaviour
         
         gameControllerObject = GameObject.Find("GameController");
         gameController = gameControllerObject.GetComponent<GameController>();
-        gameController.Initialize(coroutineRunner, dataProvider, summonController);
+        gameController.Initialize(coroutineRunner, dataProvider, summonManager);
         
         
     }

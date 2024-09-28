@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using Game.Code.Common.CoroutineRunner;
+using UnityEngine;
 using Gameplay;
-using UnityEngine.Serialization;
+using System.Collections;
 
 namespace Services
 {
@@ -11,11 +13,29 @@ namespace Services
         [SerializeField] public CreditModel yeeHawPoints;
         [SerializeField] public CreditModel armyCapacity;
         
+        [SerializeField] public float moneyIncome = 50;
+        [SerializeField] public float moneyIncomeFrequency = 2;
+        
         public PlayerBankModel(CreditModel money, CreditModel yeeHawPoints, CreditModel armyCapacity)
         {
             this.money = money;
             this.yeeHawPoints = yeeHawPoints;
             this.armyCapacity = armyCapacity;
+        }
+
+        public IEnumerator StartMoneyIncome()
+        {
+            while (true)
+            {
+                GainMoney();
+                
+                yield return new WaitForSeconds(moneyIncomeFrequency);
+            }
+        }
+
+        public void GainMoney()
+        {
+            money.AddCredits(moneyIncome);
         }
     }
 }

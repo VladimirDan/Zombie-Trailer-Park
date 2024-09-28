@@ -4,7 +4,7 @@
     {
         public void UpdateArmyCapacityUIInfo(float amount, float capacity)
         {
-            UpdateText($"$ {amount}/{capacity}");
+            UpdateText($"{amount}/{capacity}");
         }
     }
 }

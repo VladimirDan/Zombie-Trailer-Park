@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: TestLevelStartResources
   m_EditorClassIdentifier: 
   money:
-    credits: 200
+    credits: 2000
     creditsMaxCapacity: 99999
   yeeHawPoints:
     credits: 1000
     creditsMaxCapacity: 99999
   armyCapacity:
     credits: 0
-    creditsMaxCapacity: 5
+    creditsMaxCapacity: 50
