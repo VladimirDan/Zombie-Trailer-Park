@@ -3,10 +3,10 @@ using UnityEngine.Serialization;
 
 namespace CreaturesData
 {
-    [CreateAssetMenu(fileName = "UnitsData", menuName = "Entities/Units Data")]
+    [CreateAssetMenu(fileName = "BuildingsSummonData", menuName = "Entities/Units Summon Data")]
     public class UnitsSummonData : ScriptableObject
     {
-        public UnitSummonData []unitsData;
+        public UnitSummonData []unitsSummonData;
     }
     
     

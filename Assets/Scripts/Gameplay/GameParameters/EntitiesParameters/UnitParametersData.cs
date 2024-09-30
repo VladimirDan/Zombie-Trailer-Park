@@ -13,5 +13,6 @@ namespace CreaturesData
         public float AttackRange;
         public float AttackDamage;
         public float AttackSpeed;
+        public float YeeHawPointsDrop;
     }
 }

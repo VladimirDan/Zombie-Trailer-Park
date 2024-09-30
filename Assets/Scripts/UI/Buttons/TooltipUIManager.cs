@@ -10,7 +10,7 @@ namespace UI.Buttons
     {
         public GameObject tooltipPanelPrefab;
         private GameObject tooltipPanel;
-        private TooltipExpander tooltipExpander;
+       
         private GameObject warningMessagePanel;
         private GameObject warningMessageObject;
         private RectTransform warningMessageRectTransform;
@@ -28,18 +28,17 @@ namespace UI.Buttons
             tooltipPanelRectTransform.SetParent(borderRectTransform);
             
             SetTooltipPosition();
-            tooltipExpander = new TooltipExpander(tooltipPanel);
+           
             
             warningMessageObject = tooltipPanelRectTransform.transform.Find("WarningText").gameObject;
             warningMessageRectTransform = warningMessageObject.GetComponent<RectTransform>();
-            SetWarningMessage("please");
+            
             tooltipPanel.SetActive(false);
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             tooltipPanel.SetActive(true);
-            SetWarningMessage("ddd");
         }
 
         public void OnPointerExit(PointerEventData eventData)
@@ -76,6 +75,13 @@ namespace UI.Buttons
             TextMeshProUGUI textMeshPro = warningMessageObject.GetComponent<TextMeshProUGUI>();
 
             textMeshPro.text = massage;
+        }
+        
+        public void AddWarningMessage(string massage)
+        {
+            TextMeshProUGUI textMeshPro = warningMessageObject.GetComponent<TextMeshProUGUI>();
+
+            textMeshPro.text = textMeshPro.text + massage;
         }
     }
 }

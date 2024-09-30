@@ -3,39 +3,136 @@ using Game.Code.Common.CoroutineRunner;
 using UnityEngine;
 using Gameplay;
 using System.Collections;
+using LevelsParameters;
+using UI;
 
 namespace Services
 {
     [System.Serializable]
     public class PlayerBankModel
     {
+        private CoroutineRunner coroutineRunner;
+        private DataProvider dataProvider;
+        private UIManager uiManager;
+        
         [SerializeField] public CreditModel money;
         [SerializeField] public CreditModel yeeHawPoints;
         [SerializeField] public CreditModel armyCapacity;
-        
+
         [SerializeField] public float moneyIncome = 50;
         [SerializeField] public float moneyIncomeFrequency = 2;
-        
-        public PlayerBankModel(CreditModel money, CreditModel yeeHawPoints, CreditModel armyCapacity)
+
+        public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, UIManager uiManager,
+                               CreditModel money, CreditModel yeeHawPoints, CreditModel armyCapacity)
         {
+            this.coroutineRunner = coroutineRunner;
+            this.dataProvider = dataProvider;
+            this.uiManager = uiManager;
             this.money = money;
             this.yeeHawPoints = yeeHawPoints;
             this.armyCapacity = armyCapacity;
         }
+        
+        public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, UIManager uiManager)
+        {
+            this.coroutineRunner = coroutineRunner;
+            this.dataProvider = dataProvider;
+            this.uiManager = uiManager;
+        }
 
-        public IEnumerator StartMoneyIncome()
+        public void Initialize()
+        {
+            money = new CreditModel(0, 99999);
+            yeeHawPoints = new CreditModel(0, 99999);
+            armyCapacity = new CreditModel(0, 0);
+
+            AddResources(dataProvider.GetPlayerStartResources());
+
+            uiManager.UpdateAllResourcesInfo(this);
+        }
+
+
+        public void StartMoneyIncomeCycle()
+        {
+            coroutineRunner.RunCoroutine(GainMoneyCycle());
+        }
+
+        public IEnumerator GainMoneyCycle()
         {
             while (true)
             {
-                GainMoney();
-                
+                money.AddCredits(moneyIncome);
+
                 yield return new WaitForSeconds(moneyIncomeFrequency);
             }
         }
 
-        public void GainMoney()
+        public void AddResources(PlayerResources playerResources)
         {
-            money.AddCredits(moneyIncome);
+            AddMoney(playerResources.money.GetCreditsAmount());
+            ExpandArmyCapacity(playerResources.armyCapacity.GetCreditsCapacity());
+            AddYeeHawPoints(playerResources.yeeHawPoints.GetCreditsAmount());
+        }
+
+        public void AddMoney(float amount)
+        {
+            money.AddCredits(amount);
+            uiManager.UpdateMoneyInfo(this);
+        }
+        
+        public void ReduceMoney(float amount)
+        {
+            money.ReduceCredits(amount);
+            uiManager.UpdateMoneyInfo(this);
+        }
+
+        public float GetMoneyAmount()
+        {
+            return money.GetCreditsAmount();
+        }
+        public void AddYeeHawPoints(float amount)
+        {
+            yeeHawPoints.AddCredits(amount);
+            uiManager.UpdateYeeHawPointsInfo(this);
+        }
+        
+        public void ReduceYeeHawPoints(float amount)
+        {
+            yeeHawPoints.ReduceCredits(amount);
+            uiManager.UpdateYeeHawPointsInfo(this);
+        }
+        
+        public float GetYeeHawPointsAmount()
+        {
+            return yeeHawPoints.GetCreditsAmount();
+        }
+        
+        public void AddArmyCapacity(float amount)
+        {
+            armyCapacity.AddCredits(amount);
+            uiManager.UpdateArmyCapacityInfo(this);
+        }
+
+        public void ReduceArmyCapacity(float amount)
+        {
+            armyCapacity.ReduceCredits(amount);
+            uiManager.UpdateArmyCapacityInfo(this);
+        }
+
+        public float GetArmyCapacity()
+        {
+            return armyCapacity.GetCreditsAmount();
+        }
+        
+        public void ExpandArmyCapacity(float amount)
+        {
+            armyCapacity.AddCreditsCapacity(amount);
+            uiManager.UpdateArmyCapacityInfo(this);
+        }
+
+        public float GetArmyMaxCapacity()
+        {
+            return armyCapacity.GetCreditsCapacity();
         }
     }
 }

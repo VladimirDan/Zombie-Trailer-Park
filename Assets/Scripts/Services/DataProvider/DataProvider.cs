@@ -4,6 +4,7 @@ using CreaturesData;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Enums;
 using Gameplay;
 using UI;
 using UnityEngine.Serialization;
@@ -16,23 +17,16 @@ namespace Services
         [SerializeField] private UnitParametersData[] entityDataConfigs;
         
         [SerializeField] private UnitsSummonData unitsSummonData;
+        [SerializeField] private BuildingsSummonData buildingsSummonData;
 
         [SerializeField] private PlayerResources playerStartResources;
         
         private Dictionary<UnitType, UnitParametersData> entityDataDictionary;
         private Dictionary<UnitType, GameObject> entityPrefabDictionary;
-
-        private MoneyPanelUIManager moneyPanelUIManager;
-        private UITextManager yeeHawUIPanelManager;
-        private ArmyCapacityPanelUIManager armyCapacityUIPanelManager;
         
         public void Initialize()
         {
             InitializeDictionaries();
-
-            moneyPanelUIManager = GameObject.FindObjectOfType<MoneyPanelUIManager>();
-            yeeHawUIPanelManager = GameObject.Find("Yee-Haw Panel").GetComponent<UITextManager>();
-            armyCapacityUIPanelManager = GameObject.FindObjectOfType<ArmyCapacityPanelUIManager>();
         }
 
         private void InitializeDictionaries()
@@ -51,12 +45,18 @@ namespace Services
             }
         }
 
-        public EntityBasicData GetUnitData(UnitType unitType)
+        public UnitParametersData GetUnitData(UnitType unitType)
         {
-            entityDataDictionary.TryGetValue(unitType, out var data);
+            entityDataDictionary.TryGetValue(unitType, out UnitParametersData data);
             return data;
         }
 
+        public float GetUnitYeeHawPointsDrop(UnitType unitType)
+        {
+            UnitParametersData data = GetUnitData(unitType);
+            return data.YeeHawPointsDrop;
+        }
+        
         public GameObject GetUnitPrefab(UnitType unitType)
         {
             entityPrefabDictionary.TryGetValue(unitType, out var prefab);
@@ -65,50 +65,43 @@ namespace Services
         
         public float GetSummonCooldownTiming(UnitType unitType)
         {
-            UnitSummonData elem = Array.Find(unitsSummonData.unitsData,x => x.unitType == unitType);
+            UnitSummonData elem = Array.Find(unitsSummonData.unitsSummonData,x => x.unitType == unitType);
             return elem.summonTime;
         }
         
-        public float GetUnitPrice(UnitType unitType)
+        public float GetSummonPrice(UnitType unitType)
         {
-            UnitSummonData elem = Array.Find(unitsSummonData.unitsData,x => x.unitType == unitType);
+            UnitSummonData elem = Array.Find(unitsSummonData.unitsSummonData,x => x.unitType == unitType);
             return elem.price;
         }
         
         public float GetUnitCapacity(UnitType unitType)
         {
-            UnitSummonData elem = Array.Find(unitsSummonData.unitsData,x => x.unitType == unitType);
+            UnitSummonData elem = Array.Find(unitsSummonData.unitsSummonData,x => x.unitType == unitType);
             return elem.capacity;
         }
+        
+        public float GetSummonCooldownTiming(BuildingType buildingType)
+        {
+            BuildingSummonData elem = Array.Find(buildingsSummonData.buildingsSummonData,x => x.buildingType == buildingType);
+            return elem.summonTime;
+        }
+        
+        public float GetSummonPrice(BuildingType buildingType)
+        {
+            BuildingSummonData elem = Array.Find(buildingsSummonData.buildingsSummonData,x => x.buildingType == buildingType);
+            return elem.price;
+        }
+        
+        public PlayerResources GetPlayerStartResources()
+        {
+            return playerStartResources;
+        }
 
-        public CreditModel GetPlayerStartMoney()
+        public float GetBuildingCountLimit(BuildingType buildingType)
         {
-            return playerStartResources.money;
-        }
-        
-        public CreditModel GetPlayerStartYeeHawPoints()
-        {
-            return playerStartResources.yeeHawPoints;
-        }
-        
-        public CreditModel GetPlayerStartArmyCapacity()
-        {
-            return playerStartResources.armyCapacity;
-        }
-
-        public MoneyPanelUIManager GetMoneyPanelManager()
-        {
-            return moneyPanelUIManager;
-        }
-        
-        public UITextManager GetYeeHawUIPanelManager()
-        {
-            return yeeHawUIPanelManager;
-        }
-        
-        public ArmyCapacityPanelUIManager GetArmyCapacityUIPanelManager()
-        {
-            return armyCapacityUIPanelManager;
+            BuildingSummonData elem = Array.Find(buildingsSummonData.buildingsSummonData,x => x.buildingType == buildingType);
+            return elem.countLimit;
         }
     }
 }

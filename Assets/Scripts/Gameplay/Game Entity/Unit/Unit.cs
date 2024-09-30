@@ -1,10 +1,12 @@
 using Assets.Scripts.StateMachine.States;
 using UnityEngine;
+using Services;
 
 public class Unit : Entity
 {
     public IUnitModel unitModel;
 
+    public UnitType unitType;
     public float CreatureSpeed;
     public float CreatureHorizontalMovementDirection;
     public float AttackRange;
@@ -12,6 +14,20 @@ public class Unit : Entity
     public float AttackSpeed;
     public LayerMask OpponentLayer;
 
+    public float YeeHawPointsDrop;
+    public PlayerBankModel playerBank;
+    
+    public override void Die()
+    {
+        base.Die();
+        playerBank.AddYeeHawPoints(YeeHawPointsDrop);
+
+        if (gameObject.layer == LayerMask.NameToLayer("Villager"))
+        {
+            playerBank.ReduceArmyCapacity(dataProvider.GetUnitCapacity(unitType));
+        }
+    }
+    
     public override void CheckoutCurrentState()
     {
         if (!healthModel.isAlive())
@@ -30,11 +46,13 @@ public class Unit : Entity
             stateMachine.ChangeCurrentState(new WalkState(unitModel, coroutineRunner));
         }
     }
-
-    public override void setUpEntity()
+    
+    public virtual void setUpEntity(DataProvider dataProvider, PlayerBankModel playerBank)
     {
-        base.setUpEntity();
+        base.setUpEntity(dataProvider);
 
+        this.playerBank = playerBank;
+        
         unitModel = GetComponent<UnitModel>();
 
         unitModel.CreatureSpeed = CreatureSpeed;
@@ -45,6 +63,12 @@ public class Unit : Entity
         unitModel.OpponentLayer = OpponentLayer;
         unitModel.EntityRigidbody = GetComponent<Rigidbody>();
         unitModel.EntityTransform = GetComponent<Transform>();
+    }
+
+    public virtual void Initialize(DataProvider dataProvider, PlayerBankModel playerBank)
+    {
+        setUpEntity(dataProvider, playerBank);
+        this.enabled = true; 
     }
 }
 

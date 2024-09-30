@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9243bc9a337b4125921ab980537a5b11, type: 3}
-  m_Name: SummonPrices
+  m_Name: SummonUnitsPrices
   m_EditorClassIdentifier: 
-  unitsData:
+  unitsSummonData:
   - unitType: 0
     price: 50
     capacity: 1
-    summonTime: 1
+    summonTime: 0.5
   - unitType: 1
     price: 200
     capacity: 2
-    summonTime: 2
+    summonTime: 3
   - unitType: 2
     price: 350
-    capacity: 3
-    summonTime: 3
+    capacity: 2
+    summonTime: 5
   - unitType: 3
     price: 900
     capacity: 5
-    summonTime: 9
+    summonTime: 7
   - unitType: 4
     price: 1500
-    capacity: 5
-    summonTime: 15
+    capacity: 2
+    summonTime: 10

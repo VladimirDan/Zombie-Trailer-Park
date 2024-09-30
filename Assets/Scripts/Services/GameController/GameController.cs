@@ -6,6 +6,7 @@ using System.Collections;
 using Game.Code.Common.CoroutineRunner;
 using Gameplay;
 using System;
+using Enums;
 
 namespace Services
 {
@@ -13,12 +14,8 @@ namespace Services
     {
         private CoroutineRunner coroutineRunner;
         private DataProvider dataProvider;
-
+        private UIManager uiManager;
         private PlayerBankModel playerBankModel;
-
-        private MoneyPanelUIManager moneyUIPanelManager;
-        private UITextManager yeeHawUIPanelManager;
-        private ArmyCapacityPanelUIManager armyCapacityUIPanelManager;
 
         private GameSpeedController gameSpeedController;
         private SummonManager summonManager;
@@ -30,141 +27,104 @@ namespace Services
         [SerializeField] private ButtonWithCooldown survivalistCarSummonButton;
         [SerializeField] private ButtonWithCooldown clericSummonButton;
 
-        public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, SummonManager summonManager)
+        [SerializeField] private ButtonWithCooldown salvageYardSummonButton;
+        [SerializeField] private ButtonWithCooldown trailerSummonButton;
+        [SerializeField] private ButtonWithCooldown farmHouseSummonButton;
+        [SerializeField] private ButtonWithCooldown stillSummonButton;
+        [SerializeField] private ButtonWithCooldown garageSummonButton;
+        [SerializeField] private ButtonWithCooldown chapelSummonButton;
+
+        public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, SummonManager summonManager,
+            UIManager uiManager, PlayerBankModel playerBankModel)
         {
             this.coroutineRunner = coroutineRunner;
             this.dataProvider = dataProvider;
             this.summonManager = summonManager;
-
-            moneyUIPanelManager = dataProvider.GetMoneyPanelManager();
-            yeeHawUIPanelManager = dataProvider.GetYeeHawUIPanelManager();
-            armyCapacityUIPanelManager = dataProvider.GetArmyCapacityUIPanelManager();
-
-            SetUpStartResources();
+            this.uiManager = uiManager;
+            this.summonManager = summonManager;
+            this.playerBankModel = playerBankModel;
 
             gameSpeedController = new GameSpeedController();
 
-
             speedControllerButton.onClick.AddListener(OnSpeedButtonClick);
-            
+
             AddSummonListener(diggerSummonButton, UnitType.Digger);
             AddSummonListener(shooterSummonButton, UnitType.Shooter);
             AddSummonListener(boozerSummonButton, UnitType.Boozer);
             AddSummonListener(survivalistCarSummonButton, UnitType.SurvivalistCar);
             AddSummonListener(clericSummonButton, UnitType.Cleric);
-        }
 
-        public void SetUpStartResources()
-        {
-            CreditModel playerStartMoney = new CreditModel(dataProvider.GetPlayerStartMoney().GetCreditsAmount(), 0);
-
-            CreditModel playerStartYeeHawPoints =
-                new CreditModel(dataProvider.GetPlayerStartYeeHawPoints().GetCreditsAmount(), 0);
-
-            CreditModel playerStartArmyCapacity = new CreditModel(
-                dataProvider.GetPlayerStartArmyCapacity().GetCreditsAmount(),
-                dataProvider.GetPlayerStartArmyCapacity().GetCreditsCapacity()
-            );
-
-            playerBankModel = new PlayerBankModel(playerStartMoney, playerStartYeeHawPoints, playerStartArmyCapacity);
-
-            UpdateMoneyInfo();
-            UpdateYeeHawPointsInfo();
-            UpdateArmyCapacityInfo();
-        }
-
-        public void UpdateMoneyInfo()
-        {
-            moneyUIPanelManager.UpdateMoneyUIInfo(playerBankModel.money.GetCreditsAmount());
-        }
-
-        public void UpdateYeeHawPointsInfo()
-        {
-            yeeHawUIPanelManager.UpdateText(playerBankModel.yeeHawPoints.GetCreditsAmount());
-        }
-
-        public void UpdateArmyCapacityInfo()
-        {
-            armyCapacityUIPanelManager.UpdateArmyCapacityUIInfo(
-                playerBankModel.armyCapacity.GetCreditsAmount(),
-                playerBankModel.armyCapacity.GetCreditsCapacity()
-            );
+            AddSummonListener(salvageYardSummonButton, BuildingType.SalvageYard);
+            AddSummonListener(trailerSummonButton, BuildingType.Trailer);
+            AddSummonListener(farmHouseSummonButton, BuildingType.FarmHouse);
+            AddSummonListener(stillSummonButton, BuildingType.Still);
+            AddSummonListener(garageSummonButton, BuildingType.Garage);
+            AddSummonListener(chapelSummonButton, BuildingType.Chapel);
         }
 
         public void AddSummonListener(ButtonWithCooldown button, UnitType unitType)
         {
             SummonCooldownController cooldownController =
                 new SummonCooldownController(coroutineRunner, dataProvider.GetSummonCooldownTiming(unitType));
-            
+
+            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(unitType);
+            Action checkOutButtonState = () => CheckoutSummonButtonActivity(button, checkFunction);
+
             if (button != null)
             {
-                button.onClick.AddListener(() => OnUnitSummonButtonClick(unitType, button, cooldownController));
-                button.OnActivityChange += () =>
-                    CheckoutSummonButtonActivity(button, () => CheckUnitSummonAvailability(unitType));
+                button.onClick.AddListener(() => summonManager.PayForSummon(unitType));
+                button.onClick.AddListener(() => OnSummonButtonClick(unitType, button, cooldownController));
+                uiManager.OnButtonsActivityChange += checkOutButtonState;
             }
         }
 
-        public void OnSpeedButtonClick()
+        public void AddSummonListener(ButtonWithCooldown button, BuildingType buildingType)
         {
-            gameSpeedController.ChangeSpeed();
+            SummonCooldownController cooldownController =
+                new SummonCooldownController(coroutineRunner, dataProvider.GetSummonCooldownTiming(buildingType));
+
+            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(buildingType);
+            Action checkOutButtonState = () => CheckoutSummonButtonActivity(button, checkFunction);
+
+            if (button != null)
+            {
+                button.onClick.AddListener(() => summonManager.PayForSummon(buildingType));
+                button.onClick.AddListener(() => OnSummonButtonClick(buildingType, button, cooldownController));
+                uiManager.OnButtonsActivityChange += checkOutButtonState;
+            }
         }
 
-        public void OnUnitSummonButtonClick(UnitType unitType, ButtonWithCooldown button,
+        public void OnSummonButtonClick(UnitType unitType, ButtonWithCooldown button,
             SummonCooldownController cooldownController)
         {
             float cooldown = dataProvider.GetSummonCooldownTiming(unitType);
-            float unitPrice = dataProvider.GetUnitPrice(unitType);
-            float unitCapacity = dataProvider.GetUnitCapacity(unitType);
 
-            playerBankModel.money.ReduceCredits(unitPrice);
-            playerBankModel.armyCapacity.AddCredits(unitCapacity);
-
-            moneyUIPanelManager.UpdateMoneyUIInfo(playerBankModel.money.GetCreditsAmount());
-            armyCapacityUIPanelManager.UpdateArmyCapacityUIInfo(playerBankModel.armyCapacity.GetCreditsAmount(),
-                playerBankModel.armyCapacity.GetCreditsCapacity());
-
-            IEnumerator action(UnitType unitType)
-            {
-                button.FillOverlay(cooldown);
-                yield return new WaitForSeconds(cooldown);
-
-                summonManager.SummonUnit(unitType);
-            }
-
-            cooldownController.OnCallOfActionWithCooldown(action(unitType));
+            cooldownController.OnCallOfActionWithCooldown(summonManager.SummonEntity(unitType, button, cooldown));
         }
 
-        private bool CheckUnitSummonAvailability(UnitType unitType)
+        public void OnSummonButtonClick(BuildingType buildingType, ButtonWithCooldown button,
+            SummonCooldownController cooldownController)
         {
-            float unitPrice = dataProvider.GetUnitPrice(unitType);
-            float unitCapacity = dataProvider.GetUnitCapacity(unitType);
+            float cooldown = dataProvider.GetSummonCooldownTiming(buildingType);
 
-            float playerMoney = playerBankModel.money.GetCreditsAmount();
-            float playerArmyCapacity = playerBankModel.armyCapacity.GetCreditsCapacity() -
-                                       playerBankModel.armyCapacity.GetCreditsAmount();
-
-            bool hasEnoughMoney = playerMoney - unitPrice >= 0;
-            bool hasEnoughArmyCapacity = playerArmyCapacity - unitCapacity >= 0;
-
-            return hasEnoughMoney && hasEnoughArmyCapacity;
+            cooldownController.OnCallOfActionWithCooldown(summonManager.SummonEntity(buildingType, button, cooldown));
         }
 
         private void CheckoutSummonButtonActivity(ButtonWithCooldown button, Func<bool> conditionCheckForActivity)
         {
             if (conditionCheckForActivity.Invoke())
             {
-                if (!button.interactable)
-                {
-                    button.SetActiveState();
-                }
+                uiManager.ActivateButton(button);
             }
             else
             {
-                if (button.interactable)
-                {
-                    button.SetInactiveState();
-                }
+                uiManager.DeactivateButton(button);
             }
+        }
+
+        public void OnSpeedButtonClick()
+        {
+            gameSpeedController.ChangeSpeed();
         }
 
         private void OnDestroy()

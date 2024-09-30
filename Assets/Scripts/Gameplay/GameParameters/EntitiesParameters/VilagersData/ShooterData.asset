@@ -22,3 +22,4 @@ MonoBehaviour:
   AttackRange: 6
   AttackDamage: 25
   AttackSpeed: 0.2
+  YeeHawPointsDrop: 10

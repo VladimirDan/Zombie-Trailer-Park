@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8633961137601770925}
   - component: {fileID: 8885117685360641315}
   - component: {fileID: 7435677834323344974}
-  - component: {fileID: -5560482080637937334}
   m_Layer: 7
   m_Name: VillageMainBuilding
   m_TagString: Untagged
@@ -149,16 +148,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-5560482080637937334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7264403554744247981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62ded835c8c04bca891daaa569fe9733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnManager: {fileID: 6396250860676473151}

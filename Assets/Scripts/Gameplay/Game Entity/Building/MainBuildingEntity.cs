@@ -1,9 +1,6 @@
 using Assets.Scripts.StateMachine.States;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static HealthModel;
-using Game.Code.Common.CoroutineRunner;
+using Services;
 
 public class MainBuildingEntity : Entity
 {
@@ -23,9 +20,9 @@ public class MainBuildingEntity : Entity
         Debug.Log("Level end");
     }
 
-    public override void setUpEntity()
+    public override void setUpEntity(DataProvider dataProvider)
     {
-        base.setUpEntity();
+        base.setUpEntity(dataProvider);
         onDestroy += HandleMainBuildingDestruction;
     }
 }

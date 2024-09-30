@@ -22,6 +22,7 @@ MonoBehaviour:
   AttackRange: 1
   AttackDamage: 25
   AttackSpeed: 0.5
+  YeeHawPointsDrop: 10
   jumpLength: 6
   jumpCooldown: 2
   opponentBaseXCoord: -22

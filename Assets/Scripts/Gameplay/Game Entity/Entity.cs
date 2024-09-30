@@ -5,19 +5,19 @@ using UnityEngine;
 using static HealthModel;
 using Game.Code.Common.CoroutineRunner;
 using CreaturesData;
+using Services;
 
 public class Entity : MonoBehaviour
 {
     protected HealthModel healthModel;
     public CoroutineRunner coroutineRunner;
     protected StateMachine stateMachine;
+    protected DataProvider dataProvider;
 
     public delegate void OnDestroyEvent();
     public event OnDestroyEvent onDestroy;
 
-    //public bool isInitialized = false;
-
-    public void Die()
+    public virtual void Die()
     {
         this.HandleDestroy();
     }
@@ -38,10 +38,11 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public virtual void setUpEntity()
+    public virtual void setUpEntity(DataProvider dataProvider)
     {
         coroutineRunner = FindObjectOfType<CoroutineRunner>();
         healthModel = GetComponent<HealthModel>();
+        this.dataProvider = dataProvider;
 
         if (healthModel == null)
             Debug.LogWarning("HealthModel component not found on this GameObject.");
@@ -51,9 +52,9 @@ public class Entity : MonoBehaviour
         stateMachine = new StateMachine(new AfkState(coroutineRunner));
     }
 
-    public virtual void Initialize()
+    public virtual void Initialize(DataProvider dataProvider)
     {
-        setUpEntity();
+        setUpEntity(dataProvider);
         this.enabled = true;
     }
 

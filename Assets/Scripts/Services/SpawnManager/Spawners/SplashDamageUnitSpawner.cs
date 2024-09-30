@@ -11,6 +11,6 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             ((SplashDamageUnit)unitObject).maxSplashAttackTargets = ((SplashDamageUnitParametersData)unitData).maxSplashAttackTargets;
         }
 
-        public SplashDamageUnitSpawner(DataProvider dataProvider) : base(dataProvider) { }
+        public SplashDamageUnitSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
     }
 }

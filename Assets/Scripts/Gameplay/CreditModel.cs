@@ -6,7 +6,8 @@ namespace Gameplay
     public class CreditModel
     {
         [SerializeField] private float credits;
-        [SerializeField] private float creditsMaxCapacity;
+        [SerializeField] private float creditsMaxCapacity = 0;
+        [SerializeField] private float creditsMinCapacity = -9999;
 
         public void SetCredits(float anount)
         {
@@ -27,18 +28,27 @@ namespace Gameplay
         {
             return creditsMaxCapacity;
         }
-        
+
         public void AddCredits(float amount)
         {
-            if (credits + amount <= creditsMaxCapacity)
-            {
-                credits += amount;
-            }
+            //credits = Mathf.Clamp(credits + amount, creditsMinCapacity, creditsMaxCapacity);
+            credits += amount;
         }
-        
+
         public void ReduceCredits(float amount)
         {
-            this.credits -= amount;
+            //credits = Mathf.Clamp(credits - amount, creditsMinCapacity, creditsMaxCapacity);
+            credits -= amount;
+        }
+
+        public void AddCreditsCapacity(float amount)
+        {
+            creditsMaxCapacity += amount;
+        }
+
+        public void ReduceCreditsCapacity(float amount)
+        {
+            creditsMaxCapacity -= amount;
         }
 
         public CreditModel(float credits, float capacity)

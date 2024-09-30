@@ -26,8 +26,6 @@ namespace UI.Buttons
         
         [SerializeField] private Color cooldownProgressColor = new Color(1f, 1f, 1f, 0.3f);
         
-        public event Action OnActivityChange;
-        
         protected override void Start()
         {
             base.Start();
@@ -42,11 +40,6 @@ namespace UI.Buttons
             
             ChangeOutlineColor(hoverOutlineColor); 
             outline.effectDistance = outlineDistance; 
-        }
-
-        protected void Update()
-        {
-            OnActivityChange?.Invoke(); 
         }
         
         public override void OnPointerEnter(PointerEventData eventData)

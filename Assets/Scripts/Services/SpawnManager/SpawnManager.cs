@@ -9,21 +9,24 @@ public class SpawnManager : MonoBehaviour
 {
     CoroutineRunner coroutineRunner;
     DataProvider dataProvider;
+    private PlayerBankModel playerBankModel;
+    
     public Vector3 baseSpawnPosition;
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
     private float maxDistanceBetweenRows = 5;
 
     [SerializeField] public UnitsSpawnTimings unitsSpawnCycleParameters;
 
-    public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider)
+    public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, PlayerBankModel playerBankModel)
     {
         this.coroutineRunner = coroutineRunner;
         this.dataProvider = dataProvider;
+        this.playerBankModel = playerBankModel;
 
-        OrderUnitSpawn();
+        OrderUnitsSpawn();
     }
 
-    public void OrderUnitSpawn()
+    public void OrderUnitsSpawn()
     {
         foreach (var unit in unitsSpawnCycleParameters.unitsSpawnTimings)
         {
@@ -46,10 +49,10 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void SpawnUnitOnRandomRow(UnitType entityType, Vector3 baseSpawnPosition)
+    public void SpawnUnitOnRandomRow(UnitType unitType, Vector3 baseSpawnPosition)
     {
         Vector3 spawnPosition = GenerateUnitSpawnPosition(baseSpawnPosition);
-        SpawnUnit(entityType, spawnPosition);
+        SpawnUnit(unitType, spawnPosition);
     }
 
     public void SpawnUnit(UnitType unitType, Vector3 position)
@@ -57,13 +60,13 @@ public class SpawnManager : MonoBehaviour
         UnitSpawner spawner = unitType switch
         {
             UnitType.Zombie or UnitType.Banshee or UnitType.Digger
-            or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider),
-            UnitType.Giant or UnitType.Boozer => spawner = new SplashDamageUnitSpawner(dataProvider),
-            UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider),
+            or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider, playerBankModel),
+            UnitType.Giant or UnitType.Boozer => spawner = new SplashDamageUnitSpawner(dataProvider, playerBankModel),
+            UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider, playerBankModel),
             _ => null
         };
 
-        spawner.SpawnAndInitializeUnit(unitType, position);
+        spawner.SpawnAndInitializeUnit(unitType, position, playerBankModel);
     }
 
     public Vector3 GenerateUnitSpawnPosition(Vector3 baseSpawnPosition)

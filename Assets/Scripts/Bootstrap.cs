@@ -1,6 +1,7 @@
 using UnityEngine;
 using Game.Code.Common.CoroutineRunner;
 using Services;
+using UI;
 
 public class Bootstrap : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class Bootstrap : MonoBehaviour
     private CoroutineRunner coroutineRunner;
     private DataProvider dataProvider;
     
-    private GameObject playerManager;
-    private PlayerBankModel playerBank;
+    private GameObject uiManagerObject;
+    private UIManager uiManager;
     
     private GameObject gameControllerObject;
     private GameController gameController;
@@ -25,6 +26,8 @@ public class Bootstrap : MonoBehaviour
     private SpawnManager villagersSpawner;
     private SpawnManager zombieSpawner;
 
+    private PlayerBankModel playerBankModel;
+    
     private SummonManager summonManager;
 
     void Awake()
@@ -38,27 +41,31 @@ public class Bootstrap : MonoBehaviour
         dataProvider.Initialize();
         DontDestroyOnLoad(dataProviderObject);
         
+        uiManagerObject = GameObject.Find("UIManager");
+        uiManager = uiManagerObject.GetComponent<UIManager>();
+
+        playerBankModel = new PlayerBankModel(coroutineRunner, dataProvider, uiManager);
+        playerBankModel.Initialize();
+        
         GameObject playerBase = Instantiate(villageMainBuildingPrefab);
         villageMainBuilding = playerBase.GetComponent<MainBuildingEntity>();
-        villageMainBuilding.Initialize();
+        villageMainBuilding.Initialize(dataProvider);
 
         villagersSpawner = playerBase.GetComponent<SpawnManager>();
-        villagersSpawner.Initialize(coroutineRunner, dataProvider);
-        
-        summonManager = new SummonManager(dataProvider, villagersSpawner);
+        villagersSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
 
         GameObject enemyBase = Instantiate(zombieMainBuildingPrefab);
         zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
-        zombieMainBuilding.Initialize();
+        zombieMainBuilding.Initialize(dataProvider);
 
         zombieSpawner = enemyBase.GetComponent<SpawnManager>();
-        zombieSpawner.Initialize(coroutineRunner, dataProvider);
+        zombieSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
+        
+        summonManager = new SummonManager(dataProvider, villagersSpawner, uiManager, playerBankModel);
         
         gameControllerObject = GameObject.Find("GameController");
         gameController = gameControllerObject.GetComponent<GameController>();
-        gameController.Initialize(coroutineRunner, dataProvider, summonManager);
-        
-        
+        gameController.Initialize(coroutineRunner, dataProvider, summonManager, uiManager, playerBankModel);
     }
 
     public CoroutineRunner GetCoroutineRunner()

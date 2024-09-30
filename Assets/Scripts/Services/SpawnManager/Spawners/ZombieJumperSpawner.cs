@@ -14,6 +14,6 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             ((ZombieJumper)unitObject).opponentBaseXCoord = ((ZombieJumperParametersData)unitData).opponentBaseXCoord;
         }
 
-        public ZombieJumperSpawner(DataProvider dataProvider) : base(dataProvider) { }
+        public ZombieJumperSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
     }
 }

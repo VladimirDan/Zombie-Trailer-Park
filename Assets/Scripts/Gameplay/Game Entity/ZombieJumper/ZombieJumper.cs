@@ -1,11 +1,8 @@
 using Assets.Scripts.StateMachine.States;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static HealthModel;
-using Game.Code.Common.CoroutineRunner;
-using CreaturesData;
+using Services;
 using Assets.Scripts.Gameplay.Entity.StateMachine.States;
+
 
 public class ZombieJumper : Unit
 {
@@ -47,9 +44,9 @@ public class ZombieJumper : Unit
         }
     }
 
-    public override void setUpEntity()
+    public override void setUpEntity(DataProvider dataProvider, PlayerBankModel playerBankModel)
     {
-        base.setUpEntity();
+        base.setUpEntity(dataProvider, playerBankModel);
 
         ((ZombieJumperModel)unitModel).jumpLength = jumpLength;
         ((ZombieJumperModel)unitModel).jumpCooldown = jumpCooldown;

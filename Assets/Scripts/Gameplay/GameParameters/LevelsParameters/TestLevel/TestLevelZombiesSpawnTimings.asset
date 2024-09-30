@@ -17,4 +17,4 @@ MonoBehaviour:
     unitSpawnCycleParameters:
     - timing: 0
       spawnCooldown: 0.5
-      unitCount: 0
+      unitCount: 100

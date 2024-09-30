@@ -22,4 +22,5 @@ MonoBehaviour:
   AttackRange: 6
   AttackDamage: 100
   AttackSpeed: 1
+  YeeHawPointsDrop: 10
   maxSplashAttackTargets: 7
