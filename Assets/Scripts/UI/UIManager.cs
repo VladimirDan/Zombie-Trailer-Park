@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using Gameplay.GameParameters;
 using TMPro;
+using UI.HealthBar;
 
 namespace UI
 {
@@ -15,8 +16,23 @@ namespace UI
         
         [SerializeField] private RectTransform tooltipsPanel;
         [SerializeField] private GameObject tooltipPanelPrefab;
+
+        [SerializeField] private HealthBarUI playerBaseHealthBar;
+        [SerializeField] private HealthBarUI zombieBaseHealthBar;
+
+        private HealthModel playerBaseHealth;
+        private HealthModel zombieBaseHealth;
         
         public event Action OnButtonsActivityChange;
+
+        public void Initialize(HealthModel playerBaseHealth, HealthModel zombieBaseHealth)
+        {
+            this.playerBaseHealth = playerBaseHealth;
+            this.zombieBaseHealth = zombieBaseHealth;
+            
+            playerBaseHealthBar.Initialize(playerBaseHealth);
+            zombieBaseHealthBar.Initialize(zombieBaseHealth);
+        }
         
         protected void Update()
         {

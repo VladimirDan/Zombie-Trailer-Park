@@ -21,6 +21,8 @@ namespace Services
         [SerializeField] private BuildingsEffects buildingsEffects;
         
         [SerializeField] private TooltipsContent tooltipsContent;
+
+        [SerializeField] private PlayerAndZombieBasesParameters playerAndZombieBasesParameters;
         
         private Dictionary<UnitType, UnitParametersData> entityDataDictionary;
         private Dictionary<UnitType, GameObject> entityPrefabDictionary;
@@ -128,6 +130,11 @@ namespace Services
         public TooltipContent GetTooltipContent(YeeHawActionType yeeHawActionType)
         {
             return Array.Find(tooltipsContent.yeeHawActionsTooltips, x => x.title == yeeHawActionType.EnumToName());
+        }
+
+        public PlayerAndZombieBasesParameters GetPlayerAndZombieBasesParameters()
+        {
+            return playerAndZombieBasesParameters;
         }
     }
 }

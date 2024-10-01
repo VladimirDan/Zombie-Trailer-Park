@@ -6,7 +6,7 @@ public class BaseEntity : Entity
 {
     public override void CheckoutCurrentState()
     {
-        if (!healthModel.isAlive())
+        if (!healthModel.IsAlive())
         {
             stateMachine.ChangeCurrentState(new DeathState(coroutineRunner));
             Die();

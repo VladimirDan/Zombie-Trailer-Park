@@ -31,6 +31,9 @@ public class Bootstrap : MonoBehaviour
     private PlayerBankModel playerBankModel;
     
     private SummonManager summonManager;
+    
+    private HealthModel playerBaseHealth;
+    private HealthModel zombieBaseHealth;
 
     void Awake()
     {
@@ -43,23 +46,31 @@ public class Bootstrap : MonoBehaviour
         dataProvider.Initialize();
         DontDestroyOnLoad(dataProviderObject);
         
-        uiManagerObject = GameObject.Find("UIManager");
-        uiManager = uiManagerObject.GetComponent<UIManager>();
-
-        playerBankModel = new PlayerBankModel(coroutineRunner, dataProvider, uiManager);
-        playerBankModel.Initialize();
-        
         GameObject playerBase = Instantiate(villageMainBuildingPrefab);
         villageBase = playerBase.GetComponent<BaseEntity>();
         villageBase.Initialize(dataProvider);
-
-        villagersSpawner = playerBase.GetComponent<UnitsSpawnManager>();
-        villagersSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
 
         GameObject enemyBase = Instantiate(zombieMainBuildingPrefab);
         zombieBase = enemyBase.GetComponent<BaseEntity>();
         zombieBase.Initialize(dataProvider);
 
+        playerBaseHealth = playerBase.GetComponent<HealthModel>();
+        playerBaseHealth.SetHealth(dataProvider.GetPlayerAndZombieBasesParameters().playerBase.healthPoints);
+        Debug.Log(playerBaseHealth.fullHealthValue);
+        zombieBaseHealth = zombieBase.GetComponent<HealthModel>();
+        zombieBaseHealth.SetHealth(dataProvider.GetPlayerAndZombieBasesParameters().zombieBase.healthPoints);
+        Debug.Log(zombieBaseHealth.fullHealthValue);
+        
+        uiManagerObject = GameObject.Find("UIManager");
+        uiManager = uiManagerObject.GetComponent<UIManager>();
+        uiManager.Initialize(playerBaseHealth, zombieBaseHealth);
+
+        playerBankModel = new PlayerBankModel(coroutineRunner, dataProvider, uiManager);
+        playerBankModel.Initialize();
+        
+        villagersSpawner = playerBase.GetComponent<UnitsSpawnManager>();
+        villagersSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
+        
         zombieSpawner = enemyBase.GetComponent<UnitsSpawnManager>();
         zombieSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
 

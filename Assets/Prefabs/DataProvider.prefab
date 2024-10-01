@@ -69,3 +69,4 @@ MonoBehaviour:
   playerStartResources: {fileID: 11400000, guid: f1b8669d8b329fe489073bc6ce13f006, type: 2}
   buildingsEffects: {fileID: 11400000, guid: 04a2f974bb5549049b6f687d52f6259e, type: 2}
   tooltipsContent: {fileID: 11400000, guid: d4e50e13815700f4a9611246aa6b509a, type: 2}
+  playerAndZombieBasesParameters: {fileID: 11400000, guid: edf620cfab1c67b4ab8a4266dcf229ea, type: 2}

@@ -1,26 +1,38 @@
 using UnityEngine;
+using System;
 
 public class HealthModel : MonoBehaviour
 {
     [SerializeField] private float HealthPoints;
-    public delegate void OnHealthChange(float health);
-    public event OnHealthChange onHealthChange;
+    public float fullHealthValue;
+    
+    public event Action onHealthChange;
     private void DisplayMessage(float healthPoints) => Debug.Log(healthPoints);
 
-    public void setHealth(float healthPoints)
+    public void SetHealth(float healthPoints)
     {
         this.HealthPoints = healthPoints;
-        onHealthChange?.Invoke(HealthPoints);
+        fullHealthValue = healthPoints;
+        
+        onHealthChange?.Invoke();
     }
 
     public void ReduceHealth(float damagePoints)
     {
         HealthPoints -= damagePoints;
-        onHealthChange?.Invoke(HealthPoints);
+        onHealthChange?.Invoke();
     }
 
-    public bool isAlive()
+    public bool IsAlive()
     {
         return HealthPoints > 0;
+    }
+
+    public float GetHealthPercentage()
+    {
+        Debug.Log(HealthPoints + " / " + fullHealthValue);
+        if(fullHealthValue != 0)
+            return HealthPoints / fullHealthValue;
+        return 0;
     }
 }

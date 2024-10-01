@@ -20,7 +20,7 @@ public class UnitSpawner : EntitySpawner
         
         GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
 
-        unit.GetComponent<HealthModel>().setHealth(unitData.health);
+        unit.GetComponent<HealthModel>().SetHealth(unitData.health);
 
         Unit unitObject = unit.GetComponent<Unit>();
         SetParameters(unitObject, unitData);

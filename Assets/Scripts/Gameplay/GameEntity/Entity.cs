@@ -31,7 +31,7 @@ public class Entity : MonoBehaviour
 
     public virtual void CheckoutCurrentState()
     {
-        if (!healthModel.isAlive())
+        if (!healthModel.IsAlive())
         {
             stateMachine.ChangeCurrentState(new DeathState(coroutineRunner));
             Die();
