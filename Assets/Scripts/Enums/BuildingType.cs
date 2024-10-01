@@ -1,12 +1,14 @@
-﻿namespace Enums
+﻿using System.ComponentModel;
+
+namespace Enums
 {
     public enum BuildingType
     {
-        SalvageYard,
-        Trailer,
-        FarmHouse,
-        Garage,
-        Still,
-        Chapel,
+        [Description("Salvage Yard")] SalvageYard,
+        [Description("Trailer")] Trailer,
+        [Description("Farm House")] FarmHouse,
+        [Description("Garage")] Garage,
+        [Description("Still")] Still,
+        [Description("Chapel")] Chapel,
     }
 }

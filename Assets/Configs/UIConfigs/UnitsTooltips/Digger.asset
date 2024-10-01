@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a31aaefa424b6687a0ab84e3b98f21, type: 3}
+  m_Name: Digger
+  m_EditorClassIdentifier: 
+  title: Digger
+  titlePic: {fileID: 21300000, guid: 4eda8ef1ec793a04f99d835fa9a0da93, type: 3}
+  tooltipDescriptionText: Uses a shovel to smash zombies good.
+  warningTextVariants:
+    warningBeginning: 'You need '
+    noNeededBuilding: 'to build a {*****} '
+    noEnoughMoney: 'more cash '
+    noEnoughArmyCapacityAvailable: 'more trailers '
+    warningEnd: 'before summoning '
+    warningConnectionPart: 'and '
+    warningMaxCountReached: 'you already have the maximum number of '

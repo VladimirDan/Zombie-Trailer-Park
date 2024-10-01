@@ -5,9 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Enums;
-using Gameplay;
-using UI;
-using UnityEngine.Serialization;
+using Gameplay.GameParameters;
 
 namespace Services
 {
@@ -20,6 +18,9 @@ namespace Services
         [SerializeField] private BuildingsSummonData buildingsSummonData;
 
         [SerializeField] private PlayerResources playerStartResources;
+        [SerializeField] private BuildingsEffects buildingsEffects;
+        
+        [SerializeField] private TooltipsContent tooltipsContent;
         
         private Dictionary<UnitType, UnitParametersData> entityDataDictionary;
         private Dictionary<UnitType, GameObject> entityPrefabDictionary;
@@ -102,6 +103,31 @@ namespace Services
         {
             BuildingSummonData elem = Array.Find(buildingsSummonData.buildingsSummonData,x => x.buildingType == buildingType);
             return elem.countLimit;
+        }
+
+        public MoneyIncomeParameters GetMoneyIncomeParameters()
+        {
+            return buildingsEffects.moneyIncomeParameters;
+        }
+        
+        public ArmyCapacityUpgradeParameters GetArmyCapacityUpgradeParameters()
+        {
+            return buildingsEffects.armyCapacityUpgradeParameters;
+        }
+
+        public TooltipContent GetTooltipContent(UnitType unitType)
+        {
+            return Array.Find(tooltipsContent.unitsTooltips, x => x.title == unitType.EnumToName());
+        }
+        
+        public TooltipContent GetTooltipContent(BuildingType buildingType)
+        {
+            return Array.Find(tooltipsContent.buildingsTooltips, x => x.title == buildingType.EnumToName());
+        }
+        
+        public TooltipContent GetTooltipContent(YeeHawActionType yeeHawActionType)
+        {
+            return Array.Find(tooltipsContent.yeeHawActionsTooltips, x => x.title == yeeHawActionType.EnumToName());
         }
     }
 }

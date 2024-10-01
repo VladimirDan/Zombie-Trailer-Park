@@ -1,6 +1,7 @@
 using UnityEngine;
 using Game.Code.Common.CoroutineRunner;
 using Services;
+using Services.SpawnManager;
 using UI;
 
 public class Bootstrap : MonoBehaviour
@@ -20,12 +21,13 @@ public class Bootstrap : MonoBehaviour
     private GameObject gameControllerObject;
     private GameController gameController;
     
-    private MainBuildingEntity villageMainBuilding;
-    private MainBuildingEntity zombieMainBuilding;
+    private BaseEntity villageBase;
+    private BaseEntity zombieBase;
 
-    private SpawnManager villagersSpawner;
-    private SpawnManager zombieSpawner;
-
+    private UnitsSpawnManager villagersSpawner;
+    private UnitsSpawnManager zombieSpawner;
+    private BuildingsSpawnManager buildingsSpawner;
+    
     private PlayerBankModel playerBankModel;
     
     private SummonManager summonManager;
@@ -48,20 +50,22 @@ public class Bootstrap : MonoBehaviour
         playerBankModel.Initialize();
         
         GameObject playerBase = Instantiate(villageMainBuildingPrefab);
-        villageMainBuilding = playerBase.GetComponent<MainBuildingEntity>();
-        villageMainBuilding.Initialize(dataProvider);
+        villageBase = playerBase.GetComponent<BaseEntity>();
+        villageBase.Initialize(dataProvider);
 
-        villagersSpawner = playerBase.GetComponent<SpawnManager>();
+        villagersSpawner = playerBase.GetComponent<UnitsSpawnManager>();
         villagersSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
 
         GameObject enemyBase = Instantiate(zombieMainBuildingPrefab);
-        zombieMainBuilding = enemyBase.GetComponent<MainBuildingEntity>();
-        zombieMainBuilding.Initialize(dataProvider);
+        zombieBase = enemyBase.GetComponent<BaseEntity>();
+        zombieBase.Initialize(dataProvider);
 
-        zombieSpawner = enemyBase.GetComponent<SpawnManager>();
+        zombieSpawner = enemyBase.GetComponent<UnitsSpawnManager>();
         zombieSpawner.Initialize(coroutineRunner, dataProvider, playerBankModel);
+
+        buildingsSpawner = new BuildingsSpawnManager(dataProvider, playerBankModel);
         
-        summonManager = new SummonManager(dataProvider, villagersSpawner, uiManager, playerBankModel);
+        summonManager = new SummonManager(dataProvider, villagersSpawner, buildingsSpawner, uiManager, playerBankModel);
         
         gameControllerObject = GameObject.Find("GameController");
         gameController = gameControllerObject.GetComponent<GameController>();

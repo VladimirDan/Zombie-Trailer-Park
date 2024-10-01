@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
+using Enums;
 
 namespace CreaturesData
 {

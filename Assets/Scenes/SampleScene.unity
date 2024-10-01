@@ -1573,7 +1573,6 @@ GameObject:
   - component: {fileID: 471991276}
   - component: {fileID: 471991278}
   - component: {fileID: 471991279}
-  - component: {fileID: 471991280}
   - component: {fileID: 471991281}
   m_Layer: 5
   m_Name: DiggerSummonButton
@@ -1712,21 +1711,6 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1
---- !u!114 &471991280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471991273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29829affb35b0904bac4c8694018db74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipPanelPrefab: {fileID: 7028992762445656690, guid: dfe75bbb8ebe6d242b4be8140f35a00d, type: 3}
-  borderRectTransform: {fileID: 1231318806}
-  buttonPanelRectTransform: {fileID: 1401768914}
 --- !u!114 &471991281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2077,7 +2061,6 @@ GameObject:
   - component: {fileID: 543616982}
   - component: {fileID: 543616981}
   - component: {fileID: 543616980}
-  - component: {fileID: 543616984}
   - component: {fileID: 543616985}
   m_Layer: 5
   m_Name: BombardmentSummonButton
@@ -2216,21 +2199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543616978}
   m_CullTransparentMesh: 1
---- !u!114 &543616984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543616978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29829affb35b0904bac4c8694018db74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipPanelPrefab: {fileID: 7028992762445656690, guid: dfe75bbb8ebe6d242b4be8140f35a00d, type: 3}
-  borderRectTransform: {fileID: 1231318806}
-  buttonPanelRectTransform: {fileID: 1959767879}
 --- !u!114 &543616985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7064,6 +7032,8 @@ MonoBehaviour:
   moneyUIPanelManager: {fileID: 1548220116}
   yeeHawUIPanelManager: {fileID: 1333328576}
   armyCapacityUIPanelManager: {fileID: 1098332656}
+  tooltipsPanel: {fileID: 1231318806}
+  tooltipPanelPrefab: {fileID: 7028992762445656690, guid: dfe75bbb8ebe6d242b4be8140f35a00d, type: 3}
 --- !u!4 &1584329579
 Transform:
   m_ObjectHideFlags: 0
@@ -9861,7 +9831,6 @@ GameObject:
   - component: {fileID: 2106986936}
   - component: {fileID: 2106986935}
   - component: {fileID: 2106986934}
-  - component: {fileID: 2106986938}
   - component: {fileID: 2106986939}
   m_Layer: 5
   m_Name: ShooterSummonButton
@@ -10000,21 +9969,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106986932}
   m_CullTransparentMesh: 1
---- !u!114 &2106986938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106986932}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29829affb35b0904bac4c8694018db74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipPanelPrefab: {fileID: 7028992762445656690, guid: dfe75bbb8ebe6d242b4be8140f35a00d, type: 3}
-  borderRectTransform: {fileID: 0}
-  buttonPanelRectTransform: {fileID: 0}
 --- !u!114 &2106986939
 MonoBehaviour:
   m_ObjectHideFlags: 0

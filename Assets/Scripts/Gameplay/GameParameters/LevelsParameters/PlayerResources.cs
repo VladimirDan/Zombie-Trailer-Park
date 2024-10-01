@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Gameplay;
-using UnityEngine.Serialization;
 
 namespace LevelsParameters
 {

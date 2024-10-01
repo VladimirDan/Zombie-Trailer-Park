@@ -15,23 +15,15 @@ namespace Services
         private DataProvider dataProvider;
         private UIManager uiManager;
         
-        [SerializeField] public CreditModel money;
-        [SerializeField] public CreditModel yeeHawPoints;
-        [SerializeField] public CreditModel armyCapacity;
+        public CreditModel money;
+        public CreditModel yeeHawPoints;
+        public CreditModel armyCapacity;
+        
+        public float moneyIncome;
+        public float moneyIncomeCooldown;
+        public float moneyIncomeCooldownAccelerationTime;
 
-        [SerializeField] public float moneyIncome = 50;
-        [SerializeField] public float moneyIncomeFrequency = 2;
-
-        public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, UIManager uiManager,
-                               CreditModel money, CreditModel yeeHawPoints, CreditModel armyCapacity)
-        {
-            this.coroutineRunner = coroutineRunner;
-            this.dataProvider = dataProvider;
-            this.uiManager = uiManager;
-            this.money = money;
-            this.yeeHawPoints = yeeHawPoints;
-            this.armyCapacity = armyCapacity;
-        }
+        public float armyCapacityUpgradeValue;
         
         public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, UIManager uiManager)
         {
@@ -49,9 +41,18 @@ namespace Services
             AddResources(dataProvider.GetPlayerStartResources());
 
             uiManager.UpdateAllResourcesInfo(this);
+
+            MoneyIncomeParameters moneyIncomeParameters = dataProvider.GetMoneyIncomeParameters();
+            ArmyCapacityUpgradeParameters armyCapacityUpgradeParameters = dataProvider.GetArmyCapacityUpgradeParameters();
+            
+            this.moneyIncome = moneyIncomeParameters.moneyIncome;
+            this.moneyIncomeCooldown = moneyIncomeParameters.moneyIncomeCooldown;
+            this.moneyIncomeCooldownAccelerationTime = moneyIncomeParameters.moneyIncomeCooldownAccelerationTime;
+            this.armyCapacityUpgradeValue = armyCapacityUpgradeParameters.upgradeValue;
+            
+            StartMoneyIncomeCycle();
         }
-
-
+        
         public void StartMoneyIncomeCycle()
         {
             coroutineRunner.RunCoroutine(GainMoneyCycle());
@@ -61,9 +62,9 @@ namespace Services
         {
             while (true)
             {
-                money.AddCredits(moneyIncome);
-
-                yield return new WaitForSeconds(moneyIncomeFrequency);
+                AddMoney(moneyIncome);
+                
+                yield return new WaitForSeconds(moneyIncomeCooldown);
             }
         }
 
@@ -123,6 +124,11 @@ namespace Services
         {
             return armyCapacity.GetCreditsAmount();
         }
+
+        public void UpgradeArmyCapacity()
+        {
+            ExpandArmyCapacity(armyCapacityUpgradeValue);
+        }
         
         public void ExpandArmyCapacity(float amount)
         {
@@ -133,6 +139,11 @@ namespace Services
         public float GetArmyMaxCapacity()
         {
             return armyCapacity.GetCreditsCapacity();
+        }
+
+        public void AccelerateMoneyIncomeTime()
+        {
+            moneyIncomeCooldown -= moneyIncomeCooldownAccelerationTime;
         }
     }
 }

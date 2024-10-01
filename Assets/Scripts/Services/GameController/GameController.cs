@@ -16,10 +16,10 @@ namespace Services
         private DataProvider dataProvider;
         private UIManager uiManager;
         private PlayerBankModel playerBankModel;
-
+        
         private GameSpeedController gameSpeedController;
         private SummonManager summonManager;
-
+        
         [SerializeField] private Button speedControllerButton;
         [SerializeField] private ButtonWithCooldown diggerSummonButton;
         [SerializeField] private ButtonWithCooldown shooterSummonButton;
@@ -64,10 +64,14 @@ namespace Services
 
         public void AddSummonListener(ButtonWithCooldown button, UnitType unitType)
         {
+            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(unitType));
+            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(unitType));
+            tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForUnitTooltip;
+            
             SummonCooldownController cooldownController =
                 new SummonCooldownController(coroutineRunner, dataProvider.GetSummonCooldownTiming(unitType));
 
-            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(unitType);
+            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(unitType, tooltipUIManager);
             Action checkOutButtonState = () => CheckoutSummonButtonActivity(button, checkFunction);
 
             if (button != null)
@@ -80,10 +84,14 @@ namespace Services
 
         public void AddSummonListener(ButtonWithCooldown button, BuildingType buildingType)
         {
+            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(buildingType));
+            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(buildingType));
+            tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForBuildingTooltip;
+            
             SummonCooldownController cooldownController =
                 new SummonCooldownController(coroutineRunner, dataProvider.GetSummonCooldownTiming(buildingType));
 
-            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(buildingType);
+            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(buildingType, tooltipUIManager);
             Action checkOutButtonState = () => CheckoutSummonButtonActivity(button, checkFunction);
 
             if (button != null)
@@ -126,7 +134,7 @@ namespace Services
         {
             gameSpeedController.ChangeSpeed();
         }
-
+        
         private void OnDestroy()
         {
             if (speedControllerButton != null)

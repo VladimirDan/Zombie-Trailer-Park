@@ -67,3 +67,5 @@ MonoBehaviour:
   unitsSummonData: {fileID: 11400000, guid: c7521090fa38d564f8c915652c1152c3, type: 2}
   buildingsSummonData: {fileID: 11400000, guid: 9ea5e9f6393f1f0418af51d8e35e00e9, type: 2}
   playerStartResources: {fileID: 11400000, guid: f1b8669d8b329fe489073bc6ce13f006, type: 2}
+  buildingsEffects: {fileID: 11400000, guid: 04a2f974bb5549049b6f687d52f6259e, type: 2}
+  tooltipsContent: {fileID: 11400000, guid: d4e50e13815700f4a9611246aa6b509a, type: 2}

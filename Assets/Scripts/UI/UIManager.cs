@@ -2,6 +2,8 @@
 using UI.Buttons;
 using UnityEngine;
 using System;
+using Gameplay.GameParameters;
+using TMPro;
 
 namespace UI
 {
@@ -10,6 +12,9 @@ namespace UI
         [SerializeField] private MoneyPanelUIManager moneyUIPanelManager;
         [SerializeField] private UITextManager yeeHawUIPanelManager;
         [SerializeField] private ArmyCapacityPanelUIManager armyCapacityUIPanelManager;
+        
+        [SerializeField] private RectTransform tooltipsPanel;
+        [SerializeField] private GameObject tooltipPanelPrefab;
         
         public event Action OnButtonsActivityChange;
         
@@ -68,6 +73,21 @@ namespace UI
             {
                 button.SetInactiveState();
             }
+        }
+        
+        public void UpdateButtonPressMoneyPrice(ButtonWithCooldown button, float value)
+        {
+            TextMeshProUGUI priceObject = button.transform.parent.Find("Price").GetComponent<TextMeshProUGUI>();
+            priceObject.text = $"${value}";
+        }
+
+        public TooltipUIManager CreateTooltipPanel(ButtonWithCooldown button, TooltipContent tooltipContent)
+        {
+            RectTransform buttonPanel = (RectTransform)button.transform.parent;
+            
+            TooltipUIManager tooltipUIManager = button.gameObject.AddComponent<TooltipUIManager>();
+            tooltipUIManager.Initialize(tooltipContent, tooltipPanelPrefab, tooltipsPanel, buttonPanel);
+            return tooltipUIManager;
         }
     }
 }

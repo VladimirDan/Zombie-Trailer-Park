@@ -1,12 +1,18 @@
-public enum UnitType
+using System.ComponentModel;
+
+namespace Enums
 {
-    Digger,
-    Shooter,
-    Boozer,
-    SurvivalistCar,
-    Cleric,
-    Zombie,
-    ZombieJumper,
-    Banshee,
-    Giant,
+    public enum UnitType
+    {
+        [Description("Digger")] Digger,
+        [Description("Angry Farmer")] Shooter,
+        [Description("Boozer")] Boozer,
+        [Description("Survivalist")] SurvivalistCar,
+        [Description("Cleric")] Cleric,
+        [Description("Zombie")] Zombie,
+        [Description("Zombie Jumper")] ZombieJumper,
+        [Description("Banshee")] Banshee,
+        [Description("Giant")] Giant,
+    }
 }
+
