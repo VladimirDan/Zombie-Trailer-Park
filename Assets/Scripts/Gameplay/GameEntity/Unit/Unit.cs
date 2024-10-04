@@ -14,6 +14,7 @@ public class Unit : Entity
     public float AttackDamage;
     public float AttackSpeed;
     public LayerMask OpponentLayer;
+    public LayerMask OpponentBaseLayer;
 
     public float YeeHawPointsDrop;
     public PlayerBankModel playerBank;
@@ -62,6 +63,7 @@ public class Unit : Entity
         unitModel.AttackDamage = AttackDamage;
         unitModel.AttackSpeed = AttackSpeed;
         unitModel.OpponentLayer = OpponentLayer;
+        unitModel.OpponentBaseLayer = OpponentBaseLayer;
         unitModel.EntityRigidbody = GetComponent<Rigidbody>();
         unitModel.EntityTransform = GetComponent<Transform>();
     }

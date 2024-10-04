@@ -6,6 +6,6 @@ namespace Enums
     {
         [Description("Angry Mob")] CrowdSummon,
         [Description("Air Strike")] Bombardment,
-        [Description("Harvester")] SawCombine,
+        [Description("Harvester")] Harvester,
     }
 }

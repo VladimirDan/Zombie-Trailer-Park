@@ -12,6 +12,7 @@ public interface IUnitModel
     public float AttackDamage { get; set; }
     public float AttackSpeed { get; set; }
     public LayerMask OpponentLayer { get; set; }
+    public LayerMask OpponentBaseLayer{ get; set; }
     public Rigidbody EntityRigidbody { get; set; }
     public Transform EntityTransform { get; set; }
 

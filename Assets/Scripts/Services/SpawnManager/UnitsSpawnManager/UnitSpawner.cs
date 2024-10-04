@@ -17,6 +17,9 @@ public class UnitSpawner : EntitySpawner
     {
         GameObject prefab = dataProvider.GetUnitPrefab(entityType);
         UnitParametersData unitData = (UnitParametersData)dataProvider.GetUnitData(entityType);
+
+        float unitHeight = prefab.GetComponent<Transform>().localScale.y ;
+        spawnPosition.y += (unitHeight / 2);
         
         GameObject unit = UnityEngine.Object.Instantiate(prefab, spawnPosition, Quaternion.Euler(prefab.transform.rotation.eulerAngles));
 

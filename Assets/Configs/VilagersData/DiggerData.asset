@@ -17,6 +17,9 @@ MonoBehaviour:
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 64
+  OpponentBaseLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   CreatureSpeed: 3
   CreatureHorizontalMovementDirection: 1
   AttackRange: 1

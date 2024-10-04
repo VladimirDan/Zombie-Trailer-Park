@@ -23,7 +23,6 @@ namespace Services
             remainingCooldown = Mathf.Clamp(remainingCooldown, 0, 1000);
             
             lastClickTime = Time.time;
-            
             yield return new WaitForSeconds(remainingCooldown);
 
             coroutineRunner.RunCoroutine(action);

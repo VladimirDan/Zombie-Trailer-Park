@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class ZombieJumperModel : UnitModel
 {
@@ -21,10 +18,10 @@ public class ZombieJumperModel : UnitModel
 
     public Vector3 CalculateJumpForce(float jumpDistance)
     {
-        float g = Mathf.Abs(Physics.gravity.y) * gravityScale; // Убедитесь, что `g` правильно масштабирован
+        float g = Mathf.Abs(Physics.gravity.y) * gravityScale; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ `g` пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         float verticalVelocity = Mathf.Sqrt(2 * g * jumpHeight);
 
-        // Time to apex (время до достижения максимальной высоты) должно быть рассчитано корректно
+        // Time to apex (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         float timeToApex = verticalVelocity / g;
         float horizontalVelocity = jumpDistance / (2 * timeToApex) * CreatureHorizontalMovementDirection;
 

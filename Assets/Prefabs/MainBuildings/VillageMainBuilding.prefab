@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8633961137601770925}
   - component: {fileID: 8885117685360641315}
   - component: {fileID: 7435677834323344974}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: VillageMainBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 1000
+  fullHealthValue: 0
 --- !u!114 &7398787042984042990
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1991731082877149415}
   - component: {fileID: 7448398527784306184}
   - component: {fileID: 2534425052584960168}
-  - component: {fileID: 1024959357417431244}
-  - component: {fileID: 67843027447645178}
+  - component: {fileID: 3448314754767496250}
+  - component: {fileID: 3008263011048215651}
   m_Layer: 7
   m_Name: Boozer
   m_TagString: Untagged
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 100
+  fullHealthValue: 0
 --- !u!65 &7448398527784306184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -148,9 +149,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 120
   m_CollisionDetection: 1
---- !u!114 &1024959357417431244
+--- !u!114 &3448314754767496250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,11 +160,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2834832886997551221}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b38c1e632832354e998dbdd922e3c3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c9bb7ea5378468484eae946a8e29e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   coroutineRunner: {fileID: 0}
-  isInitialized: 0
+  unitType: 0
   CreatureSpeed: 0
   CreatureHorizontalMovementDirection: 0
   AttackRange: 0
@@ -172,8 +173,30 @@ MonoBehaviour:
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 0
-  maxSplashAttackTargets: 0
---- !u!114 &67843027447645178
+  OpponentBaseLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  YeeHawPointsDrop: 0
+  playerBank:
+    money:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    yeeHawPoints:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    armyCapacity:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    moneyIncome: 0
+    moneyIncomeCooldown: 0
+    moneyIncomeCooldownAccelerationTime: 0
+    armyCapacityUpgradeValue: 0
+  bombPrefab: {fileID: 0}
+  bombThrowHeight: 0
+--- !u!114 &3008263011048215651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +205,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2834832886997551221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb3e83aaed736e488ec644ad71aabb7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c369b864c4741dbaa3cef46c5fffa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSplashAttackTargets: 0
+  bombPrefab: {fileID: 0}
+  bombThrowHeight: 0

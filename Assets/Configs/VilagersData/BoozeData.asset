@@ -9,18 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0816f27ffc30bbe479be59b22419f2a6, type: 3}
-  m_Name: BoozerData
+  m_Script: {fileID: 11500000, guid: d472d22710844594a5f113f6d0fad9bd, type: 3}
+  m_Name: BoozeData
   m_EditorClassIdentifier: 
   health: 100
   unitType: 2
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 64
+  OpponentBaseLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   CreatureSpeed: 1.5
   CreatureHorizontalMovementDirection: 1
   AttackRange: 6
-  AttackDamage: 100
+  AttackDamage: 0
   AttackSpeed: 1
-  YeeHawPointsDrop: 10
-  maxSplashAttackTargets: 7
+  YeeHawPointsDrop: 0
+  bombPrefab: {fileID: 2834832886997551221, guid: e7a4e503936370f4b849b8efe585e40c, type: 3}
+  bombThrowHeight: 3

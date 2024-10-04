@@ -16,6 +16,7 @@ namespace Services
         
         [SerializeField] private UnitsSummonData unitsSummonData;
         [SerializeField] private BuildingsSummonData buildingsSummonData;
+        [SerializeField] private YeeHawPowersSummonData yeeHawPowersSummonData;
 
         [SerializeField] private PlayerResources playerStartResources;
         [SerializeField] private BuildingsEffects buildingsEffects;
@@ -78,6 +79,12 @@ namespace Services
             return elem.price;
         }
         
+        public float GetSummonPrice(YeeHawActionType yeeHawActionType)
+        {
+            YeeHawPowerSummonData elem = Array.Find(yeeHawPowersSummonData.yeeHawPowerSummonData,x => x.yeeHawActionType == yeeHawActionType);
+            return elem.price;
+        }
+        
         public float GetUnitCapacity(UnitType unitType)
         {
             UnitSummonData elem = Array.Find(unitsSummonData.unitsSummonData,x => x.unitType == unitType);
@@ -87,6 +94,12 @@ namespace Services
         public float GetSummonCooldownTiming(BuildingType buildingType)
         {
             BuildingSummonData elem = Array.Find(buildingsSummonData.buildingsSummonData,x => x.buildingType == buildingType);
+            return elem.summonTime;
+        }
+        
+        public float GetSummonCooldownTiming(YeeHawActionType yeeHawActionType)
+        {
+            YeeHawPowerSummonData elem = Array.Find(yeeHawPowersSummonData.yeeHawPowerSummonData,x => x.yeeHawActionType == yeeHawActionType);
             return elem.summonTime;
         }
         

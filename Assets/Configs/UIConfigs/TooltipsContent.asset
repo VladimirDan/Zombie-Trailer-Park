@@ -25,4 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7bda8f04e9f5df64298972fc42524270, type: 2}
   - {fileID: 11400000, guid: 75f1aeb2766ad3340998209813890ae2, type: 2}
   - {fileID: 11400000, guid: 3a52f4cef5858d24a95d1e3b317676d7, type: 2}
-  yeeHawActionsTooltips: []
+  yeeHawActionsTooltips:
+  - {fileID: 11400000, guid: b7160572ee7c7404ca27faad92a1d5f4, type: 2}
+  - {fileID: 11400000, guid: 341f1229e052fc8479b3e5113d1d125b, type: 2}
+  - {fileID: 11400000, guid: 63b77d9ea487fc34ba2c36debc442580, type: 2}

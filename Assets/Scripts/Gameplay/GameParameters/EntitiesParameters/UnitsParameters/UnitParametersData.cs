@@ -9,6 +9,7 @@ namespace CreaturesData
     {
         public UnitType unitType;
         public LayerMask OpponentLayer;
+        public LayerMask OpponentBaseLayer;
         public float CreatureSpeed;
         public float CreatureHorizontalMovementDirection;
         public float AttackRange;

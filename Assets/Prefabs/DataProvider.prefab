@@ -54,18 +54,21 @@ MonoBehaviour:
   - {fileID: 7258905495002365054, guid: 180ed603503e6be4685763716f017f93, type: 3}
   - {fileID: 7258905495002365054, guid: d360eacbebf53244b9af8fe53ed02f5d, type: 3}
   - {fileID: 7258905495002365054, guid: beaa506267782a347a2e747c9d1a66ef, type: 3}
+  - {fileID: 8132136969197805421, guid: a66cc6873c54ade4f902ee617d525df4, type: 3}
   entityDataConfigs:
   - {fileID: 11400000, guid: 7f8e8ca5d651a1a4489b9b575859bd06, type: 2}
   - {fileID: 11400000, guid: 75145e33711f5374cbd0d6572927e434, type: 2}
-  - {fileID: 11400000, guid: 687e8e1fa1daa6f46ad9a7614fe3aa23, type: 2}
+  - {fileID: 11400000, guid: 660e408dd76813c4ab1b0232e07d430d, type: 2}
   - {fileID: 11400000, guid: faeba0bde5f2a5a4093e7ef4dc3165b3, type: 2}
   - {fileID: 11400000, guid: cac7d593537c5944aa0bfd9b79c0a2f9, type: 2}
   - {fileID: 11400000, guid: e550ed28ca55485459d5e4afcb96f730, type: 2}
   - {fileID: 11400000, guid: 86b1cd92d9b66464487a4d965bd2e875, type: 2}
   - {fileID: 11400000, guid: 8490970657f22e8409267840868c1fdc, type: 2}
   - {fileID: 11400000, guid: ccd7c725273a52842943ae796ae6df24, type: 2}
+  - {fileID: 11400000, guid: 08ce4dd3b7f2ade409a850e1f65c1f24, type: 2}
   unitsSummonData: {fileID: 11400000, guid: c7521090fa38d564f8c915652c1152c3, type: 2}
   buildingsSummonData: {fileID: 11400000, guid: 9ea5e9f6393f1f0418af51d8e35e00e9, type: 2}
+  yeeHawPowersSummonData: {fileID: 11400000, guid: ef9d4fc1856932241adb107ffc2b86b1, type: 2}
   playerStartResources: {fileID: 11400000, guid: f1b8669d8b329fe489073bc6ce13f006, type: 2}
   buildingsEffects: {fileID: 11400000, guid: 04a2f974bb5549049b6f687d52f6259e, type: 2}
   tooltipsContent: {fileID: 11400000, guid: d4e50e13815700f4a9611246aa6b509a, type: 2}

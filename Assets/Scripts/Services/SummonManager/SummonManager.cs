@@ -2,9 +2,7 @@
 using UI.Buttons;
 using UnityEngine;
 using System.Collections;
-using Gameplay;
 using Enums;
-using Game.Code.Common.CoroutineRunner;
 using Services.SpawnManager;
 
 namespace Services
@@ -14,6 +12,7 @@ namespace Services
         private DataProvider dataProvider;
         private UnitsSpawnManager unitsSpawnManager;
         private BuildingsSpawnManager buildingsSpawnManager;
+        private YeeHawSpawnManager yeeHawSpawnManager;
         private UIManager uiManager;
 
         private PlayerBankModel playerBank;
@@ -26,6 +25,8 @@ namespace Services
             this.buildingsSpawnManager = buildingsSpawnManager;
             this.uiManager = uiManager;
             this.playerBank = playerBank;
+
+            yeeHawSpawnManager = new YeeHawSpawnManager(unitsSpawnManager);
         }
 
         public IEnumerator SummonEntity(UnitType unitType, ButtonWithCooldown button, float summonCooldown)
@@ -44,6 +45,14 @@ namespace Services
             
             buildingsSpawnManager.SpawnBuilding(buildingType);
         }
+        
+        public IEnumerator SummonEntity(YeeHawActionType yeeHawActionType, ButtonWithCooldown button, float summonCooldown)
+        {
+            uiManager.PlayButtonSummonEffect(button, summonCooldown);
+            yield return new WaitForSeconds(summonCooldown);
+            
+            yeeHawSpawnManager.SummonYeeHawPower(yeeHawActionType);
+        }
 
         public void PayForSummon(UnitType unitType)
         {
@@ -61,6 +70,13 @@ namespace Services
             playerBank.ReduceMoney(unitPrice);
             
             buildingsSpawnManager.OccupyBuildingSlot(buildingType);
+        }
+        
+        public void PayForSummon(YeeHawActionType yeeHawActionType)
+        {
+            float yeeHawPrice = dataProvider.GetSummonPrice(yeeHawActionType);
+            
+            playerBank.ReduceYeeHawPoints(yeeHawPrice);
         }
         
         public bool AreResourcesEnoughForSummoning(UnitType unitType, TooltipUIManager tooltipUIManager)
@@ -96,6 +112,19 @@ namespace Services
             tooltipUIManager.isSummonRequirementAccomplished = isUnitRequirementAccomplished;
             
             return hasEnoughMoney && isUnitRequirementAccomplished;
+        }
+        
+        public bool AreResourcesEnoughForSummoning(YeeHawActionType yeeHawActionType, TooltipUIManager tooltipUIManager)
+        {
+            float yeeHawPointsPrice = dataProvider.GetSummonPrice(yeeHawActionType);
+
+            float playerYeeHawPointsAmount = playerBank.GetYeeHawPointsAmount();
+
+            bool hasEnoughMoney = playerYeeHawPointsAmount - yeeHawPointsPrice >= 0;
+            
+            tooltipUIManager.isYeeHawPointsEnough = hasEnoughMoney;
+            
+            return hasEnoughMoney;
         }
 
         public bool IsSummonRequirementAccomplished(UnitType unitType)

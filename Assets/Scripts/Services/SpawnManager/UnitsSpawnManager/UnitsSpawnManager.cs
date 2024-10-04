@@ -60,10 +60,11 @@ public class UnitsSpawnManager : MonoBehaviour
     {
         UnitSpawner spawner = unitType switch
         {
-            UnitType.Zombie or UnitType.Banshee or UnitType.Digger
+            UnitType.Zombie or UnitType.Banshee or UnitType.Digger or UnitType.Harvester
             or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider, playerBankModel),
-            UnitType.Giant or UnitType.Boozer => spawner = new SplashDamageUnitSpawner(dataProvider, playerBankModel),
+            UnitType.Giant => spawner = new SplashDamageUnitSpawner(dataProvider, playerBankModel),
             UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider, playerBankModel),
+            UnitType.Boozer => spawner = new BombThrowerUnitSpawner(dataProvider, playerBankModel),
             _ => null
         };
 

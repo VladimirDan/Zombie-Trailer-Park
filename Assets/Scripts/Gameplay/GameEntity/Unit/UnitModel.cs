@@ -17,6 +17,7 @@ public class UnitModel : MonoBehaviour, IUnitModel
     public float AttackDamage { get; set; }
     public float AttackSpeed { get; set; }
     public LayerMask OpponentLayer { get; set; }
+    public LayerMask OpponentBaseLayer{ get; set; }
     public Rigidbody EntityRigidbody { get; set; }
     public Transform EntityTransform { get; set; }
 
@@ -32,14 +33,33 @@ public class UnitModel : MonoBehaviour, IUnitModel
         float width = range;
         float depth = 10f;
         float height = 1f;
-
-        Vector3 boxCenter = EntityTransform.position +
+        
+        Vector3 rightEdgeBottomCenter = new Vector3(
+            EntityTransform.position.x + (EntityTransform.localScale.x / 2 * CreatureHorizontalMovementDirection), // Правый край
+            EntityTransform.position.y - (EntityTransform.localScale.y / 2), // Нижний край
+            EntityTransform.position.z                                      // Позиция по Z
+        );
+        
+        Vector3 boxCenter = rightEdgeBottomCenter +
                             (Vector3.right * CreatureHorizontalMovementDirection * (width / 2)) +
                             (Vector3.forward * (depth / 2));
 
-        Collider[] colliders = Physics.OverlapBox(boxCenter, new Vector3(width, height, depth), Quaternion.identity, OpponentLayer);
+        Collider[] opponentUnitsColliders = Physics.OverlapBox(boxCenter, new Vector3(width, height, depth), Quaternion.identity, OpponentLayer);
+        Collider[] opponentBaseColliders = Physics.OverlapBox(boxCenter, new Vector3(width, height, depth), Quaternion.identity, OpponentBaseLayer);
 
-        opponent = colliders.Length == 0 ? null : colliders.FindNearestCollider(EntityTransform).gameObject;
+        if (opponentUnitsColliders.Length != 0)
+        {
+            opponent = opponentUnitsColliders.FindNearestCollider(EntityTransform).gameObject;
+        }
+        
+        else if (opponentBaseColliders.Length != 0)
+        {
+            opponent = opponentBaseColliders.FindNearestCollider(EntityTransform).gameObject;
+        }
+        else
+        {
+            opponent = null;
+        }
 
         return opponent;
     }

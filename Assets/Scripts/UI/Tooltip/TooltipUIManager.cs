@@ -25,6 +25,7 @@ namespace UI.Buttons
         private string warningTextObjectPath = "WarningText";
 
         public bool isMoneyEnough = false;
+        public bool isYeeHawPointsEnough = false;
         public bool isArmyCapacityEnough = false;
         public bool isSummonRequirementAccomplished = false;
 
@@ -52,18 +53,18 @@ namespace UI.Buttons
             GameObject titleImageObject = tooltipPanelRectTransform.transform.Find(titleImageObjectPath).gameObject;
             GameObject descriptionTextObject = tooltipPanelRectTransform.transform.Find(descriptionTextObjectPath).gameObject;
             
-            titleTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent.title;
+            titleTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent?.title;
             
             if (tooltipContent.titlePic != null)
             {
-                titleImageObject.GetComponent<Image>().sprite = tooltipContent.titlePic;
+                titleImageObject.GetComponent<Image>().sprite = tooltipContent?.titlePic;
             }
             else
             {
                 titleImageObject.GetComponent<Image>().sprite = null;
             }
             
-            descriptionTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent.tooltipDescriptionText;
+            descriptionTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent?.tooltipDescriptionText;
         }
         
         public void OnPointerEnter(PointerEventData eventData)
@@ -170,6 +171,24 @@ namespace UI.Buttons
             return problemsCount == 0 ? "" : result;
         }
         
+        public string ConstructWarningTextForYeeHawPowerButtonTooltip()
+        {
+            int problemsCount = 0;
+            string result = tooltipContent.warningTextVariants.warningBeginning;
+
+            if (!isYeeHawPointsEnough)
+            {
+                problemsCount++;
+                
+                result+=tooltipContent.warningTextVariants.noEnoughYeeHawPoints;
+            }
+            
+            result+=tooltipContent.warningTextVariants.warningEnd;
+            result+=tooltipContent.title;
+            
+            return problemsCount == 0 ? "" : result;
+        }
+        
         public void UpdateWarningTextForUnitTooltip()
         {
             string text = ConstructWarningTextForUnitButtonTooltip();
@@ -179,6 +198,12 @@ namespace UI.Buttons
         public void UpdateWarningTextForBuildingTooltip()
         {
             string text = ConstructWarningTextForBuildingButtonTooltip();
+            SetWarningMessage(text);
+        }
+        
+        public void UpdateWarningTextForYeeHawPowerTooltip()
+        {
+            string text = ConstructWarningTextForYeeHawPowerButtonTooltip();
             SetWarningMessage(text);
         }
     }

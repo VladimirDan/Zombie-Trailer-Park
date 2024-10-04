@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3719705045914039516}
   - component: {fileID: 4294739603098051350}
   - component: {fileID: 6251721943921722412}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: ZombieMainBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoints: 1000
+  fullHealthValue: 0
 --- !u!114 &3873254986460026776
 MonoBehaviour:
   m_ObjectHideFlags: 0

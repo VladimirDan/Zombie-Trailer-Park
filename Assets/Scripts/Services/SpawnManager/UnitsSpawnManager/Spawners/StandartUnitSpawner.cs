@@ -10,6 +10,15 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
         {
             unitObject.unitType = unitData.unitType;
             unitObject.OpponentLayer = unitData.OpponentLayer;
+            if (unitData.OpponentBaseLayer == 0)
+            {
+                unitObject.OpponentBaseLayer = unitData.OpponentLayer;
+            }
+            else
+            {
+                unitObject.OpponentBaseLayer = unitData.OpponentBaseLayer;
+            }
+
             unitObject.CreatureSpeed = unitData.CreatureSpeed;
             unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
             unitObject.AttackDamage = unitData.AttackDamage;

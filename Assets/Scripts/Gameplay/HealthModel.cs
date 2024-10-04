@@ -30,7 +30,6 @@ public class HealthModel : MonoBehaviour
 
     public float GetHealthPercentage()
     {
-        Debug.Log(HealthPoints + " / " + fullHealthValue);
         if(fullHealthValue != 0)
             return HealthPoints / fullHealthValue;
         return 0;

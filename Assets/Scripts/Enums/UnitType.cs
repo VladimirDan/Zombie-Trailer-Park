@@ -13,6 +13,7 @@ namespace Enums
         [Description("Zombie Jumper")] ZombieJumper,
         [Description("Banshee")] Banshee,
         [Description("Giant")] Giant,
+        [Description("Harvester")] Harvester,
     }
 }
 

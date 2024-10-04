@@ -17,7 +17,7 @@ MonoBehaviour:
     creditsMaxCapacity: 99999
     creditsMinCapacity: 0
   yeeHawPoints:
-    credits: 1000
+    credits: 10000
     creditsMaxCapacity: 99999
     creditsMinCapacity: 0
   armyCapacity:

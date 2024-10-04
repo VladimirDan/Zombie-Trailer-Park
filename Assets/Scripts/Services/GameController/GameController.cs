@@ -33,6 +33,10 @@ namespace Services
         [SerializeField] private ButtonWithCooldown stillSummonButton;
         [SerializeField] private ButtonWithCooldown garageSummonButton;
         [SerializeField] private ButtonWithCooldown chapelSummonButton;
+        
+        [SerializeField] private ButtonWithCooldown harvesterSummonButton;
+        [SerializeField] private ButtonWithCooldown bombardmentSummonButton;
+        [SerializeField] private ButtonWithCooldown crowdSummonSummonButton;
 
         public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, SummonManager summonManager,
             UIManager uiManager, PlayerBankModel playerBankModel)
@@ -60,6 +64,8 @@ namespace Services
             AddSummonListener(stillSummonButton, BuildingType.Still);
             AddSummonListener(garageSummonButton, BuildingType.Garage);
             AddSummonListener(chapelSummonButton, BuildingType.Chapel);
+
+            AddSummonListener(harvesterSummonButton, YeeHawActionType.Harvester);
         }
 
         public void AddSummonListener(ButtonWithCooldown button, UnitType unitType)
@@ -101,6 +107,26 @@ namespace Services
                 uiManager.OnButtonsActivityChange += checkOutButtonState;
             }
         }
+        
+        public void AddSummonListener(ButtonWithCooldown button, YeeHawActionType yeeHawActionType)
+        {
+            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(yeeHawActionType));
+            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(yeeHawActionType));
+            tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForYeeHawPowerTooltip;
+            
+            SummonCooldownController cooldownController =
+                new SummonCooldownController(coroutineRunner, dataProvider.GetSummonCooldownTiming(yeeHawActionType));
+
+            Func<bool> checkFunction = () => summonManager.AreResourcesEnoughForSummoning(yeeHawActionType, tooltipUIManager);
+            Action checkOutButtonState = () => CheckoutSummonButtonActivity(button, checkFunction);
+
+            if (button != null)
+            {
+                button.onClick.AddListener(() => summonManager.PayForSummon(yeeHawActionType));
+                button.onClick.AddListener(() => OnSummonButtonClick(yeeHawActionType, button, cooldownController));
+                uiManager.OnButtonsActivityChange += checkOutButtonState;
+            }
+        }
 
         public void OnSummonButtonClick(UnitType unitType, ButtonWithCooldown button,
             SummonCooldownController cooldownController)
@@ -116,6 +142,14 @@ namespace Services
             float cooldown = dataProvider.GetSummonCooldownTiming(buildingType);
 
             cooldownController.OnCallOfActionWithCooldown(summonManager.SummonEntity(buildingType, button, cooldown));
+        }
+        
+        public void OnSummonButtonClick(YeeHawActionType yeeHawActionType, ButtonWithCooldown button,
+            SummonCooldownController cooldownController)
+        {
+            float cooldown = dataProvider.GetSummonCooldownTiming(yeeHawActionType);
+            
+            cooldownController.OnCallOfActionWithCooldown(summonManager.SummonEntity(yeeHawActionType, button, cooldown));
         }
 
         private void CheckoutSummonButtonActivity(ButtonWithCooldown button, Func<bool> conditionCheckForActivity)
