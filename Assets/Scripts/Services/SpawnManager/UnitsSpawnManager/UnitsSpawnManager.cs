@@ -24,10 +24,10 @@ public class UnitsSpawnManager : MonoBehaviour
         this.dataProvider = dataProvider;
         this.playerBankModel = playerBankModel;
 
-        OrderUnitsSpawn();
+        OrderUnitsSpawn(unitsSpawnCycleParameters);
     }
 
-    public void OrderUnitsSpawn()
+    public void OrderUnitsSpawn(UnitsSpawnTimings unitsSpawnCycleParameters)
     {
         foreach (var unit in unitsSpawnCycleParameters.unitsSpawnTimings)
         {
@@ -65,6 +65,7 @@ public class UnitsSpawnManager : MonoBehaviour
             UnitType.Giant => spawner = new SplashDamageUnitSpawner(dataProvider, playerBankModel),
             UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider, playerBankModel),
             UnitType.Boozer => spawner = new BombThrowerUnitSpawner(dataProvider, playerBankModel),
+            UnitType.AirStrikePlane => spawner = new AirStrikePlaneSpawner(dataProvider, playerBankModel, coroutineRunner),
             _ => null
         };
 

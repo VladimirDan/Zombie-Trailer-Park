@@ -6,6 +6,7 @@ using UnityEngine;
 using System;
 using Enums;
 using Gameplay.GameParameters;
+using UnityEngine.Serialization;
 
 namespace Services
 {
@@ -27,6 +28,9 @@ namespace Services
         
         private Dictionary<UnitType, UnitParametersData> entityDataDictionary;
         private Dictionary<UnitType, GameObject> entityPrefabDictionary;
+        
+        [SerializeField] private GameObject airStrikePlanePrefab;
+        [SerializeField] private UnitsSpawnTimings crowdSpawnOrder;
         
         public void Initialize()
         {
@@ -148,6 +152,16 @@ namespace Services
         public PlayerAndZombieBasesParameters GetPlayerAndZombieBasesParameters()
         {
             return playerAndZombieBasesParameters;
+        }
+
+        public GameObject GetAirStrikePlanePrefab()
+        {
+            return airStrikePlanePrefab;
+        }
+
+        public UnitsSpawnTimings GetCrowdSpawnOrder()
+        {
+            return crowdSpawnOrder;
         }
     }
 }

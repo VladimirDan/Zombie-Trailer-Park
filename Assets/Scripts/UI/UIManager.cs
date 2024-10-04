@@ -96,6 +96,12 @@ namespace UI
             TextMeshProUGUI priceObject = button.transform.parent.Find("Price").GetComponent<TextMeshProUGUI>();
             priceObject.text = $"${value}";
         }
+        
+        public void UpdateButtonPressYeeHawPointsPrice(ButtonWithCooldown button, float value)
+        {
+            TextMeshProUGUI priceObject = button.transform.parent.Find("Price").GetComponent<TextMeshProUGUI>();
+            priceObject.text = $"{value}";
+        }
 
         public TooltipUIManager CreateTooltipPanel(ButtonWithCooldown button, TooltipContent tooltipContent)
         {

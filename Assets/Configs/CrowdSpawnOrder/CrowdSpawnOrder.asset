@@ -10,11 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83a507bd1859e5a4085daea844b32c16, type: 3}
-  m_Name: TestLevelZombiesSpawnTimings
+  m_Name: CrowdSpawnOrder
   m_EditorClassIdentifier: 
   unitsSpawnTimings:
-  - unitType: 5
+  - unitType: 0
     unitSpawnCycleParameters:
-    - timing: 5
-      spawnCooldown: 0.5
-      unitCount: 0
+    - timing: 0
+      spawnCooldown: 0.2
+      unitCount: 2
+    - timing: 0.4
+      spawnCooldown: 0.1
+      unitCount: 3
+    - timing: 0.7
+      spawnCooldown: 0.14
+      unitCount: 4
+  - unitType: 1
+    unitSpawnCycleParameters:
+    - timing: 0
+      spawnCooldown: 1.5
+      unitCount: 3

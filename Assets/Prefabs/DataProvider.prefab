@@ -64,7 +64,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e550ed28ca55485459d5e4afcb96f730, type: 2}
   - {fileID: 11400000, guid: 86b1cd92d9b66464487a4d965bd2e875, type: 2}
   - {fileID: 11400000, guid: 8490970657f22e8409267840868c1fdc, type: 2}
-  - {fileID: 11400000, guid: ccd7c725273a52842943ae796ae6df24, type: 2}
+  - {fileID: 11400000, guid: 7818afded895f5847afdbb6bffc30504, type: 2}
   - {fileID: 11400000, guid: 08ce4dd3b7f2ade409a850e1f65c1f24, type: 2}
   unitsSummonData: {fileID: 11400000, guid: c7521090fa38d564f8c915652c1152c3, type: 2}
   buildingsSummonData: {fileID: 11400000, guid: 9ea5e9f6393f1f0418af51d8e35e00e9, type: 2}
@@ -73,3 +73,5 @@ MonoBehaviour:
   buildingsEffects: {fileID: 11400000, guid: 04a2f974bb5549049b6f687d52f6259e, type: 2}
   tooltipsContent: {fileID: 11400000, guid: d4e50e13815700f4a9611246aa6b509a, type: 2}
   playerAndZombieBasesParameters: {fileID: 11400000, guid: edf620cfab1c67b4ab8a4266dcf229ea, type: 2}
+  airStrikePlanePrefab: {fileID: 1564139615793293710, guid: 9b6cbcc537575e94e9a8168143136abd, type: 3}
+  crowdSpawnOrder: {fileID: 11400000, guid: d5b783af984bee048a170b4a8dbacf6c, type: 2}

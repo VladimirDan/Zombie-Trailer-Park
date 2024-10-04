@@ -66,6 +66,8 @@ namespace Services
             AddSummonListener(chapelSummonButton, BuildingType.Chapel);
 
             AddSummonListener(harvesterSummonButton, YeeHawActionType.Harvester);
+            AddSummonListener(bombardmentSummonButton, YeeHawActionType.Bombardment);
+            AddSummonListener(crowdSummonSummonButton, YeeHawActionType.CrowdSummon);
         }
 
         public void AddSummonListener(ButtonWithCooldown button, UnitType unitType)
@@ -110,7 +112,7 @@ namespace Services
         
         public void AddSummonListener(ButtonWithCooldown button, YeeHawActionType yeeHawActionType)
         {
-            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(yeeHawActionType));
+            uiManager.UpdateButtonPressYeeHawPointsPrice(button, dataProvider.GetSummonPrice(yeeHawActionType));
             TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(yeeHawActionType));
             tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForYeeHawPowerTooltip;
             

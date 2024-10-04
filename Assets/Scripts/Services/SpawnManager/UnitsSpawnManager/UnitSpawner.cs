@@ -7,7 +7,7 @@ public class UnitSpawner : EntitySpawner
 {
     protected PlayerBankModel playerBankModel;
     
-    public void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel)
+    public virtual void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel)
     {
         Unit unitObject = SpawnUnit(entityType, spawnPosition);
         unitObject.Initialize(dataProvider, playerBankModel);
@@ -17,7 +17,7 @@ public class UnitSpawner : EntitySpawner
     {
         GameObject prefab = dataProvider.GetUnitPrefab(entityType);
         UnitParametersData unitData = (UnitParametersData)dataProvider.GetUnitData(entityType);
-
+        
         float unitHeight = prefab.GetComponent<Transform>().localScale.y ;
         spawnPosition.y += (unitHeight / 2);
         

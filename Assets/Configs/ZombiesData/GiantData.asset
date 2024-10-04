@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0816f27ffc30bbe479be59b22419f2a6, type: 3}
   m_Name: GiantData
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp:CreaturesData:SplashDamageUnitParametersData
   health: 1000
   unitType: 8
   OpponentLayer:
@@ -20,10 +20,10 @@ MonoBehaviour:
   OpponentBaseLayer:
     serializedVersion: 2
     m_Bits: 1024
-  CreatureSpeed: 2
+  CreatureSpeed: 1.5
   CreatureHorizontalMovementDirection: -1
   AttackRange: 1.5
   AttackDamage: 100
   AttackSpeed: 1
-  YeeHawPointsDrop: 10
+  YeeHawPointsDrop: 200
   maxSplashAttackTargets: 5

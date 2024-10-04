@@ -26,7 +26,7 @@ namespace Services
             this.uiManager = uiManager;
             this.playerBank = playerBank;
 
-            yeeHawSpawnManager = new YeeHawSpawnManager(unitsSpawnManager);
+            yeeHawSpawnManager = new YeeHawSpawnManager(unitsSpawnManager, dataProvider);
         }
 
         public IEnumerator SummonEntity(UnitType unitType, ButtonWithCooldown button, float summonCooldown)

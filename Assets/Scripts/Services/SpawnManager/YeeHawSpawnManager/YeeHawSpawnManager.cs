@@ -1,11 +1,19 @@
 ﻿using Enums;
+using UnityEngine;
 
 namespace Services.SpawnManager
 {
     public class YeeHawSpawnManager
     {
+        private DataProvider dataProvider;
         private UnitsSpawnManager unitsSpawnManager;
 
+        public YeeHawSpawnManager(UnitsSpawnManager unitsSpawnManager, DataProvider dataProvider)
+        {
+            this.unitsSpawnManager = unitsSpawnManager;
+            this.dataProvider = dataProvider;
+        }
+        
         public void SummonYeeHawPower(YeeHawActionType yeeHawActionType)
         {
             switch (yeeHawActionType)
@@ -13,6 +21,15 @@ namespace Services.SpawnManager
                 case YeeHawActionType.Harvester:
                     SpawnHarvester();
                     break;
+                
+                case YeeHawActionType.Bombardment:
+                    SpawnAirStrikePlane();
+                    break;
+                
+                case YeeHawActionType.CrowdSummon:
+                    SpawnCrowd();
+                    break;
+                
                 default:
                     break;
             }
@@ -22,10 +39,17 @@ namespace Services.SpawnManager
         {
             unitsSpawnManager.SpawnUnitOnRandomRow(UnitType.Harvester, unitsSpawnManager.baseSpawnPosition); 
         }
-
-        public YeeHawSpawnManager(UnitsSpawnManager unitsSpawnManager)
+        
+        public void SpawnAirStrikePlane()
         {
-            this.unitsSpawnManager = unitsSpawnManager;
+            Vector3 spawnPosition = unitsSpawnManager.baseSpawnPosition;
+            spawnPosition.y += 10;
+            unitsSpawnManager.SpawnUnitOnRandomRow(UnitType.AirStrikePlane, spawnPosition); 
+        }
+
+        public void SpawnCrowd()
+        {
+            unitsSpawnManager.OrderUnitsSpawn(dataProvider.GetCrowdSpawnOrder());
         }
     }
 }

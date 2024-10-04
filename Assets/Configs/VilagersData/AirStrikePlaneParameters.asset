@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83a507bd1859e5a4085daea844b32c16, type: 3}
-  m_Name: TestLevelZombiesSpawnTimings
+  m_Script: {fileID: 11500000, guid: 7ecc76b9a61e4fc9b41b971c91181b41, type: 3}
+  m_Name: AirStrikePlaneParameters
   m_EditorClassIdentifier: 
-  unitsSpawnTimings:
-  - unitType: 5
-    unitSpawnCycleParameters:
-    - timing: 5
-      spawnCooldown: 0.5
-      unitCount: 0
+  bombPrefab: {fileID: 2834832886997551221, guid: e445c314eb650e7439026ccb874e85d4, type: 3}
+  attackSpeed: 1
+  moveSpeed: 7
+  bombDropCooldown: 0.2

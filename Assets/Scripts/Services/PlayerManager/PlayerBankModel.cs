@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Game.Code.Common.CoroutineRunner;
+﻿using Game.Code.Common.CoroutineRunner;
 using UnityEngine;
 using Gameplay;
 using System.Collections;

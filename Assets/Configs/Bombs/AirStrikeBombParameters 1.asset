@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e0a0d7f9b834e31a775819eb7b080f1, type: 3}
-  m_Name: BoozerBombParameters
+  m_Name: AirStrikeBombParameters 1
   m_EditorClassIdentifier: 
   explosionRadius: 3
   damage: 100

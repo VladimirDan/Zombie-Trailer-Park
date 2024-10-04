@@ -14,6 +14,7 @@ namespace Enums
         [Description("Banshee")] Banshee,
         [Description("Giant")] Giant,
         [Description("Harvester")] Harvester,
+        [Description("AirStrikePlane")] AirStrikePlane,
     }
 }
 
