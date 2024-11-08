@@ -1,4 +1,5 @@
-﻿using Gameplay.GameEntity.Boozer;
+﻿using Services.LevelStatisticsManager;
+using Gameplay.GameEntity.Boozer;
 using CreaturesData;
 using Services;
 
@@ -13,6 +14,7 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             ((Boozer)unitObject).bombThrowHeight = ((BombThrowerUnitParameters)unitData).bombThrowHeight;
         }
 
-        public BombThrowerUnitSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
+        public BombThrowerUnitSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel) 
+            : base(dataProvider, levelStatisticsManager, playerBankModel) { }
     }
 }

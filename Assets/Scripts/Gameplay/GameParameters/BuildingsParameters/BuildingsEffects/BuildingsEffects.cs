@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelsParameters
+namespace GameParameters
 {
     [CreateAssetMenu(fileName = "BuildingEffects", menuName = "Building Effects/Building Effects")]
     public class BuildingsEffects : ScriptableObject

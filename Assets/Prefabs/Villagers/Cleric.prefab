@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2634876342997282216}
   - component: {fileID: 9146771303346124161}
   - component: {fileID: 1991731082877149415}
-  - component: {fileID: 5144585622558100622}
   - component: {fileID: 7448398527784306184}
   - component: {fileID: 2534425052584960168}
   - component: {fileID: -1000008502429535953}
+  - component: {fileID: 382511867521220948}
   m_Layer: 7
   m_Name: Cleric
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.13, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,9 +77,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9339623, g: 0.91407835, b: 0.2511125, a: 1}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: -931237998, guid: 15d69171471c11a428124bc7322b8a65, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,49 +103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthPoints: 100
   fullHealthValue: 0
---- !u!114 &5144585622558100622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2834832886997551221}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4504c4174a835db4bbe040695df3ccff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
-  unitType: 0
-  CreatureSpeed: 0
-  CreatureHorizontalMovementDirection: 0
-  AttackRange: 0
-  AttackDamage: 0
-  AttackSpeed: 0
-  OpponentLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  OpponentBaseLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  YeeHawPointsDrop: 0
-  playerBank:
-    money:
-      credits: 0
-      creditsMaxCapacity: 0
-      creditsMinCapacity: 0
-    yeeHawPoints:
-      credits: 0
-      creditsMaxCapacity: 0
-      creditsMinCapacity: 0
-    armyCapacity:
-      credits: 0
-      creditsMaxCapacity: 0
-      creditsMinCapacity: 0
-    moneyIncome: 0
-    moneyIncomeCooldown: 0
-    moneyIncomeCooldownAccelerationTime: 0
-    armyCapacityUpgradeValue: 0
 --- !u!65 &7448398527784306184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -206,3 +163,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a76723993c40a24b8b44b8f7e4ae1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &382511867521220948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834832886997551221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4504c4174a835db4bbe040695df3ccff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coroutineRunner: {fileID: 0}
+  unitModel: {fileID: 0}
+  unitType: 0
+  CreatureSpeed: 0
+  CreatureHorizontalMovementDirection: 0
+  AttackRange: 0
+  AttackDamage: 0
+  AttackCooldown: 0
+  OpponentLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  OpponentBaseLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 0}
+  YeeHawPointsDrop: 0
+  playerBank:
+    money:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    yeeHawPoints:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    armyCapacity:
+      credits: 0
+      creditsMaxCapacity: 0
+      creditsMinCapacity: 0
+    moneyIncome: 0
+    moneyIncomeCooldown: 0
+    moneyIncomeCooldownAccelerationTime: 0
+    armyCapacityUpgradeValue: 0

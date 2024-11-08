@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0a0d7f9b834e31a775819eb7b080f1, type: 3}
   m_Name: AirStrikeBombParameters 1
   m_EditorClassIdentifier: 
+  bombType: 1
   explosionRadius: 3
   damage: 100
   enemyUnitLayer:
@@ -19,7 +20,7 @@ MonoBehaviour:
     m_Bits: 64
   enemyBaseLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   maxTargetsCount: 5
   explosionLayerTrigger:
     serializedVersion: 2

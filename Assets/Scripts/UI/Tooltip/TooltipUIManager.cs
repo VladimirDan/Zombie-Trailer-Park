@@ -9,20 +9,21 @@ namespace UI.Buttons
 {
     public class TooltipUIManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        private GameObject tooltipPanel;
-        private TooltipContent tooltipContent;
-        private GameObject warningMessagePanel;
-        private GameObject warningMessageObject;
+        protected GameObject tooltipPanel;
+        protected TooltipContent tooltipContent;
+        protected GameObject warningMessagePanel;
+        protected GameObject warningMessageObject;
+        protected GameObject titleImageObject;
         
         public RectTransform borderRectTransform;
         
         public RectTransform buttonPanelRectTransform;
-        private RectTransform tooltipPanelRectTransform;
+        protected RectTransform tooltipPanelRectTransform;
 
-        private string titleTextObjectPath = "TitlePanel/Title";
-        private string titleImageObjectPath = "TitlePanel/UnitCapacityImage";
-        private string descriptionTextObjectPath = "Description";
-        private string warningTextObjectPath = "WarningText";
+        protected string titleTextObjectPath = "TitlePanel/Title";
+        protected string titleImageObjectPath = "TitlePanel/UnitCapacityImage";
+        protected string descriptionTextObjectPath = "Description";
+        protected string warningTextObjectPath = "WarningText";
 
         public bool isMoneyEnough = false;
         public bool isYeeHawPointsEnough = false;
@@ -31,12 +32,14 @@ namespace UI.Buttons
 
         public Action OnWarningTextUpdate;
 
-        public void Initialize(TooltipContent tooltipContent, GameObject tooltipPanelPrefab, RectTransform borderRectTransform,
+        public virtual void Initialize(TooltipContent tooltipContent, GameObject tooltipPanelPrefab, RectTransform borderRectTransform,
             RectTransform buttonPanelRectTransform)
         {
             this.borderRectTransform = borderRectTransform;
             this.buttonPanelRectTransform = buttonPanelRectTransform;
             this.tooltipContent = tooltipContent;
+            titleImageObject = tooltipContent.armyCapacityUnitImageObject;
+            this.titleImageObject = titleImageObject;
             tooltipPanel = Instantiate(tooltipPanelPrefab);
             tooltipPanelRectTransform = tooltipPanel.GetComponent<RectTransform>();
             tooltipPanelRectTransform.SetParent(borderRectTransform);
@@ -44,25 +47,16 @@ namespace UI.Buttons
             warningMessageObject = tooltipPanelRectTransform.transform.Find(warningTextObjectPath).gameObject;
             
             SetTooltipContent(tooltipContent);
-            //tooltipPanel.SetActive(false);
         }
 
-        public void SetTooltipContent(TooltipContent tooltipContent)
+        public virtual void SetTooltipContent(TooltipContent tooltipContent)
         {
             GameObject titleTextObject = tooltipPanelRectTransform.transform.Find(titleTextObjectPath).gameObject;
-            GameObject titleImageObject = tooltipPanelRectTransform.transform.Find(titleImageObjectPath).gameObject;
             GameObject descriptionTextObject = tooltipPanelRectTransform.transform.Find(descriptionTextObjectPath).gameObject;
             
             titleTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent?.title;
-            
-            if (tooltipContent.titlePic != null)
-            {
-                titleImageObject.GetComponent<Image>().sprite = tooltipContent?.titlePic;
-            }
-            else
-            {
-                titleImageObject.GetComponent<Image>().sprite = null;
-            }
+
+            SetTitlePic(titleImageObject);
             
             descriptionTextObject.GetComponent<TextMeshProUGUI>().text = tooltipContent?.tooltipDescriptionText;
         }
@@ -205,6 +199,19 @@ namespace UI.Buttons
         {
             string text = ConstructWarningTextForYeeHawPowerButtonTooltip();
             SetWarningMessage(text);
+        }
+
+        public virtual void SetTitlePic(GameObject titlePic)
+        {
+            if (titlePic == null)
+            {
+                return;
+            }
+            Transform titleImageObjectPanel = tooltipPanelRectTransform.transform.Find(titleImageObjectPath).gameObject.transform;
+            
+            Transform imageTransform = Instantiate(titlePic).transform;
+            imageTransform.transform.SetParent(titleImageObjectPanel);
+            
         }
     }
 }

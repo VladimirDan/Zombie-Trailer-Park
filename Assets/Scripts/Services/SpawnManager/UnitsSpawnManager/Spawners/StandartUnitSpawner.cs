@@ -1,4 +1,5 @@
-﻿using CreaturesData;
+﻿using Services.LevelStatisticsManager;
+using CreaturesData;
 using Services;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
@@ -23,12 +24,13 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             unitObject.CreatureHorizontalMovementDirection = unitData.CreatureHorizontalMovementDirection;
             unitObject.AttackDamage = unitData.AttackDamage;
             unitObject.AttackRange = unitData.AttackRange;
-            unitObject.AttackSpeed = unitData.AttackSpeed;
+            unitObject.AttackCooldown = unitData.AttackCooldown;
 
             unitObject.YeeHawPointsDrop = unitData.YeeHawPointsDrop;
             unitObject.playerBank = playerBankModel;
         }
 
-        public StandartUnitSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
+        public StandartUnitSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel) 
+            : base(dataProvider, levelStatisticsManager, playerBankModel) { }
     }
 }

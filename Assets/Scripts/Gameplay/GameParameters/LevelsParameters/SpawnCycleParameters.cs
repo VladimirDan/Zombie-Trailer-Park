@@ -1,6 +1,6 @@
 ﻿using Enums;
 
-namespace LevelsParameters
+namespace GameParameters
 {
     [System.Serializable]
     public class UnitSpawnCycleParameters

@@ -20,10 +20,10 @@ MonoBehaviour:
   OpponentBaseLayer:
     serializedVersion: 2
     m_Bits: 1024
-  CreatureSpeed: 1.5
+  CreatureSpeed: 0.8
   CreatureHorizontalMovementDirection: -1
   AttackRange: 1.5
-  AttackDamage: 100
-  AttackSpeed: 1
+  AttackDamage: 50
+  AttackCooldown: 1
   YeeHawPointsDrop: 200
   maxSplashAttackTargets: 5

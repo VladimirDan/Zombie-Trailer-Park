@@ -2,7 +2,7 @@
 using UnityEngine;
 using Gameplay;
 using System.Collections;
-using LevelsParameters;
+using GameParameters;
 using UI;
 
 namespace Services
@@ -12,7 +12,7 @@ namespace Services
     {
         private CoroutineRunner coroutineRunner;
         private DataProvider dataProvider;
-        private UIManager uiManager;
+        private LevelUIManager levelUIManager;
         
         public CreditModel money;
         public CreditModel yeeHawPoints;
@@ -24,11 +24,11 @@ namespace Services
 
         public float armyCapacityUpgradeValue;
         
-        public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, UIManager uiManager)
+        public PlayerBankModel(CoroutineRunner coroutineRunner, DataProvider dataProvider, LevelUIManager levelUIManager)
         {
             this.coroutineRunner = coroutineRunner;
             this.dataProvider = dataProvider;
-            this.uiManager = uiManager;
+            this.levelUIManager = levelUIManager;
         }
 
         public void Initialize()
@@ -39,7 +39,7 @@ namespace Services
 
             AddResources(dataProvider.GetPlayerStartResources());
 
-            uiManager.UpdateAllResourcesInfo(this);
+            levelUIManager.UpdateAllResourcesInfo(this);
 
             MoneyIncomeParameters moneyIncomeParameters = dataProvider.GetMoneyIncomeParameters();
             ArmyCapacityUpgradeParameters armyCapacityUpgradeParameters = dataProvider.GetArmyCapacityUpgradeParameters();
@@ -77,13 +77,13 @@ namespace Services
         public void AddMoney(float amount)
         {
             money.AddCredits(amount);
-            uiManager.UpdateMoneyInfo(this);
+            levelUIManager.UpdateMoneyInfo(this);
         }
         
         public void ReduceMoney(float amount)
         {
             money.ReduceCredits(amount);
-            uiManager.UpdateMoneyInfo(this);
+            levelUIManager.UpdateMoneyInfo(this);
         }
 
         public float GetMoneyAmount()
@@ -93,13 +93,13 @@ namespace Services
         public void AddYeeHawPoints(float amount)
         {
             yeeHawPoints.AddCredits(amount);
-            uiManager.UpdateYeeHawPointsInfo(this);
+            levelUIManager.UpdateYeeHawPointsInfo(this);
         }
         
         public void ReduceYeeHawPoints(float amount)
         {
             yeeHawPoints.ReduceCredits(amount);
-            uiManager.UpdateYeeHawPointsInfo(this);
+            levelUIManager.UpdateYeeHawPointsInfo(this);
         }
         
         public float GetYeeHawPointsAmount()
@@ -110,13 +110,13 @@ namespace Services
         public void AddArmyCapacity(float amount)
         {
             armyCapacity.AddCredits(amount);
-            uiManager.UpdateArmyCapacityInfo(this);
+            levelUIManager.UpdateArmyCapacityInfo(this);
         }
 
         public void ReduceArmyCapacity(float amount)
         {
             armyCapacity.ReduceCredits(amount);
-            uiManager.UpdateArmyCapacityInfo(this);
+            levelUIManager.UpdateArmyCapacityInfo(this);
         }
 
         public float GetArmyCapacity()
@@ -132,7 +132,7 @@ namespace Services
         public void ExpandArmyCapacity(float amount)
         {
             armyCapacity.AddCreditsCapacity(amount);
-            uiManager.UpdateArmyCapacityInfo(this);
+            levelUIManager.UpdateArmyCapacityInfo(this);
         }
 
         public float GetArmyMaxCapacity()

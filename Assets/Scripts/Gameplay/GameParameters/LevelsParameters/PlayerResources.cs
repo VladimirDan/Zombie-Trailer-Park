@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Gameplay;
 
-namespace LevelsParameters
+namespace GameParameters
 {
     [CreateAssetMenu(fileName = "LevelStartResources", menuName = "Level/Level Start Resources")]
     public class PlayerResources : ScriptableObject

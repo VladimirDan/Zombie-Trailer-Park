@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Services.LevelStatisticsManager;
+using UnityEngine;
 using Services;
 
 namespace Gameplay.GameEntity.Boozer
@@ -8,9 +9,9 @@ namespace Gameplay.GameEntity.Boozer
         public GameObject bombPrefab;
         public float bombThrowHeight;
         
-        public override void setUpEntity(DataProvider dataProvider, PlayerBankModel playerBankModel)
+        public override void setUpEntity(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel, AudioManager audioManager)
         {
-            base.setUpEntity(dataProvider, playerBankModel);
+            base.setUpEntity(dataProvider, levelStatisticsManager, playerBankModel, audioManager);
 
             ((BoozerModel)unitModel).bombPrefab = bombPrefab;
             ((BoozerModel)unitModel).bombThrowHeight = bombThrowHeight;

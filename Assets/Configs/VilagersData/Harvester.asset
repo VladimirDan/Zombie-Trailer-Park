@@ -22,7 +22,7 @@ MonoBehaviour:
     m_Bits: 0
   CreatureSpeed: 1
   CreatureHorizontalMovementDirection: 1
-  AttackRange: 0.001
+  AttackRange: 1
   AttackDamage: 1000000
-  AttackSpeed: 0.001
+  AttackCooldown: 0.001
   YeeHawPointsDrop: 0

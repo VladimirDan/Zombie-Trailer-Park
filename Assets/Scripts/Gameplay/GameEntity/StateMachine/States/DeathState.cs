@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Game.Code.Common.CoroutineRunner;
 using Assets.Scripts.Gameplay.Entity.StateMachine;
+using Gameplay.GameEntity.Entity;
 
 namespace Assets.Scripts.StateMachine.States
 {
-    internal class DeathState : EntityBehaviourState
+    public class DeathState<T> : EntityBehaviourState
     {
-
+        protected EntityModel<T> entityModel;
+        
         public override void Enter()
         {
         }
@@ -21,7 +23,9 @@ namespace Assets.Scripts.StateMachine.States
 
         }
 
-        public DeathState(ICoroutineRunner _coroutineRunner) : base(_coroutineRunner) { }
-
+        public DeathState(ICoroutineRunner _coroutineRunner, EntityModel<T> entityModel) : base(_coroutineRunner)
+        {
+            this.entityModel = entityModel;
+        }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044b632dfe837694cabb3262ebf97e09, type: 3}
   m_Name: BansheeData
   m_EditorClassIdentifier: 
-  health: 500
+  health: 400
   unitType: 7
   OpponentLayer:
     serializedVersion: 2
@@ -20,9 +20,9 @@ MonoBehaviour:
   OpponentBaseLayer:
     serializedVersion: 2
     m_Bits: 1024
-  CreatureSpeed: 4.5
+  CreatureSpeed: 6
   CreatureHorizontalMovementDirection: -1
   AttackRange: 1
-  AttackDamage: 50
-  AttackSpeed: 0.25
+  AttackDamage: 25
+  AttackCooldown: 0.3
   YeeHawPointsDrop: 10

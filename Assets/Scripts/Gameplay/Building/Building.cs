@@ -1,5 +1,6 @@
 ﻿using Services;
 using Enums;
+using UnityEngine;
 
 namespace Gameplay.Building
 {
@@ -18,7 +19,7 @@ namespace Gameplay.Building
         {
             isBuilt = true;
         }
-
+        
         public virtual void OccupySlot()
         {
             count++;

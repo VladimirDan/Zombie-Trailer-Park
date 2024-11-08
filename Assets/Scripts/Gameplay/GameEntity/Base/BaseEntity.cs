@@ -1,28 +1,48 @@
 using Assets.Scripts.StateMachine.States;
+using GameParameters;
 using UnityEngine;
 using Services;
+using Services.LevelStatisticsManager;
+using Services.Timer;
+using UI;
 
-public class BaseEntity : Entity
+namespace Gameplay.GameEntity.Base
 {
-    public override void CheckoutCurrentState()
+    public class BaseEntity : Entity<string>
     {
-        if (!healthModel.IsAlive())
+        protected Timer timer;
+        protected LevelUIManager levelUIManager;
+        public override void CheckoutCurrentState()
         {
-            stateMachine.ChangeCurrentState(new DeathState(coroutineRunner));
-            Die();
+            if (!healthModel.IsAlive())
+            {
+                stateMachine.ChangeCurrentState(new DeathState<string>(coroutineRunner, entityModel));
+                Die();
+            }
         }
-    }
 
-    private void HandleMainBuildingDestruction()
-    {
-        coroutineRunner.Dispose();
-        Time.timeScale = 0f;
-        Debug.Log("Level end");
-    }
+        protected virtual void HandleMainBuildingDestruction()
+        {
+            levelStatisticsManager.SetLevelEndTime(timer.GetElapsedTime());
+            coroutineRunner.Dispose();
+            
+            Debug.Log("Level end");
+        }
 
-    public override void setUpEntity(DataProvider dataProvider)
-    {
-        base.setUpEntity(dataProvider);
-        onDestroy += HandleMainBuildingDestruction;
+        public virtual void SetUpEntity(DataProvider dataProvider, Timer timer, LevelStatisticsManager levelStatisticsManager, LevelUIManager levelUIManager, AudioManager audioManager)
+        {
+            base.SetUpEntity(dataProvider, levelStatisticsManager, audioManager);
+            this.timer = timer;
+            this.levelStatisticsManager = levelStatisticsManager;
+            this.levelUIManager = levelUIManager;
+            
+            onDestroy += HandleMainBuildingDestruction;
+        }
+
+        public void Initialize(DataProvider dataProvider, Timer timer, LevelStatisticsManager levelStatisticsManager, LevelUIManager levelUIManager, AudioManager audioManager)
+        {
+            SetUpEntity(dataProvider, timer, levelStatisticsManager, levelUIManager, audioManager);
+            this.enabled = true;
+        }
     }
 }

@@ -1,15 +1,14 @@
 ﻿using UI;
 using UnityEngine;
 
-
 namespace Services.Timer
 {
     public class TimerManager : MonoBehaviour
     {
-        [SerializeField] private GameTimerUIManager timerUITextManager;
+        [SerializeField] private TimerUIManager timerUITextManager;
         private Timer timer;
 
-        public void Start()
+        public void Initialize()
         {
             timer = new Timer();
             timer.Start();
@@ -23,6 +22,11 @@ namespace Services.Timer
             int seconds = timer.GetSeconds();
             
             timerUITextManager.UpdateTimerUI(minutes, seconds);
+        }
+
+        public Timer GetTimer()
+        {
+            return timer;
         }
     }
 }

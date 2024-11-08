@@ -13,34 +13,35 @@ namespace Services
         private UnitsSpawnManager unitsSpawnManager;
         private BuildingsSpawnManager buildingsSpawnManager;
         private YeeHawSpawnManager yeeHawSpawnManager;
-        private UIManager uiManager;
-
+        private LevelUIManager levelUIManager;
+        private AudioManager audioManager;
         private PlayerBankModel playerBank;
+        private BuildingImageManager buildingImageManager;
         
         public SummonManager(DataProvider dataProvider, UnitsSpawnManager unitsSpawnManager, BuildingsSpawnManager buildingsSpawnManager,
-            UIManager uiManager, PlayerBankModel playerBank)
+            LevelUIManager levelUIManager, PlayerBankModel playerBank, AudioManager audioManager)
         {
             this.dataProvider = dataProvider;
             this.unitsSpawnManager = unitsSpawnManager;
             this.buildingsSpawnManager = buildingsSpawnManager;
-            this.uiManager = uiManager;
+            this.levelUIManager = levelUIManager;
             this.playerBank = playerBank;
 
-            yeeHawSpawnManager = new YeeHawSpawnManager(unitsSpawnManager, dataProvider);
+            yeeHawSpawnManager = new YeeHawSpawnManager(unitsSpawnManager, dataProvider, audioManager);
         }
 
         public IEnumerator SummonEntity(UnitType unitType, ButtonWithCooldown button, float summonCooldown)
         {
-            uiManager.PlayButtonSummonEffect(button, summonCooldown);
+            levelUIManager.PlayButtonSummonEffect(button, summonCooldown);
             
             yield return new WaitForSeconds(summonCooldown);
             
-            unitsSpawnManager.SpawnUnitOnRandomRow(unitType, unitsSpawnManager.baseSpawnPosition);
+            unitsSpawnManager.SpawnUnitOnRandomRow(unitType, unitsSpawnManager.spawnPosition);
         }
         
         public IEnumerator SummonEntity(BuildingType buildingType, ButtonWithCooldown button, float summonCooldown)
         {
-            uiManager.PlayButtonSummonEffect(button, summonCooldown);
+            levelUIManager.PlayButtonSummonEffect(button, summonCooldown);
             yield return new WaitForSeconds(summonCooldown);
             
             buildingsSpawnManager.SpawnBuilding(buildingType);
@@ -48,7 +49,7 @@ namespace Services
         
         public IEnumerator SummonEntity(YeeHawActionType yeeHawActionType, ButtonWithCooldown button, float summonCooldown)
         {
-            uiManager.PlayButtonSummonEffect(button, summonCooldown);
+            levelUIManager.PlayButtonSummonEffect(button, summonCooldown);
             yield return new WaitForSeconds(summonCooldown);
             
             yeeHawSpawnManager.SummonYeeHawPower(yeeHawActionType);

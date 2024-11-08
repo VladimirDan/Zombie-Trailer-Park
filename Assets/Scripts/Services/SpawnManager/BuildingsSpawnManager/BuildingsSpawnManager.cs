@@ -9,13 +9,15 @@ namespace Services.SpawnManager
     {
         private DataProvider dataProvider;
         private PlayerBankModel playerBank;
+        private BuildingImageManager buildingImageManager;
         
         private Dictionary<BuildingType, Building> buildings;
 
-        public BuildingsSpawnManager(DataProvider dataProvider, PlayerBankModel playerBank)
+        public BuildingsSpawnManager(DataProvider dataProvider, PlayerBankModel playerBank, BuildingImageManager buildingImageManager)
         {
             this.dataProvider = dataProvider;
             this.playerBank = playerBank;
+            this.buildingImageManager = buildingImageManager;
 
             buildings = new Dictionary<BuildingType, Building>
             {
@@ -33,6 +35,7 @@ namespace Services.SpawnManager
             if (buildings.TryGetValue(buildingType, out var building))
             {
                 building.Spawn();
+                buildingImageManager.ActivateNextBuildingImage(buildingType);
             }
         }
         

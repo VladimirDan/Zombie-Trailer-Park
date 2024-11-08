@@ -1,4 +1,5 @@
-﻿using Gameplay.GameEntity.AirStrikePlane;
+﻿using Services.LevelStatisticsManager;
+using Gameplay.GameEntity.AirStrikePlane;
 using Game.Code.Common.CoroutineRunner;
 using Services;
 using UnityEngine;
@@ -10,7 +11,7 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
     {
         private CoroutineRunner coroutineRunner;
         
-        public override void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel)
+        public override void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel, AudioManager audioManager)
         {
             GameObject airStrikePlanePrefab = dataProvider.GetAirStrikePlanePrefab();
             
@@ -23,8 +24,8 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             airStrikePlane.Initialize();
         }
 
-        public AirStrikePlaneSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel,
-            CoroutineRunner coroutineRunner) : base(dataProvider, playerBankModel)
+        public AirStrikePlaneSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel,
+            CoroutineRunner coroutineRunner) : base(dataProvider, levelStatisticsManager, playerBankModel)
         {
             this.coroutineRunner = coroutineRunner;
         }

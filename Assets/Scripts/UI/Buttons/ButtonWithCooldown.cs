@@ -74,6 +74,8 @@ namespace UI.Buttons
 
             RectTransform mainRect = mainImage.GetComponent<RectTransform>();
             RectTransform overlayRect = overlayImage.GetComponent<RectTransform>();
+            overlayRect.anchorMin = Vector2.zero;
+            overlayRect.anchorMax = Vector2.one;
             overlayRect.sizeDelta = mainRect.sizeDelta;
             overlayRect.anchoredPosition = Vector2.zero;
 
@@ -83,7 +85,6 @@ namespace UI.Buttons
             HideOverlay();
 
             ChangeOverlayColor(cooldownProgressColor);
-            overlayImage.raycastTarget = false;
 
             return overlayImage;
         }

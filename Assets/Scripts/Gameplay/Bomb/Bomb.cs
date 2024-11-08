@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using CreaturesData;
 using System.Linq;
 using Services;
+using Gameplay.GameParameters.EntitiesParameters;
 
 namespace Gameplay.Bomb
 {
@@ -10,11 +12,20 @@ namespace Gameplay.Bomb
         [SerializeField] private BombParameters bombParameters;
         [SerializeField] private float depth = 10f;
         
+        [SerializeField] private Animator animator;
+        private AudioManager audioManager;
+
+        public void Start()
+        {
+            audioManager = FindObjectOfType<AudioManager>();
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
             if (IsTouchingLayer(collision.gameObject, bombParameters.explosionLayerTrigger))
             {
                 Explode();
+                audioManager.PlayBombExplosionClip(bombParameters.bombType);
             }
         }
         

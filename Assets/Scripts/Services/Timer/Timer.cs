@@ -28,5 +28,10 @@ namespace Services.Timer
         {
             return (int)(elapsedTime % 60);
         }
+
+        public float GetElapsedTime()
+        {
+            return elapsedTime;
+        }
     }
 }

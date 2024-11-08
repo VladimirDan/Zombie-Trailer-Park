@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Enums;
+using UnityEngine;
 
 namespace CreaturesData
 {
     [CreateAssetMenu(fileName = "BombParameters", menuName = "Entities/BombParameters")]
     public class BombParameters : ScriptableObject
     {
+        public BombType bombType;
         public float explosionRadius;
         public float damage;
         public LayerMask enemyUnitLayer;

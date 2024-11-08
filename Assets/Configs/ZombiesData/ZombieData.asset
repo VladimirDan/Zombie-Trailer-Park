@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044b632dfe837694cabb3262ebf97e09, type: 3}
   m_Name: ZombieData
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   unitType: 5
   OpponentLayer:
     serializedVersion: 2
@@ -22,7 +22,7 @@ MonoBehaviour:
     m_Bits: 1024
   CreatureSpeed: 3
   CreatureHorizontalMovementDirection: -1
-  AttackRange: 1
+  AttackRange: 0.11
   AttackDamage: 10
-  AttackSpeed: 0.5
+  AttackCooldown: 0.5
   YeeHawPointsDrop: 10

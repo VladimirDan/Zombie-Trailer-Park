@@ -1,0 +1,1447 @@
+fileFormatVersion: 2
+guid: b903aa06085977e48905be415710b2e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 459
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636427e1ae5a6a84da9c5072026f93f3
+      internalID: 735505013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 459
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553cdeb4255bf7642940018a3ee0638a
+      internalID: 1238590546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 459
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf334a1776d5e648a8fb168392cad79
+      internalID: 83573831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 459
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cdc1fd8aeca0944a46aaae000e6b1f
+      internalID: 1117161081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 458
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2a4365b1e86604fa9f4f666ef11d0f
+      internalID: -634797850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 456
+        width: 76
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec7b9c3cb17061438482847568dca5a
+      internalID: -1150335312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_6
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 456
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e407a0271a9a8b9479b437dea232a924
+      internalID: -399729818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_7
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 454
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7551e9b5a43ba5c46a095f6a93440280
+      internalID: 994020918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_8
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 454
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dd5ea672485fd4185aee98fd7c2c7c
+      internalID: 1814685024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_9
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 453
+        width: 82
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d029c6b1822459459f7373a173cacce
+      internalID: -126590470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_10
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 453
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eafe6314a6300468222f78d2c39439
+      internalID: -1323515040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea6ce4fe8b331f4da21cae943176eb3
+      internalID: 954977484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 384
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240f68b49e2e8074f97f346693b49fd0
+      internalID: -138442415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 383
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d437467a8d90149bcc93a501795352
+      internalID: -594675629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 383
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abf0659a1ff87546af72adfc6fa238f
+      internalID: -1663971713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 383
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d06e996b69691042928fecd33c23a01
+      internalID: 421020371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 382
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cbd6c9c1185864899754bcacafb36c
+      internalID: -451590782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_17
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 382
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26643bf5acb85048aa6292341e38a6d
+      internalID: 1192244944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 382
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f0d3a53da43e844adaf922ad22d118
+      internalID: -1700059472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_19
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 382
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7107fada7bf5fd84b88d717007bc4924
+      internalID: -1034800565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 382
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d764251a3b6af146adac8dbbcc21189
+      internalID: -1841240870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_21
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 382
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89352f556c92b634286624d53618b673
+      internalID: -2052094729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_22
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 382
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a96ba99c000314438f90c614b08beb3
+      internalID: -789689345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_23
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 382
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a80f36ccfd5e04baafce7bd7f85e99
+      internalID: -403136143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 310
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fd70fe1036d1245aa6a64c09eaff6e
+      internalID: 154505732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 309
+        width: 74
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94a5ba40611786439fd657823e01464
+      internalID: 1710601362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_26
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 308
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a6a95b1836f594e875fc7177b6f9cc
+      internalID: 761843182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 305
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69466c4544de2a41a33b88e6113204f
+      internalID: 2081819569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_28
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 305
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcb58eab2ae2f540b56751187678db5
+      internalID: -1288251582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_29
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 303
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe909eaf61bfc3049a72772bc0366f4b
+      internalID: -917237964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_30
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 302
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c4d8fb3ac61ea43be85548d21b0570
+      internalID: 1535269615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_31
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 302
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc9aa9f64472cd40943bf7485ff1029
+      internalID: -1605041156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_32
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 301
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d1300856eeac34c8471fbbd20a91c4
+      internalID: 1893630313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_33
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 301
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acced528d178c074594264bca742a9b7
+      internalID: 1139555444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_34
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 301
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05267a8d4a590b643b4dc4d581e7e531
+      internalID: -1735372237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_35
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 301
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208d9927d1f892a4b98fff75d6aef45b
+      internalID: -344233171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 220
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6994334bcce238744ab31b2e3cea9aff
+      internalID: -851145739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_37
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 220
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56e401b1ffcf314fb4fa12d3a19cbad
+      internalID: -990632249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_38
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 220
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c577adc83a9634eabe65e63c4ad4e5
+      internalID: -1483904245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_39
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 220
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1673425f97b494ba2e320d62fabefa
+      internalID: 1685182752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_40
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130770807b6260c4f82ad4a02a1d75bd
+      internalID: 667106763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_41
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d748a40c0783947b510b850eecf128
+      internalID: 1147432182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_42
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616be5e475b4fa547bc504849939cf53
+      internalID: 1249084931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_43
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2361af4decd46e44c886f69deb4c1496
+      internalID: -1203439834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_44
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f3839b39ace1c4ab6ce4c7a0e55044
+      internalID: -819275514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_45
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 220
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792721f34a27723498d5142e3f00dfae
+      internalID: 805154865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_46
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 220
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccae8ff4effc0db4e9f7e2abc1a903bc
+      internalID: 606806856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 139
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a183648355b38ae41965238a131b399c
+      internalID: -766774029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 139
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c058d0f3a8e0843acaabadbc374216
+      internalID: 1225444071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 139
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d728627da6d8eb4c8a95bbdf7c2a90b
+      internalID: -456415264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_50
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 139
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd58ea1683f84b945877f03568065969
+      internalID: 1212416480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_51
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 139
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fc31cdbdcd28947a2c775f0c89f843
+      internalID: -1260371901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_52
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 139
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d450f519841e872468635d1bf2691fb5
+      internalID: 1288087808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_53
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 138
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94c693e34a8b8345805b2aa8c6a1b99
+      internalID: -907353021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_54
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 138
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6bdd999edba5948a61db25ce363f65
+      internalID: 913589527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_55
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 138
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b5fe13fb0efc044a91dcc4c84f00ec
+      internalID: 1084273020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_56
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 138
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114e1be522f8d214d9d4bd1a929baef6
+      internalID: -89419841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_57
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 138
+        width: 77
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e995fbb70419441499855e30f4ac70d7
+      internalID: 1667039460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_58
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad44c824fc47ac45a035522b896e8f8
+      internalID: -1902859546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 81_Assets_bombersprites_59
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 52
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4053b4112968e24c800b9fd00c3e76e
+      internalID: -1685257390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      81_Assets_bombersprites_0: 735505013
+      81_Assets_bombersprites_1: 1238590546
+      81_Assets_bombersprites_10: -1323515040
+      81_Assets_bombersprites_11: 954977484
+      81_Assets_bombersprites_12: -138442415
+      81_Assets_bombersprites_13: -594675629
+      81_Assets_bombersprites_14: -1663971713
+      81_Assets_bombersprites_15: 421020371
+      81_Assets_bombersprites_16: -451590782
+      81_Assets_bombersprites_17: 1192244944
+      81_Assets_bombersprites_18: -1700059472
+      81_Assets_bombersprites_19: -1034800565
+      81_Assets_bombersprites_2: 83573831
+      81_Assets_bombersprites_20: -1841240870
+      81_Assets_bombersprites_21: -2052094729
+      81_Assets_bombersprites_22: -789689345
+      81_Assets_bombersprites_23: -403136143
+      81_Assets_bombersprites_24: 154505732
+      81_Assets_bombersprites_25: 1710601362
+      81_Assets_bombersprites_26: 761843182
+      81_Assets_bombersprites_27: 2081819569
+      81_Assets_bombersprites_28: -1288251582
+      81_Assets_bombersprites_29: -917237964
+      81_Assets_bombersprites_3: 1117161081
+      81_Assets_bombersprites_30: 1535269615
+      81_Assets_bombersprites_31: -1605041156
+      81_Assets_bombersprites_32: 1893630313
+      81_Assets_bombersprites_33: 1139555444
+      81_Assets_bombersprites_34: -1735372237
+      81_Assets_bombersprites_35: -344233171
+      81_Assets_bombersprites_36: -851145739
+      81_Assets_bombersprites_37: -990632249
+      81_Assets_bombersprites_38: -1483904245
+      81_Assets_bombersprites_39: 1685182752
+      81_Assets_bombersprites_4: -634797850
+      81_Assets_bombersprites_40: 667106763
+      81_Assets_bombersprites_41: 1147432182
+      81_Assets_bombersprites_42: 1249084931
+      81_Assets_bombersprites_43: -1203439834
+      81_Assets_bombersprites_44: -819275514
+      81_Assets_bombersprites_45: 805154865
+      81_Assets_bombersprites_46: 606806856
+      81_Assets_bombersprites_47: -766774029
+      81_Assets_bombersprites_48: 1225444071
+      81_Assets_bombersprites_49: -456415264
+      81_Assets_bombersprites_5: -1150335312
+      81_Assets_bombersprites_50: 1212416480
+      81_Assets_bombersprites_51: -1260371901
+      81_Assets_bombersprites_52: 1288087808
+      81_Assets_bombersprites_53: -907353021
+      81_Assets_bombersprites_54: 913589527
+      81_Assets_bombersprites_55: 1084273020
+      81_Assets_bombersprites_56: -89419841
+      81_Assets_bombersprites_57: 1667039460
+      81_Assets_bombersprites_58: -1902859546
+      81_Assets_bombersprites_59: -1685257390
+      81_Assets_bombersprites_6: -399729818
+      81_Assets_bombersprites_7: 994020918
+      81_Assets_bombersprites_8: 1814685024
+      81_Assets_bombersprites_9: -126590470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

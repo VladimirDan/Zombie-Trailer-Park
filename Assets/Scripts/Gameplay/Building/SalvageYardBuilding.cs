@@ -3,7 +3,7 @@ using Enums;
 
 namespace Gameplay.Building
 {
-    public class SalvageYardBuilding: Building
+    public class SalvageYardBuilding : Building
     {
         private PlayerBankModel playerBankModel;
         

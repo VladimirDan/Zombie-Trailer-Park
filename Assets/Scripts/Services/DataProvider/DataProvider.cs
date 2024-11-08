@@ -1,5 +1,5 @@
 ﻿using Assets.Scripts.Extensions;
-using LevelsParameters;
+using GameParameters;
 using CreaturesData;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,8 +18,7 @@ namespace Services
         [SerializeField] private UnitsSummonData unitsSummonData;
         [SerializeField] private BuildingsSummonData buildingsSummonData;
         [SerializeField] private YeeHawPowersSummonData yeeHawPowersSummonData;
-
-        [SerializeField] private PlayerResources playerStartResources;
+        
         [SerializeField] private BuildingsEffects buildingsEffects;
         
         [SerializeField] private TooltipsContent tooltipsContent;
@@ -31,6 +30,10 @@ namespace Services
         
         [SerializeField] private GameObject airStrikePlanePrefab;
         [SerializeField] private UnitsSpawnTimings crowdSpawnOrder;
+
+        [SerializeField] private LevelParametersContainer currentLevelParameters;
+        
+        [SerializeField] private Transform levelFloorTransform;
         
         public void Initialize()
         {
@@ -115,7 +118,7 @@ namespace Services
         
         public PlayerResources GetPlayerStartResources()
         {
-            return playerStartResources;
+            return currentLevelParameters.levelParameters.playerStartResources;
         }
 
         public float GetBuildingCountLimit(BuildingType buildingType)
@@ -162,6 +165,26 @@ namespace Services
         public UnitsSpawnTimings GetCrowdSpawnOrder()
         {
             return crowdSpawnOrder;
+        }
+
+        public UnitsSpawnTimings GetZombiesSpawnCycleParameters()
+        {
+            return currentLevelParameters.levelParameters.zombiesSpawnCycleParameters;
+        }
+        
+        public UnitsSpawnTimings GetVillagersSpawnCycleParameters()
+        {
+            return currentLevelParameters.levelParameters.zombiesSpawnCycleParameters;
+        }
+
+        public LevelParameters GetCurrentLevelParameters()
+        {
+            return currentLevelParameters.levelParameters;
+        }
+
+        public Transform GetLevelFloorTransform()
+        {
+            return levelFloorTransform;
         }
     }
 }

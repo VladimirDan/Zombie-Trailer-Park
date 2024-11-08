@@ -1,4 +1,4 @@
-﻿namespace LevelsParameters
+﻿namespace GameParameters
 {
     [System.Serializable]
     public class ArmyCapacityUpgradeParameters

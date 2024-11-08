@@ -1,4 +1,5 @@
-﻿using CreaturesData;
+﻿using Services.LevelStatisticsManager;
+using CreaturesData;
 using Services;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
@@ -14,6 +15,7 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             ((ZombieJumper)unitObject).opponentBaseXCoord = ((ZombieJumperParametersData)unitData).opponentBaseXCoord;
         }
 
-        public ZombieJumperSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
+        public ZombieJumperSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel) 
+            : base(dataProvider, levelStatisticsManager, playerBankModel) { }
     }
 }

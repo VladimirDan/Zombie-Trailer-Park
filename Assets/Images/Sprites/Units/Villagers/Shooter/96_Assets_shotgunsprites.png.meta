@@ -1,0 +1,1169 @@
+fileFormatVersion: 2
+guid: 3a3ee75161764d547981ba8d6e4a91a1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 445
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12f5ddfb7acb534ab0b1c16c01a4429
+      internalID: -1259443887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 445
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f7a20b7b22d61478191bd8bb1fd1e8
+      internalID: -722911142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 445
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93cb3385c3b767498cf09804ab12918
+      internalID: -15916622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 445
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c5131a45107ed4d8f6a1436f399ce4
+      internalID: -510623341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 445
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b2585b16ee07418ac407404aa7c6a
+      internalID: -787315846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 445
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc29d3ff00a83d41b2730c936d84351
+      internalID: 1939804472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 445
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f40fb3271e193049ac4c60751dbc225
+      internalID: 1343890163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 445
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c9270a2f81d744793f63502b871831
+      internalID: -921983279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 445
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d831d757dabc72d4f88852ca008158a1
+      internalID: 1159277055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 445
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdcad531fc61a64d89586e7c5310268
+      internalID: 1158629533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 445
+        width: 83
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5747f8f64507f43a9730dbc6e4b051
+      internalID: 145961121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_12
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 445
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6487ce3c8dd2a4a4a923db44ca3157da
+      internalID: -564288424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_14
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 445
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55943ed5a1cb9745a2e36629aa0a7c0
+      internalID: -564657133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_16
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 444
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e685ea6145f7542937bba8738d575e
+      internalID: -628365095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 368
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176ce7da1bd21b34899a7184388f1242
+      internalID: -65293257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 368
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a78db8f4647c43995503461266d41
+      internalID: 1636348543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 368
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f199e75af81e44282d4100c8a322a5
+      internalID: 1748282267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 368
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd912c8a3b93994186b941d4edf034c
+      internalID: 731005275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_21
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 368
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627b3e95fb645bc43bde5c514a4ab390
+      internalID: -1140844302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 368
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3373af6ac07954dae564c157b2f63f
+      internalID: -1810070695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_23
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 368
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a51d21c55bc5549ae24b8c651d0e68
+      internalID: -991810554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_24
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 368
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb3a57b413f97f4794aa6add6111fb4
+      internalID: -1656729718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_25
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 368
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97a5606811a6f248b1d26844a5d5212
+      internalID: -1815730666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_26
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 368
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c445d18accde3594ba6387dcf9430c10
+      internalID: 321852448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_27
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 368
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c2d51a3e01ffd47b2a0a72921863e8
+      internalID: 933705047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_28
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 368
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04125eb600818664b9ac3f66c8bd9cd2
+      internalID: 231521043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_30
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 368
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43cff8b57182f6468ccddb7db322055
+      internalID: -41379510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_32
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 368
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6572eba01116f842911493ea7e0ea46
+      internalID: 906399291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_34
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 292
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d35073bf9ccf954b869e2f34099c140
+      internalID: -1879518838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_35
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 292
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e39cdae58c94114090015c4c8edf3fd
+      internalID: 878187896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_36
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 292
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625a32836b969d745953d2f3893846eb
+      internalID: -1760057071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_37
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 291
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28362d9bb0ea6f44a274c08701f3c24
+      internalID: -1199269743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_38
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 291
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4f9206e9e07b94280d26494a957ea7
+      internalID: 1766074825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_39
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 291
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06357b13246a8a4d89762434387f876
+      internalID: -905213635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_40
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 291
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b09e0b7af54f544af6ff60c8e1cfa2
+      internalID: 1640425407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_41
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 291
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83dec899e357794e96e0a525ee4adf5
+      internalID: -323730667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_42
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 291
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fd33581f148e344a5ccb218e3adb73
+      internalID: 1998406829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 291
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2903674252fc416489bd1a0ec79a5590
+      internalID: -1515022173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_45
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 291
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d307fc4c18cd5494b8ec01be1346f0c5
+      internalID: 115918502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_47
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 290
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e8039a05105a34aaa4e83f6a6ae3e2
+      internalID: -1139770312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_48
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 290
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd526094da6d004a97453536278b7b5
+      internalID: 2126914878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_49
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 290
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2792b0f6868c96a46b4605cf6d56df8c
+      internalID: -275579702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_50
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 290
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089501d7c216ace4f804a2a526b4c19d
+      internalID: -1457258379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_51
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 290
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f9e606b7e11ba4db84be757cd83272
+      internalID: -1089381217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_52
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 211
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b946080cfc375428a7445571fe6536
+      internalID: -929008768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_53
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 211
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc775f5047048e41af938e2c5cdb9fc
+      internalID: -1292446554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 96_Assets_shotgunsprites_54
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 211
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0e769ecc53b794ea1e60bbcdd37b2f
+      internalID: -300381213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      96_Assets_shotgunsprites_0: -1259443887
+      96_Assets_shotgunsprites_1: -722911142
+      96_Assets_shotgunsprites_10: 145961121
+      96_Assets_shotgunsprites_11: -398188584
+      96_Assets_shotgunsprites_12: -564288424
+      96_Assets_shotgunsprites_13: -1821017423
+      96_Assets_shotgunsprites_14: -564657133
+      96_Assets_shotgunsprites_15: 1167982101
+      96_Assets_shotgunsprites_16: -628365095
+      96_Assets_shotgunsprites_17: -65293257
+      96_Assets_shotgunsprites_18: 1636348543
+      96_Assets_shotgunsprites_19: 1748282267
+      96_Assets_shotgunsprites_2: -15916622
+      96_Assets_shotgunsprites_20: 731005275
+      96_Assets_shotgunsprites_21: -1140844302
+      96_Assets_shotgunsprites_22: -1810070695
+      96_Assets_shotgunsprites_23: -991810554
+      96_Assets_shotgunsprites_24: -1656729718
+      96_Assets_shotgunsprites_25: -1815730666
+      96_Assets_shotgunsprites_26: 321852448
+      96_Assets_shotgunsprites_27: 933705047
+      96_Assets_shotgunsprites_28: 231521043
+      96_Assets_shotgunsprites_29: 1249085387
+      96_Assets_shotgunsprites_3: -510623341
+      96_Assets_shotgunsprites_30: -41379510
+      96_Assets_shotgunsprites_31: -1211887315
+      96_Assets_shotgunsprites_32: 906399291
+      96_Assets_shotgunsprites_33: -780133984
+      96_Assets_shotgunsprites_34: -1879518838
+      96_Assets_shotgunsprites_35: 878187896
+      96_Assets_shotgunsprites_36: -1760057071
+      96_Assets_shotgunsprites_37: -1199269743
+      96_Assets_shotgunsprites_38: 1766074825
+      96_Assets_shotgunsprites_39: -905213635
+      96_Assets_shotgunsprites_4: -787315846
+      96_Assets_shotgunsprites_40: 1640425407
+      96_Assets_shotgunsprites_41: -323730667
+      96_Assets_shotgunsprites_42: 1998406829
+      96_Assets_shotgunsprites_43: -1515022173
+      96_Assets_shotgunsprites_44: -651575367
+      96_Assets_shotgunsprites_45: 115918502
+      96_Assets_shotgunsprites_46: -140298336
+      96_Assets_shotgunsprites_47: -1139770312
+      96_Assets_shotgunsprites_48: 2126914878
+      96_Assets_shotgunsprites_49: -275579702
+      96_Assets_shotgunsprites_5: 1939804472
+      96_Assets_shotgunsprites_50: -1457258379
+      96_Assets_shotgunsprites_51: -1089381217
+      96_Assets_shotgunsprites_52: -929008768
+      96_Assets_shotgunsprites_53: -1292446554
+      96_Assets_shotgunsprites_54: -300381213
+      96_Assets_shotgunsprites_6: 1343890163
+      96_Assets_shotgunsprites_7: -921983279
+      96_Assets_shotgunsprites_8: 1159277055
+      96_Assets_shotgunsprites_9: 1158629533
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

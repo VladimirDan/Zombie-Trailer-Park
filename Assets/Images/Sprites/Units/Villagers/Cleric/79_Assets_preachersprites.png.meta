@@ -1,0 +1,1843 @@
+fileFormatVersion: 2
+guid: 15d69171471c11a428124bc7322b8a65
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 453
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4a0f28cfd92df439e7743415dca6a4
+      internalID: 1267907307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 453
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9369a54261ef534a952b6dbecdd7752
+      internalID: 597425324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 453
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc02ba4e8bd5da4aa903f2d90268d41
+      internalID: 1458236538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 453
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be36e72c92d25f438bc300179d675eb
+      internalID: 1985530233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 453
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc71107fccdeb3d4194f149988e32061
+      internalID: 1264184034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_5
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 453
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f74e6ce5e7d24e4fa92e8598603258a
+      internalID: -961007351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_6
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 453
+        width: 90
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dcf68ffa2bb644aaee520e005f3c28
+      internalID: -172484377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_7
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 453
+        width: 103
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbbbc7e309d7e8459efde193de0df1b
+      internalID: -464120589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_8
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 453
+        width: 119
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6f4f4e54061d84db33ada723c9f12b
+      internalID: -732006619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_9
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 453
+        width: 138
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2dbaa31b9ce07458dbf3e7d2fd0fe9
+      internalID: 814150354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 386
+        width: 137
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e69cacf805528943a31c0a01e14d458
+      internalID: -1321731482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 386
+        width: 136
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9e0dac8dc8c9543af9a81ef0b4f769
+      internalID: 451382398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_12
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 386
+        width: 135
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1499f2147d4e42b4faf9a82f6672bb55
+      internalID: 521083199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 386
+        width: 134
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7dbf271e762334aa3193d651e54978
+      internalID: -1472152619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_14
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 386
+        width: 133
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c014ceb3eab0741b5367f6090ced45
+      internalID: -720095688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_15
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 386
+        width: 132
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c7ba06815e994ba1eadf23e8bc15c
+      internalID: -2039455368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 131
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d45c47de2d2a64c8d94425de2fd83b
+      internalID: 1962557189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 319
+        width: 132
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773aeb83a0b18124caaa9e513f1ade43
+      internalID: 1038308958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_18
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 319
+        width: 134
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2452f5f98841743b4df97d059f1c0d
+      internalID: 916792929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 319
+        width: 135
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ee0f79822313648aee22102979872c
+      internalID: 151644695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 319
+        width: 137
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa654a61f34c00498917f093341aab4
+      internalID: -528278182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_21
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 319
+        width: 137
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75b25d1a1e87d64aaf54de24ec75654
+      internalID: 1528985515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_22
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 252
+        width: 136
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413c112948fb723498806abca9372723
+      internalID: -1916852369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 252
+        width: 135
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd3c0e099a61bf4d8d6e53d7257145a
+      internalID: 511988053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_24
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 252
+        width: 134
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299b39d217a4b904287454819e6bd24b
+      internalID: 1020794832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_25
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 252
+        width: 133
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0518df058ff21254ebaa2ad1ac6c4755
+      internalID: 1032941364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_26
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 252
+        width: 132
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d19d059fd7ab0442a1abe7057eb67bc
+      internalID: 1588738327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_27
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 252
+        width: 131
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb1e76b09595c6409a7c6933486c482
+      internalID: 148725272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 185
+        width: 132
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30d1b1281a415940b17850a97ff25f2
+      internalID: 791083357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 185
+        width: 124
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc4538ca7262ba4aa1aac4d6148d0b6
+      internalID: 883393540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_30
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 185
+        width: 105
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4438ef092022f145a81574c9682cef5
+      internalID: 1202603494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_31
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 185
+        width: 86
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb285c660f8d0834cbc30c2430080da9
+      internalID: 1599358320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_32
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 185
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da7fc24582df0d44901bf670305f4c0
+      internalID: 120807968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_33
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 185
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d411250ac0494948b2d5e547759963b
+      internalID: 528350205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_34
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 185
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae96eb29509cdf42bf7273d135f5a26
+      internalID: -811672615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 184
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d313ad79ca2aa81459832532fcfc72c3
+      internalID: -1403498853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_36
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 184
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519edf251ad68a349a6f12f239fbe2b6
+      internalID: 705530646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_37
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 184
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c9f870687346541b983210d32817f3
+      internalID: -477971856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_38
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 181
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24668e5fd28dc6740be85fb7369e1bc7
+      internalID: 1457538076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_39
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 108
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985a6fdd7132e7444bd59ee2e904475c
+      internalID: 1624604776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_40
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 106
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2065841a8b310f4d8f9cf08b2d75202
+      internalID: 394635223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_41
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 106
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248820413e5d01047b87288dbd5c1ba4
+      internalID: -931035663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_42
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 104
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3931db810446eb4f8acefc7a96324b7
+      internalID: -1190341413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 103
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a851fcbabf5ea42957a4921eb1b429
+      internalID: 1564810212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_44
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 102
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c4640a0ac6541498029f121c92e5fc
+      internalID: -1862530397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_45
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 102
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42fab0f60d177049becfa25411fe111
+      internalID: -598362015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_46
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 102
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394b6f3144c44294d9a0ab251e84027d
+      internalID: -1425281693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_47
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 102
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e530d7af0ea4e45979125639bb7f4d
+      internalID: -551346839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_48
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 102
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb30bd6884627d142a86e1c9748cb885
+      internalID: -931237998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_49
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 102
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b52c35a7b04d724c92f2c8e9f60e492
+      internalID: -1916127405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_50
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 102
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc0714aa3350fb439fe5dc551db34f6
+      internalID: -1311214999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_51
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 102
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4c355749363f04996f5b8289a3ef0c
+      internalID: 177157095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_52
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 102
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe08e3fd514358f41ba055588317dc06
+      internalID: 1309140731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_53
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 102
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a51de009151c4d4cb0306e65ac7a53f
+      internalID: -1741387663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_54
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 101
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42be3eae6cb4b09469482eab35906a83
+      internalID: -814388961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_55
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 101
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37d1b7dbe3fcd945946850a217da41c
+      internalID: -263247266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_56
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 101
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b3cc203db362c4abd1bed6cb881c91
+      internalID: 92690809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_57
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 102
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d9d2f021bed0c479b3dd4301ee358d
+      internalID: -621988785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_58
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 101
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8022ed348664cf4cadc0abfde72a66d
+      internalID: -1239696346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_59
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 101
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc526980b1ec0f42afb936cb1193a78
+      internalID: 276050554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_60
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 101
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d83b9b86aed3684789d115b00368262
+      internalID: -1387295598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_61
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 101
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b911337ccb64bfe4693a06b4017088df
+      internalID: 967850957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_62
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 101
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d45eebc339dc9440914fccaf705d80d
+      internalID: 169604279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 21
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a1d5d065a07074a80e3cc0cc8d57d9
+      internalID: 522112122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_64
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 21
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2fc886195f4f948b9e72b7378c5cb5
+      internalID: -1201398197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_65
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 21
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18280f74a7643af42b57969b80726439
+      internalID: -914335123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_66
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 21
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf11a1b05a5a5f42ac30576d30af3ca
+      internalID: -1130071598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_67
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 21
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01acc323750efe74b95dd661a55f93fa
+      internalID: 1216754330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_68
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 21
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e911cdfda272b42bc05186f033b661
+      internalID: 512704251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_69
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 21
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3a43393a9350b4186aed35f3565557
+      internalID: -591505284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_70
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 21
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3118e61f589ab3d439140f9194b34d2f
+      internalID: -587196212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_71
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 21
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69f355b794ccff418a41f2fa360ce59
+      internalID: -788889637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_72
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 21
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e0c09d23ef7c343984718ddf1600d3
+      internalID: 1852777003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_73
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 21
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cceee2866420446ba37a1d30cd310c
+      internalID: 376071896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_74
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 21
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d86c6951ae66c4887323631726d56c
+      internalID: 1658036577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_75
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 21
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326fd8a82f24d2849a9a44d158e3d3e1
+      internalID: -1624512835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_76
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 21
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb90c41f7dbc8e498ef4c36a3e9cc54
+      internalID: 1593786597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79_Assets_preachersprites_77
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 21
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40313c0fac8456b43bed2003e53b07da
+      internalID: 25502863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      79_Assets_preachersprites_0: 1267907307
+      79_Assets_preachersprites_1: 597425324
+      79_Assets_preachersprites_10: -1321731482
+      79_Assets_preachersprites_11: 451382398
+      79_Assets_preachersprites_12: 521083199
+      79_Assets_preachersprites_13: -1472152619
+      79_Assets_preachersprites_14: -720095688
+      79_Assets_preachersprites_15: -2039455368
+      79_Assets_preachersprites_16: 1962557189
+      79_Assets_preachersprites_17: 1038308958
+      79_Assets_preachersprites_18: 916792929
+      79_Assets_preachersprites_19: 151644695
+      79_Assets_preachersprites_2: 1458236538
+      79_Assets_preachersprites_20: -528278182
+      79_Assets_preachersprites_21: 1528985515
+      79_Assets_preachersprites_22: -1916852369
+      79_Assets_preachersprites_23: 511988053
+      79_Assets_preachersprites_24: 1020794832
+      79_Assets_preachersprites_25: 1032941364
+      79_Assets_preachersprites_26: 1588738327
+      79_Assets_preachersprites_27: 148725272
+      79_Assets_preachersprites_28: 791083357
+      79_Assets_preachersprites_29: 883393540
+      79_Assets_preachersprites_3: 1985530233
+      79_Assets_preachersprites_30: 1202603494
+      79_Assets_preachersprites_31: 1599358320
+      79_Assets_preachersprites_32: 120807968
+      79_Assets_preachersprites_33: 528350205
+      79_Assets_preachersprites_34: -811672615
+      79_Assets_preachersprites_35: -1403498853
+      79_Assets_preachersprites_36: 705530646
+      79_Assets_preachersprites_37: -477971856
+      79_Assets_preachersprites_38: 1457538076
+      79_Assets_preachersprites_39: 1624604776
+      79_Assets_preachersprites_4: 1264184034
+      79_Assets_preachersprites_40: 394635223
+      79_Assets_preachersprites_41: -931035663
+      79_Assets_preachersprites_42: -1190341413
+      79_Assets_preachersprites_43: 1564810212
+      79_Assets_preachersprites_44: -1862530397
+      79_Assets_preachersprites_45: -598362015
+      79_Assets_preachersprites_46: -1425281693
+      79_Assets_preachersprites_47: -551346839
+      79_Assets_preachersprites_48: -931237998
+      79_Assets_preachersprites_49: -1916127405
+      79_Assets_preachersprites_5: -961007351
+      79_Assets_preachersprites_50: -1311214999
+      79_Assets_preachersprites_51: 177157095
+      79_Assets_preachersprites_52: 1309140731
+      79_Assets_preachersprites_53: -1741387663
+      79_Assets_preachersprites_54: -814388961
+      79_Assets_preachersprites_55: -263247266
+      79_Assets_preachersprites_56: 92690809
+      79_Assets_preachersprites_57: -621988785
+      79_Assets_preachersprites_58: -1239696346
+      79_Assets_preachersprites_59: 276050554
+      79_Assets_preachersprites_6: -172484377
+      79_Assets_preachersprites_60: -1387295598
+      79_Assets_preachersprites_61: 967850957
+      79_Assets_preachersprites_62: 169604279
+      79_Assets_preachersprites_63: 522112122
+      79_Assets_preachersprites_64: -1201398197
+      79_Assets_preachersprites_65: -914335123
+      79_Assets_preachersprites_66: -1130071598
+      79_Assets_preachersprites_67: 1216754330
+      79_Assets_preachersprites_68: 512704251
+      79_Assets_preachersprites_69: -591505284
+      79_Assets_preachersprites_7: -464120589
+      79_Assets_preachersprites_70: -587196212
+      79_Assets_preachersprites_71: -788889637
+      79_Assets_preachersprites_72: 1852777003
+      79_Assets_preachersprites_73: 376071896
+      79_Assets_preachersprites_74: 1658036577
+      79_Assets_preachersprites_75: -1624512835
+      79_Assets_preachersprites_76: 1593786597
+      79_Assets_preachersprites_77: 25502863
+      79_Assets_preachersprites_8: -732006619
+      79_Assets_preachersprites_9: 814150354
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

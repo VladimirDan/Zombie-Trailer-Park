@@ -1,4 +1,5 @@
-﻿using CreaturesData;
+﻿using Services.LevelStatisticsManager;
+using CreaturesData;
 using UnityEngine;
 using Services;
 using Enums;
@@ -7,10 +8,10 @@ public class UnitSpawner : EntitySpawner
 {
     protected PlayerBankModel playerBankModel;
     
-    public virtual void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel)
+    public virtual void SpawnAndInitializeUnit(UnitType entityType, Vector3 spawnPosition, PlayerBankModel playerBankModel, AudioManager audioManager)
     {
         Unit unitObject = SpawnUnit(entityType, spawnPosition);
-        unitObject.Initialize(dataProvider, playerBankModel);
+        unitObject.Initialize(dataProvider, levelStatisticsManager, playerBankModel, audioManager);
     }
     
     public virtual Unit SpawnUnit(UnitType entityType, Vector3 spawnPosition)
@@ -35,7 +36,7 @@ public class UnitSpawner : EntitySpawner
     {
     }
 
-    public UnitSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider)
+    public UnitSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel) : base(dataProvider, levelStatisticsManager)
     {
         this.playerBankModel = playerBankModel;
     }

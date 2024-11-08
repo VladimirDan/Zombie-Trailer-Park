@@ -1,7 +1,9 @@
-using Assets.Scripts.StateMachine.States;
+using Gameplay.GameEntity.StateMachine.States;
 using UnityEngine;
 using Services;
 using Assets.Scripts.Gameplay.Entity.StateMachine.States;
+using Enums;
+using Services.LevelStatisticsManager;
 
 
 public class ZombieJumper : Unit
@@ -14,7 +16,7 @@ public class ZombieJumper : Unit
     {
         if (!healthModel.IsAlive())
         {
-            stateMachine.ChangeCurrentState(new DeathState(coroutineRunner));
+            stateMachine.ChangeCurrentState(new UnitDeathState(coroutineRunner, entityModel));
             Die();
         }
 
@@ -44,9 +46,9 @@ public class ZombieJumper : Unit
         }
     }
 
-    public override void setUpEntity(DataProvider dataProvider, PlayerBankModel playerBankModel)
+    public override void setUpEntity(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel, AudioManager audioManager)
     {
-        base.setUpEntity(dataProvider, playerBankModel);
+        base.setUpEntity(dataProvider, levelStatisticsManager, playerBankModel, audioManager);
 
         ((ZombieJumperModel)unitModel).jumpLength = jumpLength;
         ((ZombieJumperModel)unitModel).jumpCooldown = jumpCooldown;

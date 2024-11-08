@@ -15,6 +15,6 @@ MonoBehaviour:
   unitsSpawnTimings:
   - unitType: 5
     unitSpawnCycleParameters:
-    - timing: 5
-      spawnCooldown: 0.5
+    - timing: 0
+      spawnCooldown: 0
       unitCount: 0

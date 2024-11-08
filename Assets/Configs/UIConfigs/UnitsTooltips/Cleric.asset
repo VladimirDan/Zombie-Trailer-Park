@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cleric
   m_EditorClassIdentifier: 
   title: Cleric
-  titlePic: {fileID: 0}
+  armyCapacityUnitImageObject: {fileID: 371806456568564052, guid: b41dc971ac5ac4347b192f9c29a3665f, type: 3}
   tooltipDescriptionText: Through the power of faith the Cleric converts the damned
     into friendly units.
   warningTextVariants:
@@ -21,6 +21,7 @@ MonoBehaviour:
     noNeededBuilding: 'to build a Chapel '
     noEnoughMoney: 'more cash '
     noEnoughArmyCapacityAvailable: 'more trailers '
+    noEnoughYeeHawPoints: more Yee-Haw points
     warningEnd: 'before summoning '
     warningConnectionPart: 'and '
     warningMaxCountReached: 'you already have the maximum number of '

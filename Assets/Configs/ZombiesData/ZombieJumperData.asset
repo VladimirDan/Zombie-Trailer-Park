@@ -23,8 +23,8 @@ MonoBehaviour:
   CreatureSpeed: 3.5
   CreatureHorizontalMovementDirection: -1
   AttackRange: 1
-  AttackDamage: 25
-  AttackSpeed: 0.5
+  AttackDamage: 20
+  AttackCooldown: 1
   YeeHawPointsDrop: 10
   jumpLength: 6
   jumpCooldown: 2

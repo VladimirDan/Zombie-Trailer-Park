@@ -15,4 +15,4 @@ MonoBehaviour:
   bombPrefab: {fileID: 2834832886997551221, guid: e445c314eb650e7439026ccb874e85d4, type: 3}
   attackSpeed: 1
   moveSpeed: 7
-  bombDropCooldown: 0.2
+  bombDropCooldown: 1

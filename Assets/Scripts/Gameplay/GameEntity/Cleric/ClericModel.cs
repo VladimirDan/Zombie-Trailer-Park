@@ -1,25 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
+﻿using Gameplay.GameEntity.Base;
+using Gameplay.GameEntity.StateMachine.States;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using Game.Code.Common.CoroutineRunner;
+using System.Collections;
 
 public class ClericModel : UnitModel
 {
     public override void Attack(GameObject target) 
     {
-        Unit unit = target.GetComponent<Unit>();
+        Unit unitTarget = target.GetComponent<Unit>();
+        UnitModel unitTargetModel = unitTarget.unitModel;
 
-        target.layer = (int)Mathf.Log(unit.unitModel.OpponentLayer.value, 2);
+        target.gameObject.layer = (int)Mathf.Log(unitTargetModel.OpponentLayer.value, 2);
+        target.transform.Rotate(0, 180, 0);
+        unitTarget.OpponentLayer = this.OpponentLayer;
+        unitTargetModel.OpponentLayer = this.OpponentLayer;
+        unitTargetModel.OpponentBaseLayer = this.OpponentBaseLayer;
 
-        unit.OpponentLayer = this.OpponentLayer;
-        unit.unitModel.OpponentLayer = this.OpponentLayer;
+        unitTarget.CreatureHorizontalMovementDirection = this.CreatureHorizontalMovementDirection;
+        unitTargetModel.CreatureHorizontalMovementDirection = this.CreatureHorizontalMovementDirection;
+        
+        // Vector3 scale = unitTarget.transform.localScale;
+        // scale.x = -scale.x;
+        // unitTarget.transform.localScale = scale;
 
-        unit.CreatureHorizontalMovementDirection = 1;
-        unit.unitModel.CreatureHorizontalMovementDirection = 1;
+        unitTarget.stateMachine.ChangeCurrentState(new UnitIdleState(unitTargetModel, unitTarget.coroutineRunner));
     }
 
     public override GameObject FindOpponent(float range)
@@ -50,6 +55,31 @@ public class ClericModel : UnitModel
         }
 
         return opponent;
+    }
+    
+    public override IEnumerator Fight()
+    {
+        GameObject target = FindOpponent(AttackRange);
+        
+        yield return new WaitForSeconds(AttackCooldown);
+
+        while (true)
+        {
+            if(target == null && isEnemyInAttackRange())
+            {
+                target = FindOpponent(AttackRange);
+                Attack(target);
+            }
+            else if (target != null && (1 << target.layer & OpponentLayer) != 0)
+            {
+                Attack(target);
+            }
+            else
+            {
+                yield break;
+            }
+            yield return new WaitForSeconds(AttackCooldown);
+        }
     }
 }
 

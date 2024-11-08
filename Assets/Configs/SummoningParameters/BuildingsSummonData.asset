@@ -9,25 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 594cc8252825435c87f472b3c8dc5ee3, type: 3}
   m_Name: BuildingsSummonData
   m_EditorClassIdentifier: Assembly-CSharp:CreaturesData:BuildingsSummonData
   buildingsSummonData:
   - buildingType: 0
     price: 500
     summonTime: 5
-    countLimit: 5
+    countLimit: 4
   - buildingType: 1
     price: 250
     summonTime: 3
-    countLimit: 10
+    countLimit: 14
   - buildingType: 2
     price: 1000
     summonTime: 1
     countLimit: 1
   - buildingType: 3
     price: 1000
-    summonTime: 20
+    summonTime: 1
     countLimit: 1
   - buildingType: 4
     price: 1000
@@ -35,5 +35,5 @@ MonoBehaviour:
     countLimit: 1
   - buildingType: 5
     price: 1500
-    summonTime: 30
+    summonTime: 1
     countLimit: 1

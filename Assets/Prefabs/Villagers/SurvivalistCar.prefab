@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.13, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,9 +77,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.12589462, g: 0.05833925, b: 0.6509434, a: 1}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 754715678, guid: c58774eefaabb344f83beadfeb235f35, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -116,18 +116,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coroutineRunner: {fileID: 7007052771586452342, guid: a295a74d96ddfe545aee08cd0d382efc, type: 3}
+  unitModel: {fileID: 0}
   unitType: 0
   CreatureSpeed: 0
   CreatureHorizontalMovementDirection: 0
   AttackRange: 0
   AttackDamage: 0
-  AttackSpeed: 0
+  AttackCooldown: 0
   OpponentLayer:
     serializedVersion: 2
     m_Bits: 64
   OpponentBaseLayer:
     serializedVersion: 2
     m_Bits: 0
+  animator: {fileID: 0}
   YeeHawPointsDrop: 0
   playerBank:
     money:

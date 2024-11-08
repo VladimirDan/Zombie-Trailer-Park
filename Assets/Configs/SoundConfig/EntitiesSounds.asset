@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e75a0c10c944ee82b9a0109b08fc8c, type: 3}
+  m_Name: EntitiesSounds
+  m_EditorClassIdentifier: 
+  diggerAttackSounds:
+  - {fileID: 8300000, guid: 6ae4cd00b8d1b184ebf7baf17b6c4362, type: 3}
+  - {fileID: 8300000, guid: d1211c0ec6aca274e9d55531c94eaf39, type: 3}
+  - {fileID: 8300000, guid: 4cc9e96ce5576084c8e63c078b6ec934, type: 3}
+  shooterAttackSounds:
+  - {fileID: 8300000, guid: 6e9651d1160347a4794d658c3c7711e0, type: 3}
+  boozerAttackSounds: []
+  survivalistCarAttackSounds:
+  - {fileID: 8300000, guid: a26984e6b3cde964290cbb984df7b052, type: 3}
+  clericAttackSounds:
+  - {fileID: 8300000, guid: ad1d09ef16138a84fb7102b3a3d00fdf, type: 3}
+  zombieAttackSounds:
+  - {fileID: 8300000, guid: 8351182493579344b88d758f686f7b0c, type: 3}
+  zombieJumperAttackSounds:
+  - {fileID: 8300000, guid: fcd491cf03d77254583acd62ce493e6a, type: 3}
+  bansheeAttackSounds:
+  - {fileID: 8300000, guid: fcd491cf03d77254583acd62ce493e6a, type: 3}
+  giantAttackSounds:
+  - {fileID: 8300000, guid: b77e3a64a2801a049bd5af931752337f, type: 3}
+  clericSpawnSounds:
+  - {fileID: 8300000, guid: febff8354ea334a4a98132ee00f509b1, type: 3}
+  bansheeSpawnSounds:
+  - {fileID: 8300000, guid: e5868dff680f0c94cac3f36842f38ca5, type: 3}
+  giantSpawnSounds:
+  - {fileID: 8300000, guid: ab29863bf9bf43c41b744198badac5e4, type: 3}
+  yeeHawSpawnSounds:
+  - {fileID: 8300000, guid: 074a4136583777548b258ffdef28af26, type: 3}
+  crowdSpawnSounds:
+  - {fileID: 8300000, guid: f5afcfbb84ac0ce4684803668bfc2679, type: 3}
+  airstrikeSpawnSounds:
+  - {fileID: 8300000, guid: 90a3fb443ee2ef744b24d5a2f94bcbce, type: 3}
+  zombieSpawnSounds: []
+  diggerDeathSounds:
+  - {fileID: 8300000, guid: 4d14df087e213514c83e2ad4981b88e6, type: 3}
+  shooterDeathSounds:
+  - {fileID: 8300000, guid: a9c949b6f05ea8540b0860d7cf186ce8, type: 3}
+  boozerDeathSounds:
+  - {fileID: 8300000, guid: eafad5bc5c812da4a80a125a9dd5db82, type: 3}
+  survivalistCarDeathSounds:
+  - {fileID: 8300000, guid: 6c010d7cf3578554bb23c1eb5f7b0b9f, type: 3}
+  clericDeathSounds:
+  - {fileID: 8300000, guid: 6bfb859fe5fc66843b5d463e92bcb06e, type: 3}

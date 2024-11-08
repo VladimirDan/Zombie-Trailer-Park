@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LevelsParameters
+namespace GameParameters
 {
     [CreateAssetMenu(fileName = "UnitSpawnTimings", menuName = "Level/Unit Spawn Timings")]
 

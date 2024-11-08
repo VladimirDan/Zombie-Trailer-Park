@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shooter
   m_EditorClassIdentifier: 
   title: Angry Farmer
-  titlePic: {fileID: 21300000, guid: 943935fb4f5decb41ae673d757dfe8e3, type: 3}
+  armyCapacityUnitImageObject: {fileID: 371806456568564052, guid: b41dc971ac5ac4347b192f9c29a3665f, type: 3}
   tooltipDescriptionText: Armed with a shotgum and an attitude, this man shoots zombies
     with extrime prejudice.
   warningTextVariants:
@@ -21,6 +21,7 @@ MonoBehaviour:
     noNeededBuilding: 'to build a Farm House '
     noEnoughMoney: 'more cash '
     noEnoughArmyCapacityAvailable: 'more trailers '
+    noEnoughYeeHawPoints: more Yee-Haw points
     warningEnd: 'before summoning '
     warningConnectionPart: 'and '
     warningMaxCountReached: 'you already have the maximum number of '

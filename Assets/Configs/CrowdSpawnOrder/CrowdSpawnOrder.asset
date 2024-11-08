@@ -16,13 +16,13 @@ MonoBehaviour:
   - unitType: 0
     unitSpawnCycleParameters:
     - timing: 0
-      spawnCooldown: 0.2
+      spawnCooldown: 0.4
       unitCount: 2
-    - timing: 0.4
-      spawnCooldown: 0.1
+    - timing: 0.8
+      spawnCooldown: 0.2
       unitCount: 3
-    - timing: 0.7
-      spawnCooldown: 0.14
+    - timing: 1.4
+      spawnCooldown: 0.28
       unitCount: 4
   - unitType: 1
     unitSpawnCycleParameters:

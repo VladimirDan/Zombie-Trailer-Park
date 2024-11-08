@@ -1,0 +1,1631 @@
+fileFormatVersion: 2
+guid: 7ed2c8afc4e3a174f9fb6a46d1e1df3d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 415
+        width: 123
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19aa2517d22746e4898047d8e8babecc
+      internalID: 1491954438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 414
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec87d6a2c0f99b498523a47af95ef28
+      internalID: 193294311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 414
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972b7e4425ea2514aa65c726d70be087
+      internalID: -1232248368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 413
+        width: 103
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eeec60042fc1e49a4cef2e8562e9b1
+      internalID: 1265179271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_4
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 413
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1300c9bd4337e498d60a80ff6faa38
+      internalID: 228610998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_5
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 413
+        width: 143
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145c937731b94ed439ebff887f381497
+      internalID: -595605082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_6
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 413
+        width: 140
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f63064c06c4c54794deaf269fb2e0f
+      internalID: 507972295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 413
+        width: 87
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657f4a934cc7d584cb068561534fb4ad
+      internalID: 283728035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_8
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 412
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578092b1f12e05843a3e5bf396209272
+      internalID: -684180904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_9
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 412
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae890b326127a124285dbcf7daabfec3
+      internalID: -484176637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_10
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 412
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c5e07e3cde3004782e01061d780513
+      internalID: 1610819110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_11
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 412
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf7d09ca5e66d5489762594c92756e4
+      internalID: 742913436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_12
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 412
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b19063d4c00f6f4cbbfa5378a421b78
+      internalID: -2066517643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_13
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 412
+        width: 85
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef600b911206df4984c491144df4a30
+      internalID: 1444546158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_14
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 412
+        width: 84
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d354bd1feaa5ef343b73ea783fae4d6d
+      internalID: -1562753173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_15
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 411
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2edde4ac67b68e4b8fae227937519f3
+      internalID: -640110757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_16
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 411
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dca67a496cece41acbfaceb2c1ed57
+      internalID: -1321732009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 302
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03781389dbae1d84188f8e3181a19075
+      internalID: -427007152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_18
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 302
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292335aa278096946ae6d306ff68f90c
+      internalID: 1664509689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 302
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359095b336a0a9c4d846c580cb367e6a
+      internalID: 1084860297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_20
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 302
+        width: 105
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b656247f1ed7d746af37346f7b2570a
+      internalID: 2019070587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_21
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 302
+        width: 100
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb8c8204299ecb42b27c655cfc3b836
+      internalID: 102032867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_22
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfbadd6193eb904497cfd3c90d16d05
+      internalID: 2097739982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_23
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a71705ef7e8fe478bcedc4c729293d
+      internalID: 824047744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_24
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 302
+        width: 83
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecdd87603b98384dbeb85314c3e7c21
+      internalID: 751652975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_25
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc54f8f26860ff4eaa485120ba54eb9
+      internalID: -131450424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_26
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32453837173de843be9f231a1a0d0b0
+      internalID: -1758106587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_27
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 302
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d55a7966195f446911c6ccf6eb567b
+      internalID: -1271884571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_28
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 302
+        width: 188
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e12cffac53a584c9569e0a7df2e7b6
+      internalID: -2141133882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_29
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 302
+        width: 199
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7bb4852cc5b9945b17f69ae602481a
+      internalID: 149259080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_30
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a02a57eaeaa744b8a31e6f4fca1110
+      internalID: 448763284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_31
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 302
+        width: 83
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e9c4dacadb1d042b7f0264aa0597a3
+      internalID: -1883248032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_32
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 302
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba038e39c5b46c41b131f73f767e492
+      internalID: 720936180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_33
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 301
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312ca2b79e388b646a21151998364003
+      internalID: 851879081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_34
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a601e8d9da7f6439c2756179c12db5
+      internalID: -1547604227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 191
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4836ef31c21f6b45ba06c97eb565eed
+      internalID: -697682279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_36
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 191
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322459fdddb205845b880317267b19f8
+      internalID: 91748313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 191
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de8fe6c375ce1c449ef338b7fd96c90
+      internalID: -504768531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_38
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 191
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33ba5ee603ed054a985a8309d9143e7
+      internalID: 919963361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_39
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 191
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98bb0615d4fdb34c922ec6d6b1a20eb
+      internalID: 1257541037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_40
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 191
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b0ca5217f70f64a8e748f85ebd4d53
+      internalID: 1856419280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_41
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 190
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753c0d482d36bd5489ba52fd098a5988
+      internalID: 673661385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_42
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 190
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44667a77f1abbba4c93702d87c3f8c34
+      internalID: -972728176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 190
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5187cec229daf05499c751ccd7178f97
+      internalID: 2127578203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_44
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 190
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1747b3a174802438ff1c12f9323af0
+      internalID: 492131201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_45
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 190
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e069a78968db26c4883243237de3f37e
+      internalID: -910755505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_46
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 190
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd0f4ec06384d54ca4809e510cbb510
+      internalID: 1183727568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_47
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 190
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec209fc49f9c454a8be696563187980
+      internalID: -1590397906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_48
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 190
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6795b89c9920c43930d0d900d80b09
+      internalID: -1185705598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_49
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 190
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1033f55a8c1d3ba4982532c38ccdbe4b
+      internalID: 1191460896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_50
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 189
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bc77df1ef90d743a390e29079a2e0c
+      internalID: -2022945351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_51
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 189
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7331b039b4603848ae2822ab2afef4f
+      internalID: -890183805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_52
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 189
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c7c2d6f5936064987f6a6875a41b00
+      internalID: 1398787635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_53
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 189
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3445d21277a16a4da64faa8d377d6d4
+      internalID: -1177617177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 77
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1071fe6fcd97a9b43bfde03b3d44116d
+      internalID: -811343739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_55
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 77
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4474936544c31cd4aa7dd7cec9765f88
+      internalID: 622699662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_56
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 76
+        width: 83
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beae66a2c50caa498656297d278e826
+      internalID: -952497067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_57
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 67
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cfad54a5b770341bea41241eb2d614
+      internalID: 709820163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_61
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 58
+        width: 108
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e229bb8e2ab036479c5dd54c116a7f5
+      internalID: -138817353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_62
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 48
+        width: 107
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537dce9d633586743818cb1fa1e4e01b
+      internalID: -1766163614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_65
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 42
+        width: 100
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030b377a16e2a234482d3713467d607a
+      internalID: -239502367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_66
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 38
+        width: 95
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4918509dcd99d4c8b66c2439b1dbad
+      internalID: 494620232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_67
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 36
+        width: 94
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b35aceb01a91f47bf078ed29029b67
+      internalID: 1813080713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_68
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 35
+        width: 88
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54528bed53ff4c4da1212eb5f5a3bca
+      internalID: 1818208766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_69
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 32
+        width: 135
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cf53fb406217e418e3571c4caea15d
+      internalID: -1100916887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_70
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 30
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58d39c256122a642a4fa06c1824d20e
+      internalID: 1669860896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_71
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 60
+        width: 212
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a228b8bb2a931564490a438dd63ff289
+      internalID: -1575711639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 65_Assets_fatzombiesprites_75
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 44
+        width: 191
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34123da26ffaced478faaa1b4bdc20a7
+      internalID: 645848486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      65_Assets_fatzombiesprites_0: 1491954438
+      65_Assets_fatzombiesprites_1: 193294311
+      65_Assets_fatzombiesprites_10: 1610819110
+      65_Assets_fatzombiesprites_11: 742913436
+      65_Assets_fatzombiesprites_12: -2066517643
+      65_Assets_fatzombiesprites_13: 1444546158
+      65_Assets_fatzombiesprites_14: -1562753173
+      65_Assets_fatzombiesprites_15: -640110757
+      65_Assets_fatzombiesprites_16: -1321732009
+      65_Assets_fatzombiesprites_17: -427007152
+      65_Assets_fatzombiesprites_18: 1664509689
+      65_Assets_fatzombiesprites_19: 1084860297
+      65_Assets_fatzombiesprites_2: -1232248368
+      65_Assets_fatzombiesprites_20: 2019070587
+      65_Assets_fatzombiesprites_21: 102032867
+      65_Assets_fatzombiesprites_22: 2097739982
+      65_Assets_fatzombiesprites_23: 824047744
+      65_Assets_fatzombiesprites_24: 751652975
+      65_Assets_fatzombiesprites_25: -131450424
+      65_Assets_fatzombiesprites_26: -1758106587
+      65_Assets_fatzombiesprites_27: -1271884571
+      65_Assets_fatzombiesprites_28: -2141133882
+      65_Assets_fatzombiesprites_29: 149259080
+      65_Assets_fatzombiesprites_3: 1265179271
+      65_Assets_fatzombiesprites_30: 448763284
+      65_Assets_fatzombiesprites_31: -1883248032
+      65_Assets_fatzombiesprites_32: 720936180
+      65_Assets_fatzombiesprites_33: 851879081
+      65_Assets_fatzombiesprites_34: -1547604227
+      65_Assets_fatzombiesprites_35: -697682279
+      65_Assets_fatzombiesprites_36: 91748313
+      65_Assets_fatzombiesprites_37: -504768531
+      65_Assets_fatzombiesprites_38: 919963361
+      65_Assets_fatzombiesprites_39: 1257541037
+      65_Assets_fatzombiesprites_4: 228610998
+      65_Assets_fatzombiesprites_40: 1856419280
+      65_Assets_fatzombiesprites_41: 673661385
+      65_Assets_fatzombiesprites_42: -972728176
+      65_Assets_fatzombiesprites_43: 2127578203
+      65_Assets_fatzombiesprites_44: 492131201
+      65_Assets_fatzombiesprites_45: -910755505
+      65_Assets_fatzombiesprites_46: 1183727568
+      65_Assets_fatzombiesprites_47: -1590397906
+      65_Assets_fatzombiesprites_48: -1185705598
+      65_Assets_fatzombiesprites_49: 1191460896
+      65_Assets_fatzombiesprites_5: -595605082
+      65_Assets_fatzombiesprites_50: -2022945351
+      65_Assets_fatzombiesprites_51: -890183805
+      65_Assets_fatzombiesprites_52: 1398787635
+      65_Assets_fatzombiesprites_53: -1177617177
+      65_Assets_fatzombiesprites_54: -811343739
+      65_Assets_fatzombiesprites_55: 622699662
+      65_Assets_fatzombiesprites_56: -952497067
+      65_Assets_fatzombiesprites_57: 709820163
+      65_Assets_fatzombiesprites_58: 844087016
+      65_Assets_fatzombiesprites_59: -208740845
+      65_Assets_fatzombiesprites_6: 507972295
+      65_Assets_fatzombiesprites_60: -806887397
+      65_Assets_fatzombiesprites_61: -138817353
+      65_Assets_fatzombiesprites_62: -1766163614
+      65_Assets_fatzombiesprites_63: 704028234
+      65_Assets_fatzombiesprites_64: -288975640
+      65_Assets_fatzombiesprites_65: -239502367
+      65_Assets_fatzombiesprites_66: 494620232
+      65_Assets_fatzombiesprites_67: 1813080713
+      65_Assets_fatzombiesprites_68: 1818208766
+      65_Assets_fatzombiesprites_69: -1100916887
+      65_Assets_fatzombiesprites_7: 283728035
+      65_Assets_fatzombiesprites_70: 1669860896
+      65_Assets_fatzombiesprites_71: -1575711639
+      65_Assets_fatzombiesprites_72: -889973724
+      65_Assets_fatzombiesprites_73: -782751791
+      65_Assets_fatzombiesprites_74: 1384173543
+      65_Assets_fatzombiesprites_75: 645848486
+      65_Assets_fatzombiesprites_8: -684180904
+      65_Assets_fatzombiesprites_9: -484176637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

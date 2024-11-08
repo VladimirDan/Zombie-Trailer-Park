@@ -3,37 +3,66 @@ using Game.Code.Common.CoroutineRunner;
 using System.Collections;
 using UnityEngine;
 using Services;
-using LevelsParameters;
+using GameParameters;
 using Enums;
+using Services.LevelStatisticsManager;
 
 public class UnitsSpawnManager : MonoBehaviour
 {
     CoroutineRunner coroutineRunner;
     DataProvider dataProvider;
     private PlayerBankModel playerBankModel;
+    private AudioManager audioManager;
     
-    public Vector3 baseSpawnPosition;
+    public Vector3 spawnPosition;
     private Quaternion baseRotation = Quaternion.Euler(0, 0, 0);
-    private float maxDistanceBetweenRows = 5;
+
+    [SerializeField] private Transform floorTransform;
+    [SerializeField] private Vector3 spawnPositionFromSpawner;
+    [SerializeField] private int rowsCount;
+    private float zDistanceBetweenRows;
+    private float floorWidth;
 
     [SerializeField] public UnitsSpawnTimings unitsSpawnCycleParameters;
+    private LevelStatisticsManager levelStatisticsManager;
 
-    public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, PlayerBankModel playerBankModel)
+    public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, PlayerBankModel playerBankModel,
+        UnitsSpawnTimings unitsSpawnCycleParameters, LevelStatisticsManager levelStatisticsManager, AudioManager audioManager)
     {
         this.coroutineRunner = coroutineRunner;
         this.dataProvider = dataProvider;
         this.playerBankModel = playerBankModel;
+        this.unitsSpawnCycleParameters = unitsSpawnCycleParameters;
+        this.levelStatisticsManager = levelStatisticsManager;
+        this.audioManager = audioManager;
 
+        floorTransform = dataProvider.GetLevelFloorTransform();
+        floorWidth = floorTransform.transform.localScale.z;
+        zDistanceBetweenRows = floorWidth / rowsCount;
+        
+        spawnPosition = this.transform.localPosition;
+        if (floorTransform != null)
+        {
+            spawnPosition.y = floorTransform.transform.localPosition.y + (floorTransform.transform.localScale.y / 2);
+        }
+
+        spawnPosition += spawnPositionFromSpawner;
+        
         OrderUnitsSpawn(unitsSpawnCycleParameters);
     }
 
     public void OrderUnitsSpawn(UnitsSpawnTimings unitsSpawnCycleParameters)
     {
+        if (unitsSpawnCycleParameters == null)
+        {
+            return;
+        }
+        
         foreach (var unit in unitsSpawnCycleParameters.unitsSpawnTimings)
         {
             foreach (UnitSpawnCycleParameters spawnParameters in unit.unitSpawnCycleParameters)
             {
-                coroutineRunner.RunCoroutine(startSpawnCycle(baseSpawnPosition, spawnParameters.timing, unit.unitType, 
+                coroutineRunner.RunCoroutine(startSpawnCycle(spawnPosition, spawnParameters.timing, unit.unitType, 
                     spawnParameters.spawnCooldown, spawnParameters.unitCount));
             }
         }
@@ -61,30 +90,31 @@ public class UnitsSpawnManager : MonoBehaviour
         UnitSpawner spawner = unitType switch
         {
             UnitType.Zombie or UnitType.Banshee or UnitType.Digger or UnitType.Harvester
-            or UnitType.Cleric or UnitType.SurvivalistCar or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider, playerBankModel),
-            UnitType.Giant => spawner = new SplashDamageUnitSpawner(dataProvider, playerBankModel),
-            UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider, playerBankModel),
-            UnitType.Boozer => spawner = new BombThrowerUnitSpawner(dataProvider, playerBankModel),
-            UnitType.AirStrikePlane => spawner = new AirStrikePlaneSpawner(dataProvider, playerBankModel, coroutineRunner),
+            or UnitType.SurvivalistCar or UnitType.Cleric or UnitType.Shooter => spawner = new StandartUnitSpawner(dataProvider, levelStatisticsManager, playerBankModel),
+            UnitType.Giant => spawner = new SplashDamageUnitSpawner(dataProvider, levelStatisticsManager, playerBankModel),
+            UnitType.ZombieJumper => spawner = new ZombieJumperSpawner(dataProvider, levelStatisticsManager, playerBankModel),
+            UnitType.Boozer => spawner = new BombThrowerUnitSpawner(dataProvider, levelStatisticsManager, playerBankModel),
+            UnitType.AirStrikePlane => spawner = new AirStrikePlaneSpawner(dataProvider, levelStatisticsManager, playerBankModel, coroutineRunner),
             _ => null
         };
 
-        spawner.SpawnAndInitializeUnit(unitType, position, playerBankModel);
+        spawner.SpawnAndInitializeUnit(unitType, position, playerBankModel, audioManager);
     }
 
     public Vector3 GenerateUnitSpawnPosition(Vector3 baseSpawnPosition)
     {
-        float zCoordinate = baseSpawnPosition.z + PickRandomLineForUnitWalkWay(maxDistanceBetweenRows / 2, -maxDistanceBetweenRows / 2);
+        float floorMiddle = floorTransform.transform.localPosition.z;
+        float zCoordinate = PickRandomLineForUnitWalkWay(floorMiddle - floorWidth / 2, floorMiddle + floorWidth / 2);
+        
         return new Vector3(baseSpawnPosition.x, baseSpawnPosition.y, zCoordinate);
     }
 
     public float PickRandomLineForUnitWalkWay(float minValue, float maxValue)
     {
-        float step = (maxValue - minValue) / 4.0f;
-        float[] possibleValues = new float[5];
+        float[] possibleValues = new float[rowsCount];
         for (int i = 0; i < possibleValues.Length; i++)
         {
-            possibleValues[i] = minValue + i * step;
+            possibleValues[i] = minValue + i * zDistanceBetweenRows;
         }
         int randomIndex = Random.Range(0, possibleValues.Length);
         return possibleValues[randomIndex];

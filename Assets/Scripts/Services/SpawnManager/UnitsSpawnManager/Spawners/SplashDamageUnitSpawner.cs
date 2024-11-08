@@ -1,4 +1,5 @@
-﻿using CreaturesData;
+﻿using Services.LevelStatisticsManager;
+using CreaturesData;
 using Services;
 
 namespace Assets.Scripts.Services.SpawnManager.Factories
@@ -11,6 +12,7 @@ namespace Assets.Scripts.Services.SpawnManager.Factories
             ((SplashDamageUnit)unitObject).maxSplashAttackTargets = ((SplashDamageUnitParametersData)unitData).maxSplashAttackTargets;
         }
 
-        public SplashDamageUnitSpawner(DataProvider dataProvider, PlayerBankModel playerBankModel) : base(dataProvider, playerBankModel) { }
+        public SplashDamageUnitSpawner(DataProvider dataProvider, LevelStatisticsManager levelStatisticsManager, PlayerBankModel playerBankModel) 
+            : base(dataProvider, levelStatisticsManager, playerBankModel) { }
     }
 }

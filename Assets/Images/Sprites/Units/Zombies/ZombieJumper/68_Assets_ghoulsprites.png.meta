@@ -1,0 +1,1447 @@
+fileFormatVersion: 2
+guid: 59103b1120d0c1c4bb71ac21addb99e3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 460
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43054c5623f0c6c4686f16c7f1a18159
+      internalID: -709336025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 468
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768e9de7655840428fb50a54783e1ef
+      internalID: -1083839199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 461
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7995d8b0655114382706e01751ba04
+      internalID: -9805919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 467
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640cd425f56ecdb428ed8d24bd50e087
+      internalID: 2133093192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 461
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21d88688bb6c5c43b98b3856191b463
+      internalID: -556247638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 461
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eefa639ac1b85f47a072849006d6e6d
+      internalID: 1519195627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 463
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d2b4ff1e14d24ea41ad8e0266e777
+      internalID: 260869090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 465
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab836cc810030a24e8ade27455b9e392
+      internalID: 1886964688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_8
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 468
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11403a44f7e4a44f993614a1f2407d7
+      internalID: 1831427404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 469
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e9d5c6d30086240b8b03642efc764e
+      internalID: -436828828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_10
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 465
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2f1861477a58a46bc99ffabc026066
+      internalID: -98477116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_11
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 461
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2db95c485a871f45ba0d4f8c98add77
+      internalID: -560577337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_12
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 461
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d557a1cdf31ea43bd15af7eb975ab5
+      internalID: 928037287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_13
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 461
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a8a256411471d4294b476eb942bf0e
+      internalID: -514676461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_14
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 461
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bffc50604300d5459fc4a357d2146d5
+      internalID: -771569348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_15
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 461
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8418759086ff5594d8497da685349acc
+      internalID: 365963313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_16
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 462
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2bd9782937e3246aa35fba3ac8dbcd
+      internalID: 722438195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_17
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 461
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f5a5e80adbd0e47ba9c949e49ccd63
+      internalID: 921351103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_18
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 461
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449b3470fe086884f977df5eddd85474
+      internalID: 1810959133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 401
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7f73f799ffd9f4d8f02b3221e34bf8
+      internalID: -465174109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_20
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f6997e9dc9d184f85168b1bf11941e
+      internalID: 1838917577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8abb31a64490f408d5d3faef534c56
+      internalID: -1364484468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_22
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e122d466703c614db9154512c75ad81
+      internalID: -967994362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_23
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd4934629c34094baaa37e0602a8271
+      internalID: -893309702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006aa2d4b42a37a45a6696685d779d17
+      internalID: 1202052919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_25
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4330db3b32130d43b9abb847452e724
+      internalID: -1318002174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_26
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4678f2efbca3f479d6cbc512908e6a
+      internalID: 52652783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_27
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1221e70b577474741aa559af6cd891dd
+      internalID: -1257956029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_28
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f44507e6d5bd4ca86ee55260c1f25
+      internalID: -1449295514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_29
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 386
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfadcc06977c4804c9f5981e043ded18
+      internalID: 860633737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_30
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c18b9272d4c9c4ebc4da5ccb8025f0
+      internalID: -1512779745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_31
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931c266fee37b2e4ca8411330009bd65
+      internalID: 1461985095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_32
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc642084f9630d489bf2fbcc9530128
+      internalID: 75767628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_33
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 401
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84715336c63a26d41bd23204460f4715
+      internalID: 326377573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_34
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 402
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb736caa5df9dfc44b10e728f2e9a6f8
+      internalID: 697119665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_35
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 401
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5073104aa60959489a822e98e480695
+      internalID: -1645903704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_36
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 401
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac21003248745024d94cebf256fb71aa
+      internalID: -264653422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_37
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 327
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ae45ddd8bbd6042b2f8b1e13143322
+      internalID: -1769766364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_38
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 329
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c563aa26003eb4f9c68c4686a9c7a6
+      internalID: 2063335890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_39
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 328
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c01ea72e72a784487880f093688686
+      internalID: -1657407881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_40
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 322
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbef9cea70115b14895cdd52d4ee0268
+      internalID: -185785023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_41
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 326
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbaa6591c18191419ce789ef304f1f9
+      internalID: -931482619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_42
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 333
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73597aa180a2674099698cbb7615004
+      internalID: 470642665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_43
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 330
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0991e6d64123d814a872da3bba7a816a
+      internalID: -829452723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_44
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 329
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25c487b0a019204f812e6bfe1aa48ae
+      internalID: 1082954380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_45
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 336
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f211135b857da9342aee803aeb44eb5a
+      internalID: -1668541049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_46
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 320
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7264a3d9c02949439d5dbc0085ffc22
+      internalID: -818924151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_47
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 313
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d93df422c38fb24eb0e659946447f5d
+      internalID: 983907278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_48
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 324
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d14e72bbef7804981469207bd267f3
+      internalID: 1988180210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_49
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 340
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11efb10036d5e05448d11d69444d0e97
+      internalID: 1988066174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_50
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 330
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f9756aa4119e4194a1bcf40631c2c
+      internalID: 511007741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_51
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 331
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9241b2a14ee3674da69fb2563e55b36
+      internalID: -1696498014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_52
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 323
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6244d3f50278804ba3e12f8e5540fa9
+      internalID: 721835029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_53
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 251
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2984660e3bb7840a590d5d2d177a93
+      internalID: -1018648362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_54
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 270
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93907cb23044de74197730a7dc11dc37
+      internalID: 396537342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_55
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 258
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d94cdb4d0eea854da5db066bc3398f8
+      internalID: -269982439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_56
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 250
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb053b1e6d4c99d449527e68b8610a5b
+      internalID: 867743429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_57
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 256
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e7c130b343b8a4dbccc1457b7e2797
+      internalID: 1803411145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_58
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 259
+        width: 67
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611b36f771e873048b6db9e017eedd09
+      internalID: -1345393384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 68_Assets_ghoulsprites_59
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 261
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c9765fda6d9f44fb2f84f29b48ad38
+      internalID: 1962558726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      68_Assets_ghoulsprites_0: -709336025
+      68_Assets_ghoulsprites_1: -1083839199
+      68_Assets_ghoulsprites_10: -98477116
+      68_Assets_ghoulsprites_11: -560577337
+      68_Assets_ghoulsprites_12: 928037287
+      68_Assets_ghoulsprites_13: -514676461
+      68_Assets_ghoulsprites_14: -771569348
+      68_Assets_ghoulsprites_15: 365963313
+      68_Assets_ghoulsprites_16: 722438195
+      68_Assets_ghoulsprites_17: 921351103
+      68_Assets_ghoulsprites_18: 1810959133
+      68_Assets_ghoulsprites_19: -465174109
+      68_Assets_ghoulsprites_2: -9805919
+      68_Assets_ghoulsprites_20: 1838917577
+      68_Assets_ghoulsprites_21: -1364484468
+      68_Assets_ghoulsprites_22: -967994362
+      68_Assets_ghoulsprites_23: -893309702
+      68_Assets_ghoulsprites_24: 1202052919
+      68_Assets_ghoulsprites_25: -1318002174
+      68_Assets_ghoulsprites_26: 52652783
+      68_Assets_ghoulsprites_27: -1257956029
+      68_Assets_ghoulsprites_28: -1449295514
+      68_Assets_ghoulsprites_29: 860633737
+      68_Assets_ghoulsprites_3: 2133093192
+      68_Assets_ghoulsprites_30: -1512779745
+      68_Assets_ghoulsprites_31: 1461985095
+      68_Assets_ghoulsprites_32: 75767628
+      68_Assets_ghoulsprites_33: 326377573
+      68_Assets_ghoulsprites_34: 697119665
+      68_Assets_ghoulsprites_35: -1645903704
+      68_Assets_ghoulsprites_36: -264653422
+      68_Assets_ghoulsprites_37: -1769766364
+      68_Assets_ghoulsprites_38: 2063335890
+      68_Assets_ghoulsprites_39: -1657407881
+      68_Assets_ghoulsprites_4: -556247638
+      68_Assets_ghoulsprites_40: -185785023
+      68_Assets_ghoulsprites_41: -931482619
+      68_Assets_ghoulsprites_42: 470642665
+      68_Assets_ghoulsprites_43: -829452723
+      68_Assets_ghoulsprites_44: 1082954380
+      68_Assets_ghoulsprites_45: -1668541049
+      68_Assets_ghoulsprites_46: -818924151
+      68_Assets_ghoulsprites_47: 983907278
+      68_Assets_ghoulsprites_48: 1988180210
+      68_Assets_ghoulsprites_49: 1988066174
+      68_Assets_ghoulsprites_5: 1519195627
+      68_Assets_ghoulsprites_50: 511007741
+      68_Assets_ghoulsprites_51: -1696498014
+      68_Assets_ghoulsprites_52: 721835029
+      68_Assets_ghoulsprites_53: -1018648362
+      68_Assets_ghoulsprites_54: 396537342
+      68_Assets_ghoulsprites_55: -269982439
+      68_Assets_ghoulsprites_56: 867743429
+      68_Assets_ghoulsprites_57: 1803411145
+      68_Assets_ghoulsprites_58: -1345393384
+      68_Assets_ghoulsprites_59: 1962558726
+      68_Assets_ghoulsprites_6: 260869090
+      68_Assets_ghoulsprites_7: 1886964688
+      68_Assets_ghoulsprites_8: 1831427404
+      68_Assets_ghoulsprites_9: -436828828
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

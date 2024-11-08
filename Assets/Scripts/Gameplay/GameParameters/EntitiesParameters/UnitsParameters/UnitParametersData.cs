@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Enums;
+using UnityEngine.Serialization;
 
 namespace CreaturesData
 {
@@ -14,7 +15,7 @@ namespace CreaturesData
         public float CreatureHorizontalMovementDirection;
         public float AttackRange;
         public float AttackDamage;
-        public float AttackSpeed;
+        public float AttackCooldown;
         public float YeeHawPointsDrop;
     }
 }

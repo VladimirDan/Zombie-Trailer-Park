@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Boozer
   m_EditorClassIdentifier: 
   title: Boozer
-  titlePic: {fileID: 21300000, guid: 3dac4862de421804e8e983513e9b7455, type: 3}
+  armyCapacityUnitImageObject: {fileID: 371806456568564052, guid: b41dc971ac5ac4347b192f9c29a3665f, type: 3}
   tooltipDescriptionText: These guys can lob their vile cocktails to explosive effect.
   warningTextVariants:
     warningBeginning: 'You need '
     noNeededBuilding: 'to build a Still '
     noEnoughMoney: 'more cash '
     noEnoughArmyCapacityAvailable: 'more trailers '
+    noEnoughYeeHawPoints: more Yee-Haw points
     warningEnd: 'before summoning '
     warningConnectionPart: 'and '
     warningMaxCountReached: 'you already have the maximum number of '

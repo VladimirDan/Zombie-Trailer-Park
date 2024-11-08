@@ -18,7 +18,7 @@ public class SplashDamageUnitModel : UnitModel
     public override IEnumerator Fight()
     {
         GameObject[] targets = FindOpponents(AttackRange, maxSplashAttackTargets);
-        yield return new WaitForSeconds(AttackSpeed);
+        yield return new WaitForSeconds(AttackCooldown);
 
         while (true)
         {
@@ -35,7 +35,7 @@ public class SplashDamageUnitModel : UnitModel
             {
                 yield break;
             }
-            yield return new WaitForSeconds(AttackSpeed);
+            yield return new WaitForSeconds(AttackCooldown);
         }
     }
 

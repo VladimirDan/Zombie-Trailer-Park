@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using Game.Code.Common.CoroutineRunner;
-using Gameplay;
 using System;
 using Enums;
 
@@ -14,13 +13,14 @@ namespace Services
     {
         private CoroutineRunner coroutineRunner;
         private DataProvider dataProvider;
-        private UIManager uiManager;
-        private PlayerBankModel playerBankModel;
+        private LevelUIManager levelUIManager;
         
-        private GameSpeedController gameSpeedController;
+        [SerializeField] private GameSpeedController gameSpeedController;
+        private AudioManager audioManager;
         private SummonManager summonManager;
         
         [SerializeField] private Button speedControllerButton;
+        
         [SerializeField] private ButtonWithCooldown diggerSummonButton;
         [SerializeField] private ButtonWithCooldown shooterSummonButton;
         [SerializeField] private ButtonWithCooldown boozerSummonButton;
@@ -39,16 +39,14 @@ namespace Services
         [SerializeField] private ButtonWithCooldown crowdSummonSummonButton;
 
         public void Initialize(CoroutineRunner coroutineRunner, DataProvider dataProvider, SummonManager summonManager,
-            UIManager uiManager, PlayerBankModel playerBankModel)
+            LevelUIManager levelUIManager, AudioManager audioManager)
         {
             this.coroutineRunner = coroutineRunner;
             this.dataProvider = dataProvider;
             this.summonManager = summonManager;
-            this.uiManager = uiManager;
+            this.levelUIManager = levelUIManager;
             this.summonManager = summonManager;
-            this.playerBankModel = playerBankModel;
-
-            gameSpeedController = new GameSpeedController();
+            this.audioManager = audioManager;
 
             speedControllerButton.onClick.AddListener(OnSpeedButtonClick);
 
@@ -72,8 +70,8 @@ namespace Services
 
         public void AddSummonListener(ButtonWithCooldown button, UnitType unitType)
         {
-            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(unitType));
-            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(unitType));
+            levelUIManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(unitType));
+            UnitTooltipUIManager tooltipUIManager = levelUIManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(unitType), unitType);
             tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForUnitTooltip;
             
             SummonCooldownController cooldownController =
@@ -86,14 +84,14 @@ namespace Services
             {
                 button.onClick.AddListener(() => summonManager.PayForSummon(unitType));
                 button.onClick.AddListener(() => OnSummonButtonClick(unitType, button, cooldownController));
-                uiManager.OnButtonsActivityChange += checkOutButtonState;
+                levelUIManager.OnButtonsActivityChange += checkOutButtonState;
             }
         }
 
         public void AddSummonListener(ButtonWithCooldown button, BuildingType buildingType)
         {
-            uiManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(buildingType));
-            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(buildingType));
+            levelUIManager.UpdateButtonPressMoneyPrice(button, dataProvider.GetSummonPrice(buildingType));
+            TooltipUIManager tooltipUIManager = levelUIManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(buildingType));
             tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForBuildingTooltip;
             
             SummonCooldownController cooldownController =
@@ -106,14 +104,14 @@ namespace Services
             {
                 button.onClick.AddListener(() => summonManager.PayForSummon(buildingType));
                 button.onClick.AddListener(() => OnSummonButtonClick(buildingType, button, cooldownController));
-                uiManager.OnButtonsActivityChange += checkOutButtonState;
+                levelUIManager.OnButtonsActivityChange += checkOutButtonState;
             }
         }
         
         public void AddSummonListener(ButtonWithCooldown button, YeeHawActionType yeeHawActionType)
         {
-            uiManager.UpdateButtonPressYeeHawPointsPrice(button, dataProvider.GetSummonPrice(yeeHawActionType));
-            TooltipUIManager tooltipUIManager = uiManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(yeeHawActionType));
+            levelUIManager.UpdateButtonPressYeeHawPointsPrice(button, dataProvider.GetSummonPrice(yeeHawActionType));
+            TooltipUIManager tooltipUIManager = levelUIManager.CreateTooltipPanel(button, dataProvider.GetTooltipContent(yeeHawActionType));
             tooltipUIManager.OnWarningTextUpdate += tooltipUIManager.UpdateWarningTextForYeeHawPowerTooltip;
             
             SummonCooldownController cooldownController =
@@ -126,7 +124,8 @@ namespace Services
             {
                 button.onClick.AddListener(() => summonManager.PayForSummon(yeeHawActionType));
                 button.onClick.AddListener(() => OnSummonButtonClick(yeeHawActionType, button, cooldownController));
-                uiManager.OnButtonsActivityChange += checkOutButtonState;
+                button.onClick.AddListener(() => audioManager.PlayYeeHawSound());
+                levelUIManager.OnButtonsActivityChange += checkOutButtonState;
             }
         }
 
@@ -158,24 +157,24 @@ namespace Services
         {
             if (conditionCheckForActivity.Invoke())
             {
-                uiManager.ActivateButton(button);
+                levelUIManager.ActivateButton(button);
             }
             else
             {
-                uiManager.DeactivateButton(button);
+                levelUIManager.DeactivateButton(button);
             }
         }
 
         public void OnSpeedButtonClick()
         {
-            gameSpeedController.ChangeSpeed();
+            gameSpeedController.SetNextSpeed();
         }
         
         private void OnDestroy()
         {
             if (speedControllerButton != null)
             {
-                speedControllerButton.onClick.RemoveListener(gameSpeedController.ChangeSpeed);
+                speedControllerButton.onClick.RemoveListener(gameSpeedController.SetNextSpeed);
             }
         }
     }

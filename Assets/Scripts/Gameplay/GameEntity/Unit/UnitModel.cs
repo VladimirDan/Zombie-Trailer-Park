@@ -2,24 +2,22 @@ using Assets.Scripts.StateMachine.States;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
-using UnityEditor;
-using static HealthModel;
-using static UnityEngine.EventSystems.EventTrigger;
-using Unity.VisualScripting;
-using CreaturesData;
+using Enums;
+using Gameplay.GameEntity.Entity;
 
-public class UnitModel : MonoBehaviour, IUnitModel
+
+public class UnitModel : EntityModel<UnitType>, IUnitModel
 {
     public float CreatureSpeed { get; set; }
     public float CreatureHorizontalMovementDirection { get; set; }
     public float AttackRange { get; set; }
     public float AttackDamage { get; set; }
-    public float AttackSpeed { get; set; }
+    public float AttackCooldown { get; set; }
     public LayerMask OpponentLayer { get; set; }
     public LayerMask OpponentBaseLayer{ get; set; }
     public Rigidbody EntityRigidbody { get; set; }
     public Transform EntityTransform { get; set; }
+    public Animator Animator{ get; set; }
 
     public void Walk(float speed, float movementDirection)
     {
@@ -72,14 +70,14 @@ public class UnitModel : MonoBehaviour, IUnitModel
     public virtual void Attack(GameObject target) 
     {
         HealthModel opponentHealth = target.GetComponent<HealthModel>();
-
         opponentHealth.ReduceHealth(AttackDamage);
     }
 
     public virtual IEnumerator Fight()
     {
         GameObject target = FindOpponent(AttackRange);
-        yield return new WaitForSeconds(AttackSpeed);
+        
+        yield return new WaitForSeconds(AttackCooldown);
 
         while (true)
         {
@@ -96,7 +94,7 @@ public class UnitModel : MonoBehaviour, IUnitModel
             {
                 yield break;
             }
-            yield return new WaitForSeconds(AttackSpeed);
+            yield return new WaitForSeconds(AttackCooldown);
         }
     }
 }

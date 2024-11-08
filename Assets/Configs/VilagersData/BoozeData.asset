@@ -24,7 +24,7 @@ MonoBehaviour:
   CreatureHorizontalMovementDirection: 1
   AttackRange: 6
   AttackDamage: 0
-  AttackSpeed: 1
+  AttackCooldown: 1
   YeeHawPointsDrop: 0
   bombPrefab: {fileID: 2834832886997551221, guid: e7a4e503936370f4b849b8efe585e40c, type: 3}
   bombThrowHeight: 1.5

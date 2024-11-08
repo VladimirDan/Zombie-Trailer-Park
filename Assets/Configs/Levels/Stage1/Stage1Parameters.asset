@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f635856c70544acc8c502ea02460de59, type: 3}
+  m_Name: Stage1Parameters
+  m_EditorClassIdentifier: 
+  levelId: 0
+  playerStartResources: {fileID: 11400000, guid: f1b8669d8b329fe489073bc6ce13f006, type: 2}
+  zombiesSpawnCycleParameters: {fileID: 11400000, guid: d2f6e3e3b929c1a4aace1ac8b2902e33, type: 2}
+  levelBackground: {fileID: 21300000, guid: a659243938c441d47a05f05c0a70f7c7, type: 3}
+  fastestLevelCompleteTime: 0
+  isLevelAvailable: 0

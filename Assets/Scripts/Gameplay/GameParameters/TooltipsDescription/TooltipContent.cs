@@ -7,7 +7,7 @@ namespace Gameplay.GameParameters
     public class TooltipContent : ScriptableObject
     {
         public string title;
-        [CanBeNull] public Sprite titlePic;
+        [CanBeNull] public GameObject armyCapacityUnitImageObject;
         public string tooltipDescriptionText;
         public WarningTextVariants warningTextVariants;
     }

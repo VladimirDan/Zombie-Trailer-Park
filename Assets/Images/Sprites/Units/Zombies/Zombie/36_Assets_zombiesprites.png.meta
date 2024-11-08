@@ -1,0 +1,1623 @@
+fileFormatVersion: 2
+guid: ef8461796048e6e468f14261881640b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 458
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c72c059540ca4ba295904ca5245e8
+      internalID: -876034558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 458
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649af638ae825c4409fc54733d8e74b1
+      internalID: 1302812519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 456
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b403ef47e269348818c835f528676d
+      internalID: -2053553808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 456
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39784d62365e524f8aaebcc8450d782
+      internalID: -500844195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 456
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adba714037abf8f49807b3d0f0c241d9
+      internalID: -2095370597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 456
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617bbd332d7efb64089c37d1070abbdb
+      internalID: 1497907292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 455
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22181bb4f024a4383e516097a1f9eb
+      internalID: -2118121678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 454
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f85f0f40198304690c553de2316316
+      internalID: 644235095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_8
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 454
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6338aba26c62b48953b4a87b4d7291
+      internalID: 1164308780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_9
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 453
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3620766570fda4d87168ba65723590
+      internalID: 378541438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 451
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c468af9a161184ca0e10f74a34b70d
+      internalID: -1705651765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 451
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ace6cb1f6e46945a1652b06326b57c
+      internalID: -2085274870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_12
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 450
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba664c2e458cb54f8ec2be79a21fdee
+      internalID: 1377131406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_13
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 450
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e9e70a890fea24ea9f311e52248e08
+      internalID: -1045838242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 449
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ff9616489642b41857a8d96fddb66e
+      internalID: -147872567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_15
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 449
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657ce16e9e2fcc04dbee1fe01cad96c2
+      internalID: 294305599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_16
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 449
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d313f54062f2942a0bff065195877a
+      internalID: -2099419904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_17
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 449
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fe0bcb3b641464e8a0cdb88f517d3e
+      internalID: -1822557945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 378
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96c19a5c2c2cfa45b7aaa3a15f193f1
+      internalID: 1742540410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 378
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee92be84d647c0a44be6b86343e663d9
+      internalID: -627781317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_20
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 378
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e80eb0f6630707479799bd9206b9377
+      internalID: 1440237617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_21
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 378
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36606cfecc29e284199c0944b59e286d
+      internalID: 1673887005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_22
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 378
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21647647a8f74c242bab50630e8f169b
+      internalID: 854941642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_23
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 378
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7b2639ff59f4044bbbd4793e50217f
+      internalID: -1449895657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_24
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 378
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e27ac670e897f468260029d1e405a7
+      internalID: 1011710643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_25
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 378
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d5b450abfe54540beb76b4d446730f
+      internalID: 1660997134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_26
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 378
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d938d2bdb6ed94ea54617141d8b77d
+      internalID: -1323224413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_27
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 378
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2340bb856396f4a4bab68ba6ed469c5f
+      internalID: -1929783131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_28
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 378
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5aa285223ac82144bb15b1cc606312a
+      internalID: 1282624403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_29
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 378
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0895071cc1c855a4e9fe0fa3d2d829bb
+      internalID: -1412941081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_30
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 378
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7060452fd4245e64e9d36b8052971b78
+      internalID: 1196728869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_31
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 378
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7b3b81a5a805848a0648f689d64c30
+      internalID: -2114603091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_32
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 378
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d7b8b77223ade409d8eb6d94221143
+      internalID: -168860571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_33
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 378
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b756614890086e419d42ec77a2ed6b7
+      internalID: 76363021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_34
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 378
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b518e7094e5b9f47a539f73c7db2be8
+      internalID: -1676887345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_35
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 378
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453cdd4234db9944f80cca1dc1242ce7
+      internalID: -879560104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_36
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 378
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cb6da0b21fd0643bd74773fb51e828
+      internalID: -3093686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_37
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 307
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2967fe0edfe7b142adfddc66967c2c9
+      internalID: -1587717399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_38
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 306
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bd23cd1c53ed246a0eb01284b8edef
+      internalID: -1107360957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 306
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b25f5d9bc52394ca42d1d13c5d49f8
+      internalID: 372083708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_40
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 306
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fb36a0c90319c49a231d97395ade99
+      internalID: -1807684360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_41
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 306
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc51c947004d5a4ea215980014786c5
+      internalID: -1206645679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_42
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e815c5e0b52457346be99b33d85d4d64
+      internalID: -1947356226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_43
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26773663b5ae17a4481e7f7b43fc1892
+      internalID: -2045693791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_44
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 306
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46b0f4cc8a4d3643805c371e6273125
+      internalID: 811619502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_45
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 306
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56a4484f22d35f47a960a0ed95dc393
+      internalID: 1598024251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_46
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df57730a583e6a4789615ad4a522861
+      internalID: 125310028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_47
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bb4cd0b5eca38498035070b943ee44
+      internalID: -698775401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_48
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 306
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400006202b693d84b9f0e300504cff47
+      internalID: -466511916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_49
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 306
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e47596ad7b7da546a9156465983cc45
+      internalID: 494158022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_50
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa8607773c4a15439fb387e75c34e08
+      internalID: -1304269315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_51
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 306
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97a02b67c943de45aa68b7b0d2555c3
+      internalID: 109844050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_52
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 306
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28faf77ac7f7d844e8444f196b73b077
+      internalID: -446385386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_53
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 306
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea59a3d8ba5076647858ac0464508a35
+      internalID: 1359411072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_54
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 306
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c710da257c8b6924b82bad56fcdcd089
+      internalID: -529664517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_55
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 306
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6adac11475c9c043bd01b3e5999e691
+      internalID: -1328829971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_56
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 306
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8fb25e64f760741a86a78caacce297
+      internalID: 1076846483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_57
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 234
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5562787ffa22c4ab3f4a1878b1acbe
+      internalID: 1226777641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_58
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 234
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a0537f8da6e7e40a76bfdf16de1aa1
+      internalID: 586286505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_59
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 234
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4686bfa39fd60184e9cae81b113b035d
+      internalID: -989484102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_60
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 233
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffea76588aa0d44a94f0cda043d516f
+      internalID: 1406034203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_61
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 233
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af2aed1a8e70264bbb6383cc465fafe
+      internalID: -153968922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_62
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 233
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b83bcc0e1f60c46971d5a7115e04cb
+      internalID: 725815892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_63
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 233
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b0dd7f8e21414291d669cab99a658
+      internalID: 565330601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_64
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 233
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ab11025d70edf479595504c1c7a863
+      internalID: -287297144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_65
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 229
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53efe1be31d5ec24da693b84a4aa433c
+      internalID: 1076994273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_66
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 229
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b64ec23b41da9a43ab408f22544aa45
+      internalID: -299157354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 36_Assets_zombiesprites_67
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 227
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf54fb3b5e7a7c54db84a74f17b03a89
+      internalID: 1519866130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      36_Assets_zombiesprites_0: -876034558
+      36_Assets_zombiesprites_1: 1302812519
+      36_Assets_zombiesprites_10: -1705651765
+      36_Assets_zombiesprites_11: -2085274870
+      36_Assets_zombiesprites_12: 1377131406
+      36_Assets_zombiesprites_13: -1045838242
+      36_Assets_zombiesprites_14: -147872567
+      36_Assets_zombiesprites_15: 294305599
+      36_Assets_zombiesprites_16: -2099419904
+      36_Assets_zombiesprites_17: -1822557945
+      36_Assets_zombiesprites_18: 1742540410
+      36_Assets_zombiesprites_19: -627781317
+      36_Assets_zombiesprites_2: -2053553808
+      36_Assets_zombiesprites_20: 1440237617
+      36_Assets_zombiesprites_21: 1673887005
+      36_Assets_zombiesprites_22: 854941642
+      36_Assets_zombiesprites_23: -1449895657
+      36_Assets_zombiesprites_24: 1011710643
+      36_Assets_zombiesprites_25: 1660997134
+      36_Assets_zombiesprites_26: -1323224413
+      36_Assets_zombiesprites_27: -1929783131
+      36_Assets_zombiesprites_28: 1282624403
+      36_Assets_zombiesprites_29: -1412941081
+      36_Assets_zombiesprites_3: -500844195
+      36_Assets_zombiesprites_30: 1196728869
+      36_Assets_zombiesprites_31: -2114603091
+      36_Assets_zombiesprites_32: -168860571
+      36_Assets_zombiesprites_33: 76363021
+      36_Assets_zombiesprites_34: -1676887345
+      36_Assets_zombiesprites_35: -879560104
+      36_Assets_zombiesprites_36: -3093686
+      36_Assets_zombiesprites_37: -1587717399
+      36_Assets_zombiesprites_38: -1107360957
+      36_Assets_zombiesprites_39: 372083708
+      36_Assets_zombiesprites_4: -2095370597
+      36_Assets_zombiesprites_40: -1807684360
+      36_Assets_zombiesprites_41: -1206645679
+      36_Assets_zombiesprites_42: -1947356226
+      36_Assets_zombiesprites_43: -2045693791
+      36_Assets_zombiesprites_44: 811619502
+      36_Assets_zombiesprites_45: 1598024251
+      36_Assets_zombiesprites_46: 125310028
+      36_Assets_zombiesprites_47: -698775401
+      36_Assets_zombiesprites_48: -466511916
+      36_Assets_zombiesprites_49: 494158022
+      36_Assets_zombiesprites_5: 1497907292
+      36_Assets_zombiesprites_50: -1304269315
+      36_Assets_zombiesprites_51: 109844050
+      36_Assets_zombiesprites_52: -446385386
+      36_Assets_zombiesprites_53: 1359411072
+      36_Assets_zombiesprites_54: -529664517
+      36_Assets_zombiesprites_55: -1328829971
+      36_Assets_zombiesprites_56: 1076846483
+      36_Assets_zombiesprites_57: 1226777641
+      36_Assets_zombiesprites_58: 586286505
+      36_Assets_zombiesprites_59: -989484102
+      36_Assets_zombiesprites_6: -2118121678
+      36_Assets_zombiesprites_60: 1406034203
+      36_Assets_zombiesprites_61: -153968922
+      36_Assets_zombiesprites_62: 725815892
+      36_Assets_zombiesprites_63: 565330601
+      36_Assets_zombiesprites_64: -287297144
+      36_Assets_zombiesprites_65: 1076994273
+      36_Assets_zombiesprites_66: -299157354
+      36_Assets_zombiesprites_67: 1519866130
+      36_Assets_zombiesprites_7: 644235095
+      36_Assets_zombiesprites_8: 1164308780
+      36_Assets_zombiesprites_9: 378541438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
